@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/tasks/task-image-classification-openvino.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-image-classification-openvino.md:3
+msgid "CK workflows for image classification with OpenVino"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-image-classification-openvino.md:5
+msgid "Old CK workflow for MLPerf v0.5 with OpenVino 2019 R3"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-image-classification-openvino.md:7
+msgid "Reproducibility study"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-image-classification-openvino.md:9
+msgid "Running MLPerf with OpenVino 2019 R3 on x86 with Ubuntu 18.04"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-image-classification-openvino.md:11
+msgid "Adaptive containers"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-image-classification-openvino.md:13
+msgid "Old container for MLPerf v0.5 with OpenVino 2019 R3"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-image-classification-openvino.md:14
+msgid "Old container for MLPerf v0.7 with OpenVino 2020.2"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-image-classification-openvino.md:16
+msgid "Future work"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-image-classification-openvino.md:18
+msgid ""
+"We plan to update above workflow to be compatible with our new end-to-end"
+" MLPerf submission workflow."
+msgstr ""
+

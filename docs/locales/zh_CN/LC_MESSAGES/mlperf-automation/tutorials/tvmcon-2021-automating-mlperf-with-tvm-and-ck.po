@@ -1,0 +1,252 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:1
+msgid "TVMCon'21 tutorial"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:2
+msgid ""
+"\"Automating and simplifying MLPerf inference benchmark submissions with "
+"TVM and CK\""
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:4
+msgid "Shortcut: https://bit.ly/tvmcon21-mlperf"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:6
+msgid "Authors"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:7
+msgid "Grigori Fursin, OctoML"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:8
+msgid "Thomas Zhu, Oxford University"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:9
+msgid "Alexander Peskov, Deelvin"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:10
+msgid "Thierry Moreau, OctoML"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:12
+msgid "Brief description"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:14
+msgid ""
+"MLPerf is a community effort to develop a common Machine Learning (ML) "
+"benchmark that provides consistent, reproducible, and fair measurements "
+"of accuracy, speed, and efficiency across diverse ML models, datasets, "
+"hardware, and software. While MLPerf popularity is steadily growing, the "
+"barrier of entry to MLPerf remains high due to a complex benchmarking and"
+" submission pipeline and rapidly evolving hardware and software stacks. "
+"In this tutorial, we will demonstrate how Apache TVM and the Collective "
+"Knowledge framework (CK) can simplify and automate MLPerf inference "
+"benchmarking based on our own MLPerf v1.1 submission. The goal is to "
+"explain how our flexible open-source stack can lower the barrier of entry"
+" for future hardware participants by providing a powerful framework that "
+"is both hardware and ML framework agnostic and can optimize almost any "
+"deep learning model on almost any deployment hardware."
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:30
+msgid "Agenda"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:32
+msgid "Introduction"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:33
+msgid "MLPerf and MLCommons"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:34
+msgid "MLPerf inference benchmark: intro, GitHub"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:35
+msgid "Regular submissions: v1.1 results"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:36
+msgid ""
+"Current problems: the high barrier of entry due to a complex submission "
+"pipeline and rapidly evolving ML/SW/HW stacks"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:37
+msgid ""
+"OctoML have joined MLCommons to help the community solve these problems "
+"with TVM and CK"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:38
+msgid "Apache TVM"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:39
+msgid ""
+"CK \"plug&play\" automation framework: GitHub, Motivation, ArXiv, "
+"automation actions, MLOps components"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:44
+msgid ""
+"ACM REQUEST-ASPLOS'18: the 1st Reproducible Tournament on Pareto-"
+"efficient Image Classification"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:45
+msgid "Live scoreboard"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:46
+msgid "CK-based MLPerf automation"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:53
+msgid "cKnowledge.io dashboard with reproducible results"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:55
+msgid "OctoML's MLPerf inference submission v1.1:"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:57
+msgid "TVM backend for MLPerf inference (vision)"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:58
+msgid ""
+"TVM extension to support MLPerf inference (should be in the mainline TVM "
+"in Q1 2022)"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:59
+msgid "CK packages for MLPerf"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:60
+msgid "CK workflows for MLPerf"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:62
+msgid "All Data Center results"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:63
+msgid "OctoML's demo submission (open division)"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:64
+msgid "GitHub"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:66
+msgid "Tutorial to reproduce our MLPerf TVM results using the CK framework"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:68
+msgid ""
+"The same CK steps and APIs are used across different hardware, ML "
+"frameworks, libraries, compilers, models and data sets!"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:70
+msgid ""
+"MLPerf inference v1.1; Image Classification; Resnet50; TVM; AWS "
+"m5zn.6xlarge; X64; datacenter; open division"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:72
+msgid "Automating MLPerf submission"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:73
+msgid "Using reduced ImageNet for testing"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:75
+msgid "Adaptive containers with the CK API"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:76
+msgid "Example: MLPerf object detection ONNX and TVM"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:78
+msgid "Tutorial to extend MLPerf benchmarks"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:79
+msgid "Can support any framework, model, compiler, hardware"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:81
+msgid "Future work:"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:83
+msgid "This is an on-going community effort - please get in touch!"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:85
+msgid ""
+"Preparing MLCommons WG on CK-based design space exploration of ML/SW/HW "
+"stacks"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:86
+msgid "Adding TVM support to all MLPerf inference and training benchmarks"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:87
+msgid ""
+"Developing CK and CK2 within MLCommons to make it easier to benchmark, "
+"optimize and deploy ML Systems across continuously changing ML/SW/HW "
+"stacks"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:88
+msgid ""
+"Adding more ML models, data sets, frameworks, libraries and compilers as "
+"plug&play CK packages"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:89
+msgid "Collaborating with other MLSys and MLOps projects"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:91
+msgid "Contact:"
+msgstr ""
+
+#: ../../mlperf-automation/tutorials/tvmcon-2021-automating-mlperf-with-tvm-and-ck.md:92
+msgid "Grigori Fursin and Thierry Moreau"
+msgstr ""
+

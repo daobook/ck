@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/models/notes-convert-resnet50-onnx-format-to-quantized-tensorrt-engine.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-convert-resnet50-onnx-format-to-quantized-tensorrt-engine.md:3
+msgid "BeyondCloud commented:"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-convert-resnet50-onnx-format-to-quantized-tensorrt-engine.md:5
+msgid ""
+"Hi, I am trying to reproduce the resnet50 benchmark result shows on "
+"mlperf.org (edged/closed division row 4). Currently I can achieve 2.4ms "
+"latency on Jetson Xavier AGX SingleStream scenario . However, I use "
+"trtexec to generate the int8 engine file from resnet50_v1.onnx and "
+"trtexec does not support calibration (it uses random weight instead). "
+"Could you tell me how did you convert resnet50_v1.onnx to int8 engine "
+"file (or plan file) you use in this this repo?"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-convert-resnet50-onnx-format-to-quantized-tensorrt-engine.md:8
+msgid "psyhtest commented:"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-convert-resnet50-onnx-format-to-quantized-tensorrt-engine.md:11
+msgid ""
+"To obtain the TensorRT plans, we followed NVIDIA's instructions from "
+"their MLPerf™ Inference v0.5 submission. This happened between the v0.5 "
+"and v0.7 submission rounds, i.e. between October 2019 - September 2020. "
+"we submitted the results to v0.7 (without DLA support)."
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-convert-resnet50-onnx-format-to-quantized-tensorrt-engine.md:13
+msgid ""
+"After v0.7, we reproduced some of the results with JetPack 4.5, while "
+"resolving a few issues along the way. We did not create CK packages for "
+"the new plans though."
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-convert-resnet50-onnx-format-to-quantized-tensorrt-engine.md:15
+msgid ""
+"When the v1.0 results are out on 21 April 2021, I'd encourage you to "
+"reproduce them in the same way and share your experience with the "
+"community!"
+msgstr ""
+

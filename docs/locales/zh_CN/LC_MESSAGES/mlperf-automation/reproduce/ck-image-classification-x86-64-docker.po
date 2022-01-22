@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:3
+msgid ""
+"Adaptive CK container for MLPerf™ Inference v1.0 - Image Classification -"
+" TFLite 2.4.1 with RUY"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:5
+msgid "Install Collective Knowledge (CK) with CK MLOps repo"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:12
+msgid ""
+"Build Docker container with CK components and a small ImageNet (500 "
+"images) to test MLPerf™ workflows"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:18
+msgid "Run this container interactively"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:24
+msgid ""
+"You can now issue standard CK commands from here to install ResNet-50 and"
+" benchmark it via loadgen."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:28
+msgid "Issue a CK command to this container"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:30
+msgid "Linux"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:50
+msgid "Run a container and record experiments locally"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:52
+msgid ""
+"You can run adaptive CK containers while recording experiments to local "
+"CK repositories to perform further analysis and visualization on yout "
+"host machine."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:54
+msgid "Let's create a dummy repository 'ck-experiment':"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:59
+msgid ""
+"You can then run the script \"ck-object-detection-x86-64-docker-"
+"start.sh\" from this directory to pass the path to this repo to the "
+"container, run it, benchmark MLPerf™ model, and record experiments to the"
+" above ck-experiment repository:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:67
+msgid "Here is the content of this script:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:84
+msgid ""
+"It also passes a helper script \"ck-object-detection-x86-64-docker-"
+"helper.sh\" to the container:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:124
+msgid ""
+"You can see the results in the ck-experiments from your host machine as "
+"follows:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:128
+msgid "or"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:133
+msgid "You can pack this repository."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:138
+msgid ""
+"CK will create \"ckr-ck-experiments.zip\" file that can be shared with "
+"other colleagues or workgroups."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:140
+msgid ""
+"Anyone else can now add these experiments in their own CK repositories "
+"for further analysis as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:145
+msgid "You can also visualize this data using CK dashboards."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:147
+msgid "Run a container with external ImageNet"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:150
+msgid "Run the following examples for Windows and Linux:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:151
+msgid "ck-image-classification-x86-64-docker-external-imagenet-start.sh"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:152
+msgid "ck-image-classification-x86-64-docker-external-imagenet-start.bat"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:154
+msgid "and a helper file:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-docker.md:155
+msgid "ck-image-classification-x86-64-docker-external-imagenet-helper.sh"
+msgstr ""
+

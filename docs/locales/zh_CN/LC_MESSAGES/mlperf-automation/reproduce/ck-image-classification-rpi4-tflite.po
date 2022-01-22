@@ -1,0 +1,228 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:3
+msgid "Reproduced by Grigori Fursin on 20210505"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:5
+msgid "Platform: Raspberry Pi 4"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:6
+msgid "OS: Ubuntu 20.04 64-bit"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:8
+msgid "MLPerf™ Inference v1.0 - Image Classification - TFLite 2.4.1"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:10
+msgid "System packages"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:12
+msgid "Install system packages for RPi4 Ubuntu."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:14
+msgid "Install Collective Knowledge (CK) and Virtual Environment"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:16
+msgid ""
+"Note that you need Python 3.7+! If you do not have it installed, don't "
+"worry - CK can rebuilt a required version when creating a virtual "
+"environment."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:24
+msgid ""
+"CK will attempt to detect existing python versions and will ask you which"
+" one to use for your virtual environment."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:26
+msgid "Activate created virtual environment"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:32
+msgid "Pull CK MLOps repository"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:38
+msgid "Set up CK environment"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:46
+msgid "Install common CK packages"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:48
+msgid ""
+"You will need cmake to build MLPerf™ loadgen. First, attempt to detect if"
+" you already have it installed:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:53
+msgid "Note that you need version >= 3.16"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:55
+msgid "CK will register your version if it manages to detect it:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:64
+msgid ""
+"If you do not have cmake installed or CK did not manage to detect it, you"
+" can use a CK package to build it for your system:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:69
+msgid "You can now install other dependencies via CK:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:83
+msgid "Install (detect) full ImageNet 2012 val dataset with 50000 images"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:85
+msgid ""
+"ImageNet 2012 validation set is no longer publicly available and this CK "
+"meta-package cannot automatically download it!"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:88
+msgid ""
+"If you already have it installed on your machine, you can detect and "
+"register it to work with CK workflows using this command:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:97
+msgid ""
+"You can also download it via Academic Torrents and then register in the "
+"CK using the above command."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:101
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:134
+msgid "Preprocess using OpenCV (better accuracy but may fail on some machines)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:109
+msgid "Processing time: ~30 min."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:111
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:142
+msgid ""
+"Preprocess using pillow (slightly worse accuracy but works most of the "
+"time)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:119
+msgid "Processing time: ~26 min."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:125
+msgid "Install reduced ImageNet 2012 val dataset with the first 500 images"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:127
+msgid ""
+"If you do not have the full ImagNet val dataset, you can install its "
+"reduced version via CK with the first 500 images just for a test:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:150
+msgid "Install framework TFLite 2.4.1 with RUY"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:152
+msgid "Note that TFLite will only use CPU on Nvidia Jetson cards"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:158
+msgid "Building time: ~15 min."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:162
+msgid "Install model(s)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:164
+msgid "ResNet-50 (no-argmax)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:166
+msgid "Install ResNet model via CK:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:171
+msgid "Test that it works with the installed TFLite version:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:183
+msgid "Run MLPerf™ benchmark"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:185
+msgid "Accuracy: Single Stream (50 samples)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:201
+msgid "Accuracy: Single Stream (50000 samples)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:217
+msgid "Accuracy: Offline (500 samples)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:233
+msgid "Performance: Single Stream (500 samples)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:235
+msgid ""
+"A note from the community: A valid SingleStream performance run must "
+"reach a) the minimum duration of 60 seconds (NB: increased to 600 seconds"
+" for v1.0), and b) the minimum of 1,024 queries. Increasing the expected "
+"SingleStream target latency in user.conf from 10 milliseconds to above "
+"~60 milliseconds decreases the number of queries that LoadGen issues from"
+" 6,000 (actually, 12,000 to account for variability) to 1,024. Note that "
+"it does not matter whether the expected latency is, say, 100 ms or 1000 "
+"ms, as long as it is above ~60 ms."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:259
+msgid "Performance: Offline (500 samples)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-rpi4-tflite.md:261
+msgid ""
+"A note from the community: A valid Offline performance run must reach the"
+" minimum duration of 60 seconds (NB: increased to 600 seconds for v1.0), "
+"and b) the minimum of 24,576 samples."
+msgstr ""
+

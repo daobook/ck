@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/models/notes-using-tflite-models-for-datacenter-scenarios.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-using-tflite-models-for-datacenter-scenarios.md:3
+msgid "Crefeda Rodrigues crefeda.rodrigues@arm.com"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-using-tflite-models-for-datacenter-scenarios.md:5
+msgid "Hi,"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-using-tflite-models-for-datacenter-scenarios.md:7
+msgid ""
+"I wanted to clarify whether we can use tflite models for datacenter "
+"scenarios? My understanding is that we start from the reference model TF "
+"model provided and convert it to TFlite."
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-using-tflite-models-for-datacenter-scenarios.md:10
+msgid "Thanks, Crefeda Rodrigues"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-using-tflite-models-for-datacenter-scenarios.md:16
+msgid ""
+"As long you start with a reference model and can show how you get to your"
+" model you should be ok."
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-using-tflite-models-for-datacenter-scenarios.md:18
+msgid ""
+"Not sure how well tflite models work for datacenter since many times they"
+" are burned in to batchsize 1 and the interpreper api does not allow "
+"multiple requests into the same session (aka you’d need to fiddle with "
+"the app to load the model multiple times)."
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-using-tflite-models-for-datacenter-scenarios.md:23
+msgid "Guenther."
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-using-tflite-models-for-datacenter-scenarios.md:28
+msgid "Examples:"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-using-tflite-models-for-datacenter-scenarios.md:30
+msgid "ResNet50: https://github.com/arm-software/armnn-mlperf"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes-using-tflite-models-for-datacenter-scenarios.md:31
+msgid ""
+"SSD-ResNet34, however, was rather tricky to convert: "
+"https://github.com/mlcommons/inference/issues/229"
+msgstr ""
+

@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:3
+msgid "Reproduced by Grigori Fursin on 20210428"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:5
+msgid "MLPerf™ Inference v1.0 - Object Detection - TFLite"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:7
+msgid "Platform: RPi4"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:8
+msgid "OS: Ubuntu 20.04 64-but"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:10
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:12
+msgid "System packages"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:14
+msgid "Install system packages for RPi4 Ubuntu."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:16
+msgid "Install Collective Knowledge (CK)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:18
+msgid "Please follow the installation instructions for your system e.g.:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:26
+msgid "Note that you need GCC 9+!"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:28
+msgid "Pull CK MLOps repository"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:34
+msgid "Set up CK environment"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:43
+msgid "Install common CK packages"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:53
+msgid "Install COCO 2017 val dataset (5000 images) and"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:61
+msgid "Setup for RPi4 CPU"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:63
+msgid "Install CK packages explicitly"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:65
+msgid "~30 min to build"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:77
+msgid "Run experiments (via native CK program workflow)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:79
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:146
+msgid "Accuracy"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:104
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:133
+msgid "Performance"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:131
+msgid "Run experiments (via cmdgen)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:158
+msgid "Sample result:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:204
+msgid "Compliance"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:217
+msgid "Notes"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:219
+msgid ""
+"https://github.com/mlcommons/inference_results_v0.7/tree/master/closed/Dividiti/measurements"
+"/rpi4coral-tflite-v2.2.0-ruy/ssd-mobilenet-non-quantized/singlestream"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:220
+msgid "https://mlcommons.org/en/inference-edge-07/"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:221
+msgid "https://mlcommons.org/en/inference-edge-10/"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-object-detection-rpi4-tflite.md:222
+msgid ""
+"https://github.com/mlcommons/inference_results_v1.0/blob/master/open/Krai/measurements"
+"/rpi4coral-fan.on-tflite-v2.4.1-ruy/efficientnet-lite0-non-"
+"quantized/singlestream/README.md#mobilenet_v3"
+msgstr ""
+

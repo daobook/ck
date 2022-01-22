@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../src/how-to-contribute.md:1
+msgid "Notes"
+msgstr ""
+
+#: ../../src/how-to-contribute.md:3
+msgid ""
+"Users extend the CK functionality via external GitHub reposities in the "
+"CK format. See docs for more details."
+msgstr ""
+
+#: ../../src/how-to-contribute.md:6
+msgid ""
+"If you want to extend the CK core, please note that we plan to completely"
+" rewrite it based on the OO principles (we wrote the first prototype "
+"without OO to be able to port to bare-metal devices in C but we decided "
+"not to do it at the end). We also plan to relicense the framework to "
+"Apache 2.0. In the meantime, please check this documentation."
+msgstr ""
+
+#: ../../src/how-to-contribute.md:11
+msgid "How to contribute"
+msgstr ""
+
+#: ../../src/how-to-contribute.md:13
+msgid ""
+"Current Collective Knowledge framework (CK) uses standard Apache 2.0 "
+"license. Contributions are very welcome to improve the existing "
+"functionality of the CK framework, CK modules, and CK components."
+msgstr ""
+
+#: ../../src/how-to-contribute.md:17
+msgid ""
+"You can easily contribute to CK and all related repositories by forking "
+"them on GitHub and then submitting a pull request. We strongly suggest "
+"you to discuss your PR with the community using the public CK google "
+"group."
+msgstr ""
+
+#: ../../src/how-to-contribute.md:21
+msgid ""
+"Since most CK modules and components are reused in different projects, "
+"please make sure that you thoroughly tested your contributions and they "
+"are backward compatible!"
+msgstr ""
+
+#: ../../src/how-to-contribute.md:25
+msgid ""
+"When sending PRs, please briefly explain why they are needed, how their "
+"work, and how you tested backward compatibility to make sure that "
+"dependent projects continue working correctly."
+msgstr ""
+
+#: ../../src/how-to-contribute.md:29
+msgid "Please submit bug reports, feedback, and ideas as GitHub issues."
+msgstr ""
+
+#: ../../src/how-to-contribute.md:31
+msgid ""
+"Note that we plan to rewrite the CK kernel and make it more pythonic when"
+" we have more resources! Feel free to get in touch if you would like to "
+"know more about our future R&D plans."
+msgstr ""
+
+#: ../../src/how-to-contribute.md:35
+msgid "Thank you very much for supporting this community project!"
+msgstr ""
+

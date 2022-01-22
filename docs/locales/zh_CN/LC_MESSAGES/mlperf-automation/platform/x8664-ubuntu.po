@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/platform/x8664-ubuntu.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/platform/x8664-ubuntu.md:3
+msgid "x8664-based generic platforms with Ubuntu"
+msgstr ""
+
+#: ../../mlperf-automation/platform/x8664-ubuntu.md:5
+msgid "Ubuntu 18.04 or 20.04"
+msgstr ""
+
+#: ../../mlperf-automation/platform/x8664-ubuntu.md:6
+msgid "Sample platform: Lenovo T470p with Intel Core i5-7300HQ"
+msgstr ""
+
+#: ../../mlperf-automation/platform/x8664-ubuntu.md:9
+msgid "Notes"
+msgstr ""
+
+#: ../../mlperf-automation/platform/x8664-ubuntu.md:11
+msgid ""
+"[20210813] Grigori successfully tested this setup with the MLPerf end-to-"
+"end submission system for TVM, ONNX, PyTorch, TF and TFLite across Azure,"
+" AWS and GCP nodes."
+msgstr ""
+
+#: ../../mlperf-automation/platform/x8664-ubuntu.md:16
+msgid ""
+"[20210421] Grigori tested ck venv to prepare CK virtual environment and "
+"build several python versions - it worked fine."
+msgstr ""
+
+#: ../../mlperf-automation/platform/x8664-ubuntu.md:19
+msgid ""
+"[20210421] Grigori managed to build the latest loadgen from MLCommons™ "
+"inference (both python version and static library)."
+msgstr ""
+
+#: ../../mlperf-automation/platform/x8664-ubuntu.md:24
+msgid "Prerequisites"
+msgstr ""
+

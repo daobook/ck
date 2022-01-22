@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/tasks-custom/README.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:3
+msgid "Customize MLPerf™ inference benchmark"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:5
+msgid ""
+"Here we describe how to customize MLPerf™ inference benchmark to automate"
+" design space exploration across different models, frameworks and data "
+"sets with the help of the CK workflow framework."
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:10
+msgid ""
+"We collect all CK components for MLPerf and MLSystems co-design in one CK"
+" repository: https://github.com/mlcommons/ck-mlops ."
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:12
+msgid ""
+"We plan to test, unify and standardize them during summer 2021. In the "
+"meantime you can have a look at these examples and the following CK "
+"components for ML Systems benchmarking:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:15
+msgid "Program workflows"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:16
+msgid "Packages with frameworks, models, data sets and quantization scripts"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:17
+msgid "SUT descriptions"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:18
+msgid "Docker images"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:19
+msgid "Aux scripts"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:22
+msgid "TBD:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:24
+msgid "Image classification"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:25
+msgid "Object detection"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:26
+msgid "Medical imaging"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:27
+msgid "NLP"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:28
+msgid "Recommendation"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:29
+msgid "Speech recognition"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:34
+msgid "Feedback"
+msgstr ""
+
+#: ../../mlperf-automation/tasks-custom/README.md:35
+msgid "Contact: grigori@octoml.ai"
+msgstr ""
+

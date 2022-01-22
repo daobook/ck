@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/datasets/coco2017-preprocess.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/coco2017-preprocess.md:3
+msgid "Install COCO 2017 val dataset (5000 images)"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/coco2017-preprocess.md:9
+msgid "Locate installed dataset"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/coco2017-preprocess.md:19
+msgid "Convert COCO to 300x300"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/coco2017-preprocess.md:25
+msgid "Install models compatible with processed COCO 300x300"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/coco2017-preprocess.md:27
+msgid "TF SSD Mobilenet-v1 non-quantized"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/coco2017-preprocess.md:29
+msgid "Install the non-quantized model directly"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/coco2017-preprocess.md:34
+msgid ""
+"Note that opencv provides faster conversion and can give better accuracy "
+"than pillow but may fail on some platforms."
+msgstr ""
+
+#: ../../mlperf-automation/datasets/coco2017-preprocess.md:36
+msgid "Convert COCO to 1200x1200"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/coco2017-preprocess.md:42
+msgid ""
+"You can add flag --ask to select the path where to install this dataset "
+"to be able to reuse it later:"
+msgstr ""
+

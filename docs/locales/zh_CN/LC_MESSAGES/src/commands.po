@@ -1,0 +1,515 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../src/commands.md:1
+msgid "CK CLI and API"
+msgstr "CK CLI 和 API"
+
+#: ../../src/commands.md:3
+msgid ""
+"Most of the CK functionality is implemented using CK modules with "
+"automation actions and associated CK entries (components)."
+msgstr ""
+"大多数 CK 功能都是使用带有 [自动化操作](https://cknowledge.io/actions) 和相关 [CK 条目（组件）](https://cknowledge.io/browse) 的 [CK 模块](https://cknowledge.io/modules) 实现的。"
+
+#: ../../src/commands.md:7
+msgid ""
+"Here we describe the main CK functionality to manage repositories, "
+"modules, and actions. Remember that you can see all flags for a given "
+"automation action from the command line as follows:"
+msgstr ""
+
+#: ../../src/commands.md:13
+msgid "You can set the value of any key for the automation action as follows:"
+msgstr ""
+
+#: ../../src/commands.md:20
+msgid "If the value is omitted, CK will use \"yes\" string."
+msgstr ""
+
+#: ../../src/commands.md:22
+msgid "You can also use JSON or YAML files as inputs to a given action:"
+msgstr ""
+
+#: ../../src/commands.md:29
+msgid "CLI to manage CK repositories"
+msgstr ""
+
+#: ../../src/commands.md:31
+msgid "Automation actions are implemented using the internal CK module repo."
+msgstr ""
+
+#: ../../src/commands.md:32
+msgid ""
+"See the list of all automation actions and their API at cKnowledge.io "
+"platform."
+msgstr ""
+
+#: ../../src/commands.md:34
+msgid "Init new CK repository in the current path"
+msgstr ""
+
+#: ../../src/commands.md:39
+msgid ""
+"CK will ask user for a repo name and will also attempt to detect Git URL "
+"from .git/config."
+msgstr ""
+
+#: ../../src/commands.md:41
+msgid "Extra options:"
+msgstr ""
+
+#: ../../src/commands.md:49 ../../src/commands.md:208 ../../src/commands.md:234
+#: ../../src/commands.md:261 ../../src/commands.md:297
+#: ../../src/commands.md:339 ../../src/commands.md:365
+#: ../../src/commands.md:397 ../../src/commands.md:416
+#: ../../src/commands.md:439
+msgid "Example:"
+msgstr ""
+
+#: ../../src/commands.md:57
+msgid "Pull existing repository using Git URL"
+msgstr ""
+
+#: ../../src/commands.md:63
+msgid "Pull existing repository from cTuning GitHub"
+msgstr ""
+
+#: ../../src/commands.md:69
+msgid "In this case, CK will use https://github.com/ctuning/{CK repo name}"
+msgstr ""
+
+#: ../../src/commands.md:71
+msgid "Download a repository as a zip file"
+msgstr ""
+
+#: ../../src/commands.md:77
+msgid "Update all local CK repositories from Git"
+msgstr ""
+
+#: ../../src/commands.md:83
+msgid "Create a dummy CK repository locally"
+msgstr ""
+
+#: ../../src/commands.md:85
+msgid "Quick mode with minimal questions:"
+msgstr ""
+
+#: ../../src/commands.md:91
+msgid "Advanced mode with many questions to configure repository:"
+msgstr ""
+
+#: ../../src/commands.md:96
+msgid "Import existing local repository from current directory"
+msgstr ""
+
+#: ../../src/commands.md:101
+msgid "Import existing local repository from some local directory"
+msgstr ""
+
+#: ../../src/commands.md:106
+msgid "List local CK repositories"
+msgstr ""
+
+#: ../../src/commands.md:110 ../../src/commands.md:121
+#: ../../src/commands.md:125 ../../src/commands.md:140
+#: ../../src/commands.md:191 ../../src/commands.md:225
+#: ../../src/commands.md:252 ../../src/commands.md:256
+#: ../../src/commands.md:292 ../../src/commands.md:313
+#: ../../src/commands.md:326 ../../src/commands.md:330
+#: ../../src/commands.md:334 ../../src/commands.md:386
+#: ../../src/commands.md:390 ../../src/commands.md:411
+msgid "or"
+msgstr ""
+
+#: ../../src/commands.md:115
+msgid "Delete a given CK repository"
+msgstr ""
+
+#: ../../src/commands.md:117
+msgid ""
+"Unregister CK repository but do not delete the content (you can later "
+"import it again to reuse automation actions and components):"
+msgstr ""
+
+#: ../../src/commands.md:130
+msgid "Delete CK repository completely with the content:"
+msgstr ""
+
+#: ../../src/commands.md:135
+msgid "Find a path to a given CK repository"
+msgstr ""
+
+#: ../../src/commands.md:145
+msgid "Pack a given CK repository to a zip file"
+msgstr ""
+
+#: ../../src/commands.md:150
+msgid "Add CK entries from a zip file to an existing CK repository"
+msgstr ""
+
+#: ../../src/commands.md:152
+msgid "To a local repository:"
+msgstr ""
+
+#: ../../src/commands.md:157
+msgid "To a given repository:"
+msgstr ""
+
+#: ../../src/commands.md:169
+msgid "CLI to manage CK entries"
+msgstr ""
+
+#: ../../src/commands.md:171
+msgid ""
+"CK repository is basically a database of CK modules and entries. You can "
+"see internal CK commands to manage CK entries as follows:"
+msgstr ""
+
+#: ../../src/commands.md:177
+msgid "CID is the Collective Identifier of the following formats:"
+msgstr ""
+
+#: ../../src/commands.md:178
+msgid "{CK module name or UID}:{CK entry name or UID}"
+msgstr ""
+
+#: ../../src/commands.md:179
+msgid "{CK repo name or UID}:{CK module name or UID}:{CK entry name or UID}"
+msgstr ""
+
+#: ../../src/commands.md:181
+msgid "Note that wildcards are allowed in CID when appropriate!"
+msgstr ""
+
+#: ../../src/commands.md:184
+msgid "Here are the most commonly used commands to manage CK modules and entries."
+msgstr ""
+
+#: ../../src/commands.md:186
+msgid "List CK modules from all local CK repositories"
+msgstr ""
+
+#: ../../src/commands.md:197
+msgid "Show full CID (repository:module:entry):"
+msgstr ""
+
+#: ../../src/commands.md:202
+msgid "List some CK modules with a wildcard from all local CK repositories"
+msgstr ""
+
+#: ../../src/commands.md:218
+msgid "List CK entries for a given CK module in a given repository"
+msgstr ""
+
+#: ../../src/commands.md:247
+msgid "Search for CK entries by tags"
+msgstr ""
+
+#: ../../src/commands.md:269
+msgid "Search for CK entries by a string"
+msgstr ""
+
+#: ../../src/commands.md:271
+msgid ""
+"You can search CK entries by the occurrence of a given string in values "
+"of keys in JSON meta descriptions"
+msgstr ""
+
+#: ../../src/commands.md:277
+msgid ""
+"Note that CK supports transparent indexing of all CK JSON meta "
+"descriptions by ElasticSearch to enable fast search and powerful queries."
+" This mode is used in our cKnowledge.io platform. Please check these "
+"pages to know how to configure your CK installation with ES:"
+msgstr ""
+
+#: ../../src/commands.md:280
+msgid "https://github.com/mlcommons/ck/wiki/Customization"
+msgstr ""
+
+#: ../../src/commands.md:281
+msgid "https://github.com/mlcommons/ck/wiki/Indexing-entries"
+msgstr ""
+
+#: ../../src/commands.md:282
+msgid "https://github.com/mlcommons/ck/wiki/Searching-entries"
+msgstr ""
+
+#: ../../src/commands.md:287
+msgid "Find a path to a given CK entry"
+msgstr ""
+
+#: ../../src/commands.md:308
+msgid "Show JSON meta description of a given entry"
+msgstr ""
+
+#: ../../src/commands.md:321
+msgid "Delete a given CK entry"
+msgstr ""
+
+#: ../../src/commands.md:348
+msgid "Create an empty CK entry"
+msgstr ""
+
+#: ../../src/commands.md:350
+msgid "Create a CK entry in a local repository (CK scratch-pad):"
+msgstr ""
+
+#: ../../src/commands.md:356
+msgid "Create CK entry in a given repository:"
+msgstr ""
+
+#: ../../src/commands.md:376
+msgid "Note that CK always generate Unique IDs for all entries!"
+msgstr ""
+
+#: ../../src/commands.md:381
+msgid "Rename a given CK entry"
+msgstr ""
+
+#: ../../src/commands.md:395
+msgid ""
+"Note that CK keeps the same global UID for a renamed entry to be able to "
+"always find it!"
+msgstr ""
+
+#: ../../src/commands.md:405
+msgid "Move a given CK entry to another CK repository"
+msgstr ""
+
+#: ../../src/commands.md:424
+msgid "Copy a given CK entry"
+msgstr ""
+
+#: ../../src/commands.md:427
+msgid "With a new name within the same repository:"
+msgstr ""
+
+#: ../../src/commands.md:432
+msgid "With a new name in a new repository:"
+msgstr ""
+
+#: ../../src/commands.md:449
+msgid "CLI to manage CK actions"
+msgstr ""
+
+#: ../../src/commands.md:451
+msgid ""
+"All the functionality in CK is implemented as automation actions in CK "
+"modules."
+msgstr ""
+
+#: ../../src/commands.md:453
+msgid ""
+"All CK modules inherit default automation actions from the previous "
+"section to manage associated CK entries."
+msgstr ""
+
+#: ../../src/commands.md:455
+msgid "A new action can be added to a given CK module as follows:"
+msgstr ""
+
+#: ../../src/commands.md:461
+msgid ""
+"CK will ask you a few questions and will create a dummy function in the "
+"given CK module. You can immediately test it as follows:"
+msgstr ""
+
+#: ../../src/commands.md:467
+msgid ""
+"It will just print the input as JSON to let you play with the command "
+"line and help you understand how CK converts the command line parameters "
+"into the dictionary input for this function."
+msgstr ""
+
+#: ../../src/commands.md:471
+msgid "Next, you can find this module and start modifying this function:"
+msgstr ""
+
+#: ../../src/commands.md:476
+msgid ""
+"For example, you can add the following Python code inside this function "
+"to load some meta description of the entry ''my data'' when you call the "
+"following action:"
+msgstr ""
+
+#: ../../src/commands.md:505
+msgid ""
+"Note that uoa means that this variable accepts Unique ID or Alias (user-"
+"friendly name)."
+msgstr ""
+
+#: ../../src/commands.md:507
+msgid ""
+"Here ck is a CK kernel with various productivity functions and one "
+"unified access function to all CK modules and actions with unified "
+"dictionary (JSON) I/O."
+msgstr ""
+
+#: ../../src/commands.md:511
+msgid ""
+"You can find JSON API for all internal CK actions from the previous "
+"section that manage CK entries from the command line as follows:"
+msgstr ""
+
+#: ../../src/commands.md:517
+msgid "For example, you can check the API of the \"load\" action as follows:"
+msgstr ""
+
+#: ../../src/commands.md:522
+msgid "For non-internal actions, you can check their API as follows:"
+msgstr ""
+
+#: ../../src/commands.md:527
+msgid "You can also check them at the cKnowledge.io platform."
+msgstr ""
+
+#: ../../src/commands.md:529
+msgid "When executing the following command"
+msgstr ""
+
+#: ../../src/commands.md:534
+msgid ""
+"CK will convert the above command line parameters to the following Python"
+" dictionary ''i'' for a given action:"
+msgstr ""
+
+#: ../../src/commands.md:551
+msgid ""
+"Note that when adding a new action to a given module, CK will also create"
+" a description of this action inside the meta.json of this module. You "
+"can see an example of such descriptions for the internal CK module "
+"\"repo\" here. When CK calls an action, it is not invoked directly from "
+"the given Python module but CK first checks the description, tests "
+"inputs, and then passes the control to the given Python module."
+msgstr ""
+
+#: ../../src/commands.md:557
+msgid ""
+"Also note that we suggest not to use aliases (user-friendly names) inside"
+" CK modules but CK UIDs. The reason is that CK names may change while CK "
+"UIDs stay persistent. We specify dependencies on other CK modules in the "
+"meta.json of a given module using the module_deps key. See an example in "
+"the CK module program:"
+msgstr ""
+
+#: ../../src/commands.md:561
+msgid "program meta.json"
+msgstr ""
+
+#: ../../src/commands.md:562
+msgid "how it is used in the CK module program"
+msgstr ""
+
+#: ../../src/commands.md:564
+msgid ""
+"Such approach also allows us to visualize the growing knowledge graph: "
+"interactive graph, video."
+msgstr ""
+
+#: ../../src/commands.md:568
+msgid "Finally, a given CK module has an access to the 3 dictionaries:"
+msgstr ""
+
+#: ../../src/commands.md:569
+msgid "cfg - this dictionary is loaded from the meta.json file from the CK module"
+msgstr ""
+
+#: ../../src/commands.md:570
+msgid "work - this dictionary has some run-time information:"
+msgstr ""
+
+#: ../../src/commands.md:572
+msgid "self_module_uid: UID of the module"
+msgstr ""
+
+#: ../../src/commands.md:573
+msgid "self_module_uoa: Alias (user-friendly name of the module) or UID"
+msgstr ""
+
+#: ../../src/commands.md:574
+msgid "self_module_alias: Alias (user-friendly name of the module) or empty"
+msgstr ""
+
+#: ../../src/commands.md:575
+msgid "path: path to the CK module"
+msgstr ""
+
+#: ../../src/commands.md:576
+msgid ""
+"ck.cfg - CK global cfg dictionary that is updated at run-time with the "
+"meta description of the \"kernel:default\" entry. This dictionary is used"
+" to customize the local CK installation."
+msgstr ""
+
+#: ../../src/commands.md:582
+msgid "CK Python API"
+msgstr ""
+
+#: ../../src/commands.md:584
+msgid ""
+"One of the goals of the CK framework was to make it very simple for any "
+"user to access any automation action. That is why we have developed just "
+"one unified Python \"access\" function that allows one to access all "
+"automation actions with a simple I/O (dictionary as input and dictionary "
+"as output)."
+msgstr ""
+
+#: ../../src/commands.md:588
+msgid ""
+"You can call this function from any Python script or from CK modules as "
+"follows:"
+msgstr ""
+
+#: ../../src/commands.md:608
+msgid ""
+"Such approach allows users to continue extending different automation "
+"actions by adding new keys while keeping backward compatibility. That's "
+"how we managed to develop 50+ modules with the community without breaking"
+" portable CK workflows for our ML&systems R&D."
+msgstr ""
+
+#: ../../src/commands.md:612
+msgid ""
+"At the same time, we have implemented a number of \"productivity\" "
+"functions in the CK kernel that are commonly used by many researchers and"
+" engineers. For example, you can load JSON files, list files in "
+"directories, copy strings to clipboards. At the same time, we made sure "
+"that these functions work in the same way across different Python "
+"versions (2.7+ and 3+) and different operating systems thus removing this"
+" burden from developers."
+msgstr ""
+
+#: ../../src/commands.md:619
+msgid ""
+"You can see the list of such productivity functions here. For example, "
+"you can load a json file in your script or CK module in a unified way as "
+"follows:"
+msgstr ""
+
+#: ../../src/commands.md:640
+msgid "More resources"
+msgstr ""
+
+#: ../../src/commands.md:642
+msgid "CK wiki"
+msgstr ""
+

@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/reproduce/README.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:3
+msgid "Reproducibility reports: MLPerf™ inference benchmark v1.1"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:5
+msgid "Official results: Datacenter, Edge"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:6
+msgid "Raw results: GitHub"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:7
+msgid "News: MLCommons press-release"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:9
+#: ../../mlperf-automation/reproduce/README.md:54
+msgid "Image Classification"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:11
+msgid "Powered by the MLCommons CK automation suite v2.5.8:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:13
+msgid "Resnet50; TVM; AWS m5zn.6xlarge; X64; datacenter; open division"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:14
+msgid "Resnet50; TVM; GCP n2-standard-80; X64; datacenter; open division"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:15
+msgid "Resnet50; TVM; AWS c6gd.xlarge; ARM64; edge; closed division"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:16
+msgid "Resnet50; TVM; Raspberry Pi 4; ARM64; edge; closed division"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:17
+msgid ""
+"Design Space Exploration (Pareto frontier): efficientnet-lite0-non-"
+"quantized; TFLite; AWS c6gd.xlarge; Neoverse-N1; edge; open division"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:18
+msgid ""
+"Design Space Exploration (Pareto frontier): "
+"mobilenet-v1-0.25-224-quantized; TFLite; AWS c6gd.xlarge; Neoverse-N1; "
+"edge; open division"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:19
+msgid ""
+"Design Space Exploration (Pareto frontier): mobilenet-v3-large-"
+"minimalistic_224_1.0_uint8; TFLite; AWS c6gd.xlarge; Neoverse-N1; edge; "
+"open division"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:20
+msgid ""
+"Resnet50; ONNX (out of the box); AWS m5zn.6xlarge; X64; datacenter; open "
+"division"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:21
+msgid ""
+"Resnet50; TensorFlow (out of the box); AWS m5zn.6xlarge; X64; datacenter;"
+" open division"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:22
+msgid ""
+"Resnet50; ONNX (out of the box); GCP n2-standard-80; X64; datacenter; "
+"open division"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:23
+msgid ""
+"Resnet50; TensorFlow (out of the box); GCP n2-standard-80; X64; "
+"datacenter; open division"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:26
+msgid ""
+"Further developments of CK workflows for other ML benchmarks, models and "
+"data sets are supported by MLCommons™ within the Design Space Exploration"
+" workgroup. Please contact Grigori Fursin (workgroup co-chair) if you are"
+" interested to join this community effort!"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:32
+msgid "Reproducing MLPerf™ inference benchmarks (v0.7 and v1.0)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:34
+msgid "Using native MLCommons™ scripts"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:36
+msgid "Dell EMC System inteference v0.7"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:37
+msgid "NVidia Jetson Xavier"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:39
+msgid "Using CK workflows"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:41
+msgid ""
+"Official MLCommons™ notes for image classification (outdated - more "
+"automation exists)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:42
+msgid ""
+"Official MLCommons™ notes for object detection (outdated - more "
+"automations exists)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:44
+msgid "Using CK adaptive containers (to be tested!)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:46
+msgid "MLPerf™ workflows"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:48
+msgid "CK image classification"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:49
+msgid "CK object detection"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:52
+msgid "Other reproducibility studies"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:56
+#: ../../mlperf-automation/reproduce/README.md:63
+msgid "Example of adaptive CK container: AMD (x8664) with TFlite"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:57
+msgid "x86 TFLite ImageNet"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:58
+msgid "RPi4 TFLite ImageNet"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:59
+msgid "Nvidia Jetson Nano (CPU) TFLite ImageNet"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:61
+msgid "Object detection"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:64
+msgid "AMD (x8664) with TFlite"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:65
+msgid "Coral EdgeTPU on RPi4 with TFlite"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/README.md:66
+msgid "RPi4 with TFlite"
+msgstr ""
+

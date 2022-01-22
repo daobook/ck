@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:3
+msgid "Nvidia-based generic platforms with Ubuntu"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:5
+msgid "Ubuntu 18.04 or 20.04"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:6
+msgid "Sample platform: Lenovo T470p with Nvidia GeForce 940MX 2GB"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:9
+#: ../../mlperf-automation/platform/nvidia-generic.md:58
+#: ../../mlperf-automation/platform/nvidia-generic.md:59
+msgid "Notes"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:11
+msgid ""
+"[20210421] Grigori tested ck venv to prepare CK virtual environment and "
+"build several python versions - it worked fine."
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:14
+msgid ""
+"[20210421] Grigori managed to build the latest loadgen from MLCommons™ "
+"inference (both python version and static library)."
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:19
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:21
+msgid "Standard software"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:35
+msgid "CUDA driver"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:37
+#: ../../mlperf-automation/platform/nvidia-generic.md:41
+msgid "TBD"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:39
+msgid "CUDA SDK"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:43
+msgid "cuDNN"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:46
+msgid "TensorRT"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:49
+msgid "Test CK automation (platform detection)"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:60
+msgid "Install TVM with CUDA:"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:61
+msgid "ck install package --tags=tvm,src,dev-cuda"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-generic.md:65
+msgid "Misc links"
+msgstr ""
+

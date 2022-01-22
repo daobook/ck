@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/tbd/ck2.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/ck2.md:3
+msgid "Ideas to improve CK"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/ck2.md:5
+msgid "Developing backwards compatible CK2 based on our collective experience:"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/ck2.md:7
+msgid ""
+"simple and pythonic access to CK repos as a database (separate from "
+"actions)"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/ck2.md:8
+msgid ""
+"simplify CK repo structure to avoid numerous .cm directories. Use cm.json"
+" file with UID and then reindex components when pulling repo or "
+"adding/deleting entries"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/ck2.md:9
+msgid ""
+"implement CK actions/modules as standard Python packages with "
+"dependencies that can be installed via PIP (to ensure stability and "
+"testing)"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/ck2.md:10
+msgid ""
+"simplify modules program+platform with a \"workflow\" module that "
+"resolves all dependencies (platform+scripts+pip requirements become a "
+"part of it), take env as input, run script, modifies env, and produce "
+"output - unified CK LEGO bricks"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/ck2.md:12
+msgid ""
+"host/traget platform become a package rather than current separate entity"
+" - much easier to extend and provide deps!"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/ck2.md:13
+msgid "improve DSE + autotuner based on exposed env vars + packages + deps"
+msgstr ""
+

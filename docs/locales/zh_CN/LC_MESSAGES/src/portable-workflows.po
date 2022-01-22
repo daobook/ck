@@ -1,0 +1,357 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../src/portable-workflows.md:1
+msgid "Automating ML&systems R&D"
+msgstr ""
+
+#: ../../src/portable-workflows.md:3
+msgid ""
+"After releasing CK we started working with the community to gradually "
+"automate the most common and repetitive tasks for ML&systems R&D (see the"
+" journal article and FastPath'20 presentation)."
+msgstr ""
+
+#: ../../src/portable-workflows.md:7
+msgid ""
+"We started adding the following CK modules and actions with a unified API"
+" and I/O."
+msgstr ""
+
+#: ../../src/portable-workflows.md:9
+msgid "Platform and environment detection"
+msgstr ""
+
+#: ../../src/portable-workflows.md:11
+msgid ""
+"These CK modules automate and unify the detection of different properties"
+" of user platforms and environments."
+msgstr ""
+
+#: ../../src/portable-workflows.md:13
+msgid "module:os [API] [components]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:14
+msgid "module:platform [API]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:15
+msgid "module:platform.os [API]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:16
+msgid "module:platform.cpu [API]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:17
+msgid "module:platform.gpu [API]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:18
+msgid "module:platform.gpgpu [API]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:19
+msgid "module:platform.nn [API]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:21 ../../src/portable-workflows.md:38
+#: ../../src/portable-workflows.md:63 ../../src/portable-workflows.md:96
+#: ../../src/portable-workflows.md:124
+msgid "Examples:"
+msgstr ""
+
+#: ../../src/portable-workflows.md:29
+msgid "Software detection"
+msgstr ""
+
+#: ../../src/portable-workflows.md:31
+msgid ""
+"This CK module automates the detection of a given software or files "
+"(datasets, models, libraries, compilers, frameworks, tools, scripts) on a"
+" given platform using CK names, UIDs, and tags:"
+msgstr ""
+
+#: ../../src/portable-workflows.md:34
+msgid "module:soft [API] [components]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:36
+msgid ""
+"It helps to understand a user platform and environment to prepare "
+"portable workflows."
+msgstr ""
+
+#: ../../src/portable-workflows.md:47
+msgid "Virtual environment"
+msgstr ""
+
+#: ../../src/portable-workflows.md:49
+msgid "module:env [API]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:51
+msgid ""
+"Whenever a given software or files are found using software detection "
+"plugins, CK creates a new \"env\" component in the local CK repository "
+"with an env.sh (Linux/MacOS) or env.bat (Windows)."
+msgstr ""
+
+#: ../../src/portable-workflows.md:55
+msgid ""
+"This environment file contains multiple environment variables with unique"
+" names usually starting from CK_ with automatically detected information "
+"about a given soft such as versions and paths to sources, binaries, "
+"include files, libraries, etc."
+msgstr ""
+
+#: ../../src/portable-workflows.md:60
+msgid ""
+"This allows you to detect and use multiple versions of different software"
+" that can easily co-exist on your system in parallel."
+msgstr ""
+
+#: ../../src/portable-workflows.md:80
+msgid "Meta packages"
+msgstr ""
+
+#: ../../src/portable-workflows.md:82
+msgid ""
+"When a given software is not detected on our system, we usually want to "
+"install related packages with different versions."
+msgstr ""
+
+#: ../../src/portable-workflows.md:84
+msgid ""
+"That's why we have developed the following CK module that can automate "
+"installation of missing packages (models, datasets, tools, frameworks, "
+"compilers, etc):"
+msgstr ""
+
+#: ../../src/portable-workflows.md:86
+msgid "module:package [API] [components]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:88
+msgid ""
+"This is a meta package manager that provides a unified API to "
+"automatically download, build, and install packages for a given target "
+"(including mobile and edge devices) using existing building tools and "
+"package managers."
+msgstr ""
+
+#: ../../src/portable-workflows.md:92
+msgid ""
+"All above modules can now support portable workflows that can "
+"automatically adapt to a given environment based on soft dependencies."
+msgstr ""
+
+#: ../../src/portable-workflows.md:103
+msgid "See an example of variations to customize a given package: lib-tflite."
+msgstr ""
+
+#: ../../src/portable-workflows.md:106
+msgid "Scripts"
+msgstr ""
+
+#: ../../src/portable-workflows.md:108
+msgid "We also provided an abstraction for ad-hoc scripts:"
+msgstr ""
+
+#: ../../src/portable-workflows.md:110
+msgid "module:script [API] [components]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:112
+msgid ""
+"See an example of the CK component with a script used for MLPerf™ "
+"benchmark submissions: GitHub"
+msgstr ""
+
+#: ../../src/portable-workflows.md:116
+msgid "Portable program pipeline (workflow)"
+msgstr ""
+
+#: ../../src/portable-workflows.md:118
+msgid ""
+"Next we have implemented a CK module to provide a common API to compile, "
+"run, and validate programs while automatically adapting to any platform "
+"and environment:"
+msgstr ""
+
+#: ../../src/portable-workflows.md:120
+msgid "module:program [API] [components]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:122
+msgid ""
+"A user describes dependencies on CK packages in the CK program meta as "
+"well as commands to build, pre-process, run, post-process, and validate a"
+" given program."
+msgstr ""
+
+#: ../../src/portable-workflows.md:133
+msgid "Reproducible experiments"
+msgstr ""
+
+#: ../../src/portable-workflows.md:135
+msgid ""
+"We have developed an abstraction to record and reply experiments using "
+"the following CK module:"
+msgstr ""
+
+#: ../../src/portable-workflows.md:137
+msgid "module:experiment [API] [components]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:139
+msgid ""
+"This module records all resolved dependencies, inputs and outputs when "
+"running above CK programs thus allowing to preserve experiments with all "
+"the provenance and replay them later on the same or different machine:"
+msgstr ""
+
+#: ../../src/portable-workflows.md:152
+msgid "Dashboards"
+msgstr ""
+
+#: ../../src/portable-workflows.md:154
+msgid ""
+"Since we can record all experiments in a unified way, we can also "
+"visualize them in a unified way. That's why we have developed a simple "
+"web server that can help to create customizable dashboards:"
+msgstr ""
+
+#: ../../src/portable-workflows.md:157
+msgid "module:web [API]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:159
+msgid "See examples of such dashboards:"
+msgstr ""
+
+#: ../../src/portable-workflows.md:160
+msgid "view online at cKnowledge.io platform"
+msgstr ""
+
+#: ../../src/portable-workflows.md:161
+msgid "view locally (with or without Docker)"
+msgstr ""
+
+#: ../../src/portable-workflows.md:166
+msgid "Interactive articles"
+msgstr ""
+
+#: ../../src/portable-workflows.md:168
+msgid ""
+"One of our goals for CK was to automate the (re-)generation of "
+"reproducible articles. We have validated this possibility in this proof-"
+"of-concept project with the Raspberry Pi foundation."
+msgstr ""
+
+#: ../../src/portable-workflows.md:172
+msgid ""
+"We plan to develop a GUI to make the process of generating such papers "
+"more user friendly!"
+msgstr ""
+
+#: ../../src/portable-workflows.md:177
+msgid "Jupyter notebooks"
+msgstr ""
+
+#: ../../src/portable-workflows.md:179
+msgid ""
+"It is possible to use CK from Jupyter and Colab notebooks. We provided an"
+" abstraction to share Jupyter notebooks in CK repositories:"
+msgstr ""
+
+#: ../../src/portable-workflows.md:181
+msgid "module:jnotebook [API] [components]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:183
+msgid ""
+"You can see an example of a Jupyter notebook with CK commands to process "
+"MLPerf™ benchmark results here."
+msgstr ""
+
+#: ../../src/portable-workflows.md:188
+msgid "Docker"
+msgstr ""
+
+#: ../../src/portable-workflows.md:190
+msgid "We provided an abstraction to build, pull, and run Docker images:"
+msgstr ""
+
+#: ../../src/portable-workflows.md:192
+msgid "module:docker [API] [components]"
+msgstr ""
+
+#: ../../src/portable-workflows.md:194
+msgid ""
+"You can see examples of Docker images with unified CK commands to "
+"automate the MLPerf™ benchmark here."
+msgstr ""
+
+#: ../../src/portable-workflows.md:199
+msgid "Further info"
+msgstr ""
+
+#: ../../src/portable-workflows.md:201
+msgid ""
+"During the past few years we converted all the workflows and components "
+"from our past ML&systems R&D including the MILEPOST and cTuning.org "
+"project to the CK format."
+msgstr ""
+
+#: ../../src/portable-workflows.md:204
+msgid ""
+"There are now 150+ CK modules with actions automating and abstracting "
+"many tedious and repetitive tasks in ML&systems R&D including model "
+"training and prediction, universal autotuning, ML/SW/HW co-design, model "
+"testing and deployment, paper generation and so on:"
+msgstr ""
+
+#: ../../src/portable-workflows.md:208
+msgid "A high level overview of portable CK workflows"
+msgstr ""
+
+#: ../../src/portable-workflows.md:209
+msgid ""
+"A Collective Knowledge workflow for collaborative research into multi-"
+"objective autotuning and machine learning techniques (collaboration with "
+"the Raspberry Pi foundation)"
+msgstr ""
+
+#: ../../src/portable-workflows.md:210
+msgid "A summary of main CK-based projects with academic and industrial partners"
+msgstr ""
+
+#: ../../src/portable-workflows.md:211
+msgid "cKnowledge.io platform documentation"
+msgstr ""
+
+#: ../../src/portable-workflows.md:213
+msgid ""
+"Don't hesitate to contact us if you have a feedback or want to know more "
+"about our plans!"
+msgstr ""
+

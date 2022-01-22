@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/platform/README.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/platform/README.md:3
+msgid ""
+"Prepare your platform for MLPerf™ automation using the following "
+"guidelines:"
+msgstr ""
+
+#: ../../mlperf-automation/platform/README.md:5
+msgid "x8664 (Ubuntu)"
+msgstr ""
+
+#: ../../mlperf-automation/platform/README.md:6
+msgid "x8664 (Yocto)"
+msgstr ""
+
+#: ../../mlperf-automation/platform/README.md:7
+msgid "Raspberry Pi4 (Ubuntu)"
+msgstr ""
+
+#: ../../mlperf-automation/platform/README.md:8
+msgid "Raspberry Pi4 with Coral EdgeTPU (Ubuntu)"
+msgstr ""
+
+#: ../../mlperf-automation/platform/README.md:9
+msgid "Raspberry Pi4 (Debian)"
+msgstr ""
+
+#: ../../mlperf-automation/platform/README.md:10
+msgid "Nvidia generic"
+msgstr ""
+
+#: ../../mlperf-automation/platform/README.md:11
+msgid "Nvidia Jetson Nano"
+msgstr ""
+

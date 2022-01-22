@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/models/notes.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes.md:3
+msgid "Preparing models"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes.md:5
+msgid "Misc"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes.md:7
+msgid ""
+"Using TFLite models for datacenter scenarios (example for ResNet50 and "
+"SSD-ResNet34)"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes.md:8
+msgid "Convert resnet50's onnx format to quantized tensorrt engine"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes.md:9
+msgid "Convert TF resnet50 v1.5 to TFLite"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes.md:11
+msgid "Calibrate ResNet50 for Qualcomm Cloud AI"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes.md:12
+msgid "Calibrate SSD-ResNet34 for Qualcomm Cloud AI"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes.md:14
+msgid ""
+"Issues (interesting): Quantized MobileNet model, TF, TFLite (some "
+"problems)"
+msgstr ""
+
+#: ../../mlperf-automation/models/notes.md:15
+msgid ""
+"Issues (interesting): TFLite MobileNet quantized (int8) fails with OpenCV"
+" preprocessing for MobileNet (rgbf32)"
+msgstr ""
+

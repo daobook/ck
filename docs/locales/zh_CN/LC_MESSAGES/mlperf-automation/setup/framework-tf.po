@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/setup/framework-tf.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/setup/framework-tf.md:3
+msgid "Pull MLOps automation repo"
+msgstr ""
+
+#: ../../mlperf-automation/setup/framework-tf.md:9
+msgid "Install CK packages with TensorFlow (CPU)"
+msgstr ""
+
+#: ../../mlperf-automation/setup/framework-tf.md:15
+#: ../../mlperf-automation/setup/framework-tf.md:33
+msgid "Install any available version"
+msgstr ""
+
+#: ../../mlperf-automation/setup/framework-tf.md:20
+msgid "Install CK packages with TensorFlow (GPU)"
+msgstr ""
+
+#: ../../mlperf-automation/setup/framework-tf.md:22
+msgid "Follow this guide to plug CUDA into CK."
+msgstr ""
+
+#: ../../mlperf-automation/setup/framework-tf.md:28
+msgid "You can check you CUDA capabilities via CK as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/setup/framework-tf.md:39
+msgid "Tested configurations"
+msgstr ""
+
+#: ../../mlperf-automation/setup/framework-tf.md:41
+msgid "20210806"
+msgstr ""
+
+#: ../../mlperf-automation/setup/framework-tf.md:43
+msgid ""
+"Grigori tested the following configuration for MLPerf inference v1.1 "
+"benchmark (image classification):"
+msgstr ""
+
+#: ../../mlperf-automation/setup/framework-tf.md:44
+msgid "Ubuntu 18.04"
+msgstr ""
+
+#: ../../mlperf-automation/setup/framework-tf.md:45
+msgid "CUDA 11.1"
+msgstr ""
+
+#: ../../mlperf-automation/setup/framework-tf.md:46
+msgid "cuDNN 8.1.0"
+msgstr ""
+
+#: ../../mlperf-automation/setup/framework-tf.md:47
+msgid "TF 2.5.0"
+msgstr ""
+

@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/submit/README.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/submit/README.md:4
+msgid "End-to-end submission system"
+msgstr ""
+
+#: ../../mlperf-automation/submit/README.md:6
+msgid ""
+"We are working on an end-to-end submission system based on CK workflows. "
+"Please follow this guide"
+msgstr ""
+
+#: ../../mlperf-automation/submit/README.md:10
+msgid "Unsorted notes"
+msgstr ""
+
+#: ../../mlperf-automation/submit/README.md:12
+msgid "https://mlcommons.org/en/get-involved"
+msgstr ""
+
+#: ../../mlperf-automation/submit/README.md:14
+msgid "https://github.com/mlcommons/policies/blob/master/submission_rules.adoc"
+msgstr ""
+
+#: ../../mlperf-automation/submit/README.md:15
+msgid "https://github.com/mlcommons/inference/blob/master/SubmissionExample.ipynb"
+msgstr ""
+
+#: ../../mlperf-automation/submit/README.md:18
+msgid "Notes about power"
+msgstr ""
+
+#: ../../mlperf-automation/submit/README.md:20
+msgid "Misc inference notes"
+msgstr ""
+
+#: ../../mlperf-automation/submit/README.md:21
+msgid "Generate target latency via CK repos"
+msgstr ""
+
+#: ../../mlperf-automation/submit/README.md:22
+msgid "Dump CK repo to submission"
+msgstr ""
+
+#: ../../mlperf-automation/submit/README.md:23
+msgid "Submission example from Dell using Nvidia-based machine"
+msgstr ""
+

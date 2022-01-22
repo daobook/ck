@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:3
+msgid ""
+"MLPerf™ webcam demo: live object detection with a webcam using MLPerf™ "
+"models"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:5
+msgid "Install Collective Knowledge (CK) and Virtual Environment"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:13
+msgid ""
+"CK will attempt to detect existing python versions and will ask you which"
+" one to use for your virtual environment. Note, that this solution was "
+"tested with Python 3.6 and may not work with other versions!"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:16
+msgid "Activate created virtual environment"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:22
+msgid "Install cBench client"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:28
+msgid "Initialize demo solution"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:30
+msgid "This is a prototype of CK-based ML solutions to simplify ML deployment."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:39
+msgid ""
+"It may take ~5..10 minutes to install and build all CK components for "
+"MLPerf™ object detection SSD MobileNet non-quantized model (trained on "
+"COCO) with TensorFlow."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:42
+msgid "Run CK workflow with MLPerf™ model in the background"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:48
+msgid "Start cb client"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:57
+msgid "Go the cKnowledge.io webpage with camera"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:59
+msgid ""
+"https://cknowledge.io/c/solution/demo-webcam-mlperf-obj-detection-coco-"
+"tf-cpu-linux"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:61
+msgid "Click on \"Start webcam\""
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/demo-webcam-object-detection-x86-64.md:63
+msgid ""
+"Click on \"Start AI workflow\". The browser will send a command to the "
+"cBench client to start the MLPerf™ model, will continuosly push images to"
+" this model and will display inference results."
+msgstr ""
+

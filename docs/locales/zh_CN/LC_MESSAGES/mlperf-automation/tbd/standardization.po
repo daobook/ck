@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/tbd/standardization.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:3
+msgid "Standardization"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:5
+msgid "CK packages with ML models"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:7
+msgid "Examples of JSON meta for CK packages with ML models:"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:8
+msgid "SSD ResNet34 1200x1200 ONNX"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:9
+msgid "MobileNet v1.0 224x224 TensorFlow"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:10
+msgid "MobileNet v3.0 224x224 TFLite"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:12
+msgid "CK workflows for MLPerf"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:14
+msgid "Examples:"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:15
+msgid "MLPerf inference, object detection, ONNX, CPU"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:17
+msgid "TBD"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:19
+msgid "We need to standardize:"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:20
+msgid "CK package meta and env for models"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:21
+msgid "CK package meta and env for datasets"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:22
+msgid "CK package meta and env for frameworks and libraries"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:23
+msgid "platform description"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:24
+msgid "CK program API for MLPerf™ tasks"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:25
+msgid "Power measurements"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/standardization.md:26
+msgid "Visualization of all results on multi-dimensional Pareto-frontier"
+msgstr ""
+

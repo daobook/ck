@@ -1,0 +1,353 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:1
+msgid "Reproducibility report: system setup"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:3
+msgid ""
+"Tags: MLPerf inference v1.1; Image Classification; Resnet50; TVM; AWS "
+"c6gd.xlarge; ARM64; edge; closed division"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:5
+msgid "Install system dependencies"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:7
+msgid "Similar to RPi4:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:8
+msgid ""
+"https://github.com/mlcommons/ck/blob/master/docs/mlperf-"
+"automation/platform/rpi4-ubuntu.md"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:10
+msgid "Check python version (3.7+)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:18
+msgid "Install CK automation framework"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:20
+msgid "Tested with the version 2.5.8"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:26
+msgid "You may need to restart your bash to initialize PATH to CK scripts."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:28
+msgid "Prepare virtual environment with common MLPerf components"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:35
+msgid "Activate virtual environment"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:41
+msgid "Install CK repository with ML/MLPerf automations"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:48
+msgid "Install CK components"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:64
+msgid "Prepare image classification task"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:70
+msgid "Plug local ImageNet into CK"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:72
+msgid ""
+"Note that the ImageNet validation dataset is not available for public "
+"download. Please follow these instructions to obtain it."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:75
+msgid ""
+"Find the path with the ImageNet validation set (50,000 images) and plug "
+"it into CK as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:82
+msgid "See all installed packages and detected components"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:94
+msgid "Reproducibility report: benchmarking"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:96
+msgid ""
+"Do not forget to prepare your system based on the \"Reproducibility "
+"report: system setup\"."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:99
+msgid "Install ONNX model (ResNet50; opset-11; FP32)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:101
+msgid "Install MLPerf model:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:107
+msgid "More information about this model: [ CK meta.json ]"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:111
+msgid "Install CK workflow Python dependencies"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:119
+msgid "Run Offline scenario"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:121
+msgid ""
+"Since it's too long to run this scenario and we can't satisfy min number "
+"of samples (24K), we use SingleStream results."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:123
+msgid "You can still try to run offline mode as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:125
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:163
+msgid "Accuracy"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:140
+msgid "Extra customization:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:141
+msgid "--env.EXTRA_OPS=\"--threads 1 --max-batchsize 1 --count 100 --time 60\")"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:142
+msgid "llvm -mcpu=cortex-a72 -mfloat-abi=hard"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:145
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:178
+msgid "Performance"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:161
+msgid "SingleStream scenario"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:195
+msgid "Add \"--no_clean\" flag to avoid recompiling TVM model"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:203
+msgid "Prepare your submission"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:205
+msgid ""
+"One can use the end-to-end MLPerf submission and visualization workflow "
+"(collaboration between MLCommons, OctoML and the cTuning foundation) to "
+"prepare the above submission as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:253
+msgid "You should truncate your accuracy files before submitting results:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:258
+msgid "Check the submission by the MLPerf submission checker:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:263
+msgid "Pack results:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:271
+msgid "Visualize MLPerf results"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:273
+msgid "Convert MLPerf inference results into the CK database format"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:275
+msgid "Supported host OS to process results: Linux, Windows, MacOS"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:277
+msgid "Install CK automation for the Python virtual environment"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:279
+msgid "Install CK as described here."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:281
+msgid "Prepare virtual CK environment:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:291
+msgid "Pull CK repo with MLOps automation recipes"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:296
+msgid "Pull already processed results"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:301
+msgid "Install CK packages with MLPerf inference results"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:310
+msgid ""
+"Note that you can skip the above step and register your own local "
+"directory with your results as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:315
+msgid "Import results into CK format"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:317
+msgid ""
+"Create a scratch CK repository to record results (unless you want to "
+"record them to the shared \"ck-mlperf-inference\" repo:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:322
+msgid "Import results to this repository:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:328
+msgid ""
+"Note that we do not yet have a smart way to update results in the "
+"repository and they will be appended each time you run the above command."
+" You may want to clean your results before running this command again:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:334
+msgid "Display all results locally"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:340
+msgid ""
+"You can customize URL to show results from a given repo (ck_repo) and for"
+" a given scenario as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:342
+msgid ""
+"http://localhost:3344/?template=result&cfg=mlperf.inference.all&cfg_id"
+"=mlperf-inference-all-image-classification-edge-singlestream&repo_uoa=ck-"
+"mlperf-inference-1.1-dse"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:343
+msgid ""
+"http://localhost:3344/?template=result&cfg=mlperf.inference.all&cfg_id"
+"=mlperf-inference-all-image-classification-edge-offline&repo_uoa=ck-"
+"mlperf-inference-1.1-dse"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:345
+msgid ""
+"You can also specify a given MLPerf scenario and a repository with "
+"results from the command line with starting a dashboard (CK version > "
+"2.5.8):"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:350
+msgid "or"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:355
+msgid "Process results on a Pareto frontier"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:362
+msgid ""
+"You can remove \"ck-mlperf-inference-1.1-dse:\" from above commands to "
+"process results in all repositories."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:365
+msgid "Display other reproduced results at cKnowledge.io"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:367
+msgid "List dashboards"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:374
+msgid "Resources"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:376
+msgid ""
+"Our on-going collaboration with MLCommons to make the MLPerf™ inference "
+"benchmark more customizable, portable and easy to use:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:379
+msgid "MLPerf Inference Benchmark article"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:380
+msgid "Motivation"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:381
+msgid "MLCommons working groups"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:382
+msgid "Open-source CK framework and MLCube"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:383
+msgid "ML/AI packages from the community, OctoML and the cTuning foundation"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:384
+msgid "ML/AI workflows from the community, OctoML and the cTuning foundation"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:385
+msgid "Documentation for the CK-powered MLPerf automation suite"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-1b165548d8adbe4d.md:386
+msgid ""
+"Prototype of the end-to-end submission workflow for the MLPerf inference "
+"benchmark"
+msgstr ""
+

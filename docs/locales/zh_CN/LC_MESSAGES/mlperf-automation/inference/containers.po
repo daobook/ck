@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/inference/containers.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/inference/containers.md:3
+msgid ""
+"We would like to prepare a set of containers to run MLPerf inference "
+"benchmark out-of-the-box."
+msgstr ""
+
+#: ../../mlperf-automation/inference/containers.md:5
+msgid "Ongoing efforts:"
+msgstr ""
+
+#: ../../mlperf-automation/inference/containers.md:6
+#: ../../mlperf-automation/inference/containers.md:7
+msgid "https://github.com/mlcommons/ck-mlops/tree/main/docker"
+msgstr ""
+
+#: ../../mlperf-automation/inference/containers.md:10
+msgid "Adaptive CK containers for MLPerf inference"
+msgstr ""
+

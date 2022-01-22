@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:1
+msgid "MLPerf task: object detection"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:3
+msgid "Install general MLPerf dependencies"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:5
+msgid "Install task dependencies"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:16
+msgid "Scenario: Accuracy; Offline"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:18
+msgid "All items are enqued from the start and then scheduled across threads."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:20
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:185
+msgid "Use TVM"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:29
+msgid "Customize it and record results in local CK repo:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:43
+msgid "Pack experiments:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:48
+msgid ""
+"This command will create ckr-local.zip file with all CK experiments form "
+"the local repository. It can be shared with other colleagues and "
+"installed locally for analysis as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:54
+msgid "Replay experiment (to be improved):"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:62
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:195
+msgid "Use ONNX"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:76
+msgid "Scenario: Accuracy; Single Stream"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:78
+msgid "Substitute \"cmd_key\" with accuracy-singlestream."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:80
+msgid "Scenario: Accuracy; Server"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:82
+msgid "Substitute \"cmd_key\" with accuracy-server."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:84
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:97
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:216
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:229
+msgid "Extra options:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:90
+msgid "Scenario: Accuracy; MultiStream"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:92
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:224
+msgid "Note that MultiStream scenario is removed from MLPerf v1.1"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:94
+msgid ""
+"samples-per-query are separated by max-batchsize. Substitute \"cmd_key\" "
+"with \"accuracy-multistream."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:108
+msgid "Check model accuracy"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:110
+msgid "model,image-classification,mlperf,onnx,resnet50,v1.5-opset-8"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:112
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:147
+msgid "TVM and ONNX produced the same results (~35 min on AMD Milan):"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:145
+msgid "model,image-classification,mlperf,onnx,resnet50,v1.5-opset-11"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:183
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:208
+msgid "Scenario: Performance; Single Stream"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:210
+msgid "Substitute \"cmd_key\" with performance-singlestream."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:212
+msgid "Scenario: Performance; Server"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:214
+msgid "Substitute \"cmd_key\" with performance-server."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:222
+msgid "Scenario: Performance; MultiStream"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/tvm/mlperf-object-detection.md:226
+msgid ""
+"samples-per-query are separated by max-batchsize. Substitute \"cmd_key\" "
+"with \"performance-multistream."
+msgstr ""
+

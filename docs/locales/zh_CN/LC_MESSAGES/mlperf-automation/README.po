@@ -1,0 +1,372 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/README.md:1
+msgid "MLPerf™ inference benchmark automation"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:3
+msgid ""
+"This is an on-going community effort coordinated by the MLCommons Design "
+"Space Exploration working group to make it easier to customize, run and "
+"reproduce MLPerf™ inference benchmarks across continuously changing ML "
+"models, frameworks, libraries, compilers, data sets and platform. We are "
+"also developing an open database for benchmarking results and provenance "
+"information compatible with FAIR principles."
+msgstr ""
+
+#: ../../mlperf-automation/README.md:9
+msgid ""
+"As a starting point, we will use the open-source and technology-neutral "
+"MLCommons CK framework with a collection of reusable automation recipes, "
+"plug&play packages and adaptive containers with a common API for ML "
+"systems. CK framework was already successfully used by several MLCommons "
+"members to automate their MLPerf inference submissions and we want to "
+"build upon their experience."
+msgstr ""
+
+#: ../../mlperf-automation/README.md:16
+msgid ""
+"We reuse a relatively mature methodology to reproduce research results "
+"from ML and Systems papers (ACM TechTalk and Artifact Evaluation) and "
+"open-source tools from the MLCommons™ including MLCube™."
+msgstr ""
+
+#: ../../mlperf-automation/README.md:19
+msgid "News"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:21
+msgid ""
+"20210924: We will continue further developments within a new MLCommons "
+"working group on Design Space Exploration - more details to follow soon."
+msgstr ""
+
+#: ../../mlperf-automation/README.md:22
+msgid "20210914: Reproducibility studies for the MLPerf inference benchmark"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:23
+msgid ""
+"20210911: cTuning foundation and OctoML donated the CK framework and "
+"workflows to MLCommons:"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:24
+msgid "https://github.com/mlcommons/ck"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:25
+msgid "https://github.com/mlcommons/ck-venv"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:26
+msgid "https://github.com/mlcommons/ck-mlops"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:28
+msgid "Standardization of the CK components for MLPerf"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:30
+msgid ""
+"We are gradually converting all CK packages, benchmark workflows, "
+"automation scripts and Docker containers for diverse ML tasks, models, "
+"datasets and frameworks from the community to support the new MLPerf "
+"inference submission workflow."
+msgstr ""
+
+#: ../../mlperf-automation/README.md:37
+msgid "CK workflows for the MLPerf inference benchmark"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:40
+msgid ""
+"✓ - supports the new MLPerf inference submission workflow<br> ± - works "
+"fine but uses old format"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:44
+msgid ""
+"MLPerf tasks         | PyTorch | TensorFlow | TVM | ONNX | TFLite | "
+"OpenVINO | TensorRT | --- | --- | --- | --- | --- | --- | --- | --- | "
+"Image classification | CK ✓ | CK ✓ | CK ✓ | CK ✓ | CK ± | CK ± |  | "
+"Object detection     |  |  | CK ± | CK ✓ | CK ± |  | CK ± | Medical "
+"imaging      | CK ✓ |  |  | CK ✓ |  |  |  | Language             |  |  |"
+"  | CK ✓ |  |  |  | Recommendation       |  |  |  |  |  |  |  | Speech"
+"               | CK ± |  |  |  |  |  |  |"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:53
+msgid "CK packages with MLPerf datasets"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:55
+msgid "Object detection: COCO 2017"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:56
+msgid "Image classification: ImageNet 2012"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:57
+msgid "Language: SQuAD"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:58
+msgid "Speech: LibriSpeech"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:60
+msgid ""
+"See other CK packages with open source datasets shared by the community "
+"(to be standardized and connected with the new submission system): View"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:64
+msgid "CK packages with ML models used for MLPerf submissions"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:66
+msgid "ResNet50: ONNX PyTorch TensorFlow TFLite"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:67
+msgid "EfficientNet (quantized/non-quantized): TensorFlow and TFLite"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:68
+msgid "MobileNet-v3 (quantized/non-quantized): TensorFlow and TFLite"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:69
+msgid "MobileNet-v2 (quantized): TensorFlow and TFLite"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:70
+msgid "MobileNet-v2 (non-quantized): TensorFlow and TFLite"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:71
+msgid "MobileNet-v1 (quantized/non-quantized): TensorFlow and TFLite"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:72
+msgid "SSD MobileNet 300: ONNX"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:73
+msgid "SSD ResNet34 1200: ONNX"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:74
+msgid "BERT Large: ONNX"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:76
+msgid "Customizable dashboards"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:78
+msgid "All aggregated MLPerf inference benchmark results"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:80
+msgid "News and updates"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:82
+msgid ""
+"20210808: Make sure that your CK version >= 2.5.8 with many enhancements "
+"for MLPerf (ck version). You can update it via (python3 -m pip install ck"
+" -U)."
+msgstr ""
+
+#: ../../mlperf-automation/README.md:85
+msgid "Table of contents"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:87
+msgid "Prepare your platform"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:88
+msgid "Install CK framework"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:89
+msgid "Install CK virtual environment (optional)"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:90
+msgid "Use adaptive CK container"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:91
+msgid "Prepare and run reference MLPerf™ inference benchmark"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:92
+msgid "Customize MLPerf™ inference benchmark"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:93
+msgid "Submit to MLPerf™ inference"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:94
+msgid "Integrate CK workflows with CI platforms"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:95
+msgid "Analyze MLPerf inference results"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:96
+msgid "Example of CK dashboards for ML Systems DSE"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:97
+msgid "Reproduce MLPerf™ results"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:98
+msgid "Use CK with MLCube™"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:99
+msgid "Test models with a webcam"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:100
+msgid "Explore ML Systems designs (AutoDSE)"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:101
+msgid "Related tools"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:104
+msgid "Examples"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:106
+msgid "MLPerf™ object detection workflow"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:107
+msgid "Docker image for MLPerf™ with OpenVINO"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:108
+msgid "Jupyter notebook for ML DSE"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:109
+msgid "Webcam test of the MLPerf object detection model with TFLite"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:110
+msgid "Public scoreboard with MLPerf DSE"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:113
+msgid "Further improvements"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:115
+msgid "Common workflow for MLPerf inference (prototype available)"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:116
+msgid "Test and update CK automation recipes for MLOps"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:117
+msgid "Docker containers to run MLPerf inference out of the box"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:118
+msgid "MLPerf tutorials"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:119
+msgid "Unifying CK components for ML Systems"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:120
+msgid "Ideas to make it easier to use MLPerf™ inference benchmarks"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:121
+msgid "Add MLPerf™ power measurements to our automated benchmark toolset"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:122
+msgid "Standardization of MLPerf™ workflows"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:123
+msgid "More automation"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:124
+msgid "Redesigning CK (CKLite)"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:127
+msgid "Contributions"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:129
+msgid ""
+"Feel free to contribute to this collaborative doc by sending your PR here"
+" or creating tickets at github.com/mlcommons/inference and "
+"github.com/mlcommons/ck. Thank you!"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:135
+msgid "Support"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:137
+msgid "MLCommons"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:138
+msgid "OctoML.ai"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:139
+msgid "cTuning foundation"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:140
+msgid "ACM"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:143
+msgid "Coordinators"
+msgstr ""
+
+#: ../../mlperf-automation/README.md:145
+msgid "Grigori Fursin"
+msgstr ""
+

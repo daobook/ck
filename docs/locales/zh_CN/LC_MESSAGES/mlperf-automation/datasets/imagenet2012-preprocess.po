@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:1
+msgid "[ Back to TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:3
+msgid "Shortcuts"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:5
+msgid "Install reduced dataset with the first 500 images (for tests)"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:6
+msgid "Plug in full dataset with 50,000 images"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:8
+msgid "Notes"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:10
+msgid ""
+"ImageNet 2012 validation set is no longer publicly available and this CK "
+"meta-package cannot automatically download it! If you already have it "
+"installed on your machine, you can detect and register it to work with CK"
+" workflows as described further. However, we prepared a CK package with a"
+" reduced Imagenet dataset (500 images) to let you test CK-MLPerf "
+"workflows."
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:18
+msgid "Install CK"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:20
+msgid "Please follow this guide"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:22
+msgid "Install CK repos with MLOps components"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:28
+msgid "Install reduced ImageNet 2012 val dataset with the first 500 images"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:30
+msgid ""
+"If you do not have the full ImageNet val dataset, you can install its "
+"reduced version via CK with the first 500 images just for a test:"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:38
+msgid "You can locate the place where CK installs packages as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:44
+msgid "Prepare CK for ImageNet preprocessing"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:46
+msgid "Set up CK environment"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:54
+msgid "Install common CK packages"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:56
+msgid ""
+"You will need cmake to build MLPerf™ loadgen. First, attempt to detect if"
+" you already have it installed:"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:61
+msgid "Note that you need version >= 3.16"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:63
+msgid "CK will register your version if it manages to detect it:"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:72
+msgid ""
+"If you do not have cmake installed or CK did not manage to detect it, you"
+" can use a CK package to build it for your system:"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:77
+msgid "Install Python dependencies via CK"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:79
+msgid "You can now install other dependencies via CK:"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:89
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:121
+msgid "Preprocess using OpenCV (better accuracy but may fail on some machines)"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:97
+msgid ""
+"Preprocess using Pillow (slightly worse accuracy but works most of the "
+"time)"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:106
+msgid "Plug in full ImageNet 2012 val dataset with 50000 images"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:108
+msgid ""
+"ImageNet 2012 validation set is no longer publicly available. If you "
+"already have it installed on your machine, you can detect and register it"
+" to work with CK workflows using this command:"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:117
+msgid ""
+"You can download it via Academic Torrents and then register in the CK "
+"using the above command."
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:129
+msgid "Processing time: ~30 min."
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:131
+msgid ""
+"Preprocessing using pillow (slightly worse accuracy but works most of the"
+" time)"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:139
+msgid "Processing time: ~26 min."
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:142
+msgid "Preprocess ImageNet for other models with different resolutions"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012-preprocess.md:144
+msgid "CK-ML repo docs"
+msgstr ""
+

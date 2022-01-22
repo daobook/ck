@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/platform/rpi4-debian.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-debian.md:3
+msgid "Rapsberry Pi 4 with a standard port of Debian"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-debian.md:5
+msgid "OS release: 2021-03-04 (32-but)"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-debian.md:6
+msgid "Memory: 4GB"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-debian.md:8
+msgid "Notes:"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-debian.md:10
+msgid ""
+"[20210422] Grigori tested ck venv to prepare CK virtual environment and "
+"build several python versions - it worked fine."
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-debian.md:13
+msgid ""
+"[20210423] Grigori attempted to build loadgen from MLCommons™ inference "
+"but it fails during C++ compliation."
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-debian.md:17
+msgid ""
+"The earlier revision of loadgen (r0.5?) works - this means that it's "
+"possible to fix the latest version if needed."
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-debian.md:20
+msgid "Ubuntu 20.04 64-bit seems to work fine."
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-debian.md:22
+msgid "Prerequisites"
+msgstr ""
+

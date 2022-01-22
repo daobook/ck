@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/datasets/brats2019.md:1
+msgid "[ Back to TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/brats2019.md:3
+msgid "Shortcuts"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/brats2019.md:5
+#: ../../mlperf-automation/datasets/brats2019.md:30
+msgid "Plug in downloaded BraTS 2019"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/brats2019.md:7
+msgid "Notes"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/brats2019.md:9
+msgid ""
+"BraTS 2019 dataset is not publicly available without registration and "
+"this CK meta-package cannot automatically download it! If you already "
+"have it installed on your machine, you can detect and register it to work"
+" with CK workflows as described further."
+msgstr ""
+
+#: ../../mlperf-automation/datasets/brats2019.md:15
+msgid ""
+"The size of the dataset is about 2.8 GB and it is separated into 5 folds "
+"for cross-validation. The MLPerf workflow uses fold 1."
+msgstr ""
+
+#: ../../mlperf-automation/datasets/brats2019.md:20
+msgid "Install CK"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/brats2019.md:22
+msgid "Please follow this guide"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/brats2019.md:24
+msgid "Install CK repos with MLOps components"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/brats2019.md:32
+msgid ""
+"BraTS 2019 dataset is not publicly available. If you already have it "
+"installed on your machine, you can detect and register it to work with CK"
+" workflows using this command:"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/brats2019.md:41
+msgid ""
+"You can download it via Academic Torrents and then register in the CK "
+"using the above command."
+msgstr ""
+

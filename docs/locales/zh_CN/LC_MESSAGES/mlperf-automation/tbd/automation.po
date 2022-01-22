@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/tbd/automation.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/automation.md:3
+msgid "Ideas to improve automation"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/automation.md:5
+msgid ""
+"Provide tests to automate all CK components and workflows across all "
+"available platforms"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/automation.md:6
+msgid ""
+"Test ML models with real workflows (image classificaiton, object "
+"detection, NLP) similar to CK demo"
+msgstr ""
+
+#: ../../mlperf-automation/tbd/automation.md:7
+msgid ""
+"Add more details about how set up RPi4, Nvidia, Coral Edge TPU and other "
+"boards from scratch"
+msgstr ""
+

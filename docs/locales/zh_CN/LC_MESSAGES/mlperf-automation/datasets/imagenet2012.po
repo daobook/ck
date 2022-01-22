@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:1
+msgid "[ Back to TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:3
+msgid "Shortcuts"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:5
+msgid "Install reduced dataset with the first 500 images (for tests)"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:6
+msgid "Plug in full dataset with 50,000 images"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:7
+msgid "Pre-process installed datasets if needed"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:9
+msgid "Notes"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:11
+msgid ""
+"ImageNet 2012 validation set is no longer publicly available and this CK "
+"meta-package cannot automatically download it! If you already have it "
+"installed on your machine, you can detect and register it to work with CK"
+" workflows as described further. However, we prepared a CK package with a"
+" reduced Imagenet dataset (500 images) to let you test CK-MLPerf "
+"workflows."
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:19
+msgid "Install CK"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:21
+msgid "Please follow this guide"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:23
+msgid "Install CK repos with MLOps components"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:29
+msgid "Install ImageNet 2012 aux package"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:35
+msgid ""
+"If berkeleyvision website is unavailable, you can use the DropBox "
+"substitute as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:40
+#: ../../mlperf-automation/datasets/imagenet2012.md:55
+msgid "You can locate the place where CK installed this package as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:46
+msgid "Install reduced ImageNet 2012 val dataset with the first 500 images"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:48
+msgid ""
+"If you do not have the full ImageNet val dataset, you can install its "
+"reduced version via CK with the first 500 images just for a test:"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:60
+msgid ""
+"If you are using MLPerf benchmark scripts without CK workflows, you must "
+"copy the labels next to the images:"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:66
+msgid "Note that CK workflows will copy labels next to images automatically."
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:69
+msgid "Plug in full ImageNet 2012 val dataset with 50000 images"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:71
+msgid ""
+"ImageNet 2012 validation set is no longer publicly available. If you "
+"already have it installed on your machine, you can detect and register it"
+" to work with CK workflows using this command:"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:80
+msgid ""
+"You can download it via Academic Torrents and then register in the CK "
+"using the above command."
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:83
+msgid "Preprocess installed dataset"
+msgstr ""
+
+#: ../../mlperf-automation/datasets/imagenet2012.md:85
+msgid ""
+"If you need a preprocessed dataset or you use CK workflows that require a"
+" preprocessed ImageNet, the community provided different CK packages to "
+"automate ImageNet preprocessing as described here."
+msgstr ""
+

@@ -1,0 +1,364 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:3
+msgid "MLPerf™ Inference v1.0: object detection"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:5
+msgid "Official models"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:7
+msgid ""
+"| model | reference app | framework | dataset | | ---- | ---- | ---- | "
+"---- | | ssd-mobilenet 300x300 | vision/classification_and_detection | "
+"tensorflow, pytorch, onnx| coco resized to 300x300 [CK automation]| | "
+"ssd-resnet34 1200x1200 | vision/classification_and_detection | "
+"tensorflow, pytorch, onnx | coco resized to 1200x1200 [CK automation] |"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:12
+msgid "All supported models"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:14
+msgid ""
+"| model | framework | accuracy | dataset | model link | model source | "
+"precision | notes | CK dataset | CK model | CK model package tags | | "
+"---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | "
+"---- | | ssd-mobilenet 300x300 | tensorflow | mAP 0.23 | coco resized to "
+"300x300 | from tensorflow | from tensorflow | fp32 | NHWC |   |   |   | |"
+" ssd-mobilenet 300x300 quantized finetuned | tensorflow | mAP 0.23594 | "
+"coco resized to 300x300 | from zenodo | Habana | int8 | ??? |   |   |   |"
+" | ssd-mobilenet 300x300 symmetrically quantized finetuned | tensorflow |"
+" mAP 0.234 | coco resized to 300x300 | from zenodo | Habana | int8 | ??? "
+"|   |   |   | | ssd-mobilenet 300x300 | pytorch | mAP 0.23 | coco resized"
+" to 300x300 | from zenodo | from tensorflow | fp32 | NHWC |   |   |   | |"
+" ssd-mobilenet 300x300 | onnx | mAP 0.23 | coco resized to 300x300 | from"
+" zenodo opset-8, opset-11 | from tensorflow converted using this script |"
+" fp32 | NHWC, tested on onnxruntime, some runtime warnings |   | link | "
+"model,object-detection,mlperf,onnx,ssd-mobilenet,side.300,non-quantized  "
+"| | ssd-mobilenet 300x300 | onnx, pytorch | mAP 0.23 | coco resized to "
+"300x300  | from zenodo | ??? | int8 | ??? |   |   |   | | ssd-resnet34 "
+"1200x1200 | tensorflow | mAP 0.20 | coco resized to 1200x1200| from "
+"zenodo | from mlperf, training model | fp32 | NCHW |   |   |   | | ssd-"
+"resnet34 1200x1200 | pytorch | mAP 0.20 | coco resized to 1200x1200 | "
+"from zenodo | from mlperf | fp32 | NCHW |   |   |   | | ssd-resnet34 "
+"1200x1200 | onnx | mAP 0.20 | coco resized to 1200x1200 | from zenodo "
+"opset-8 | from mlperf converted using the these instructions | fp32 | "
+"Converted from pytorch model. |   | link  | model,object-"
+"detection,mlperf,onnx,ssd-resnet34,side.1200,non-quantized,opset-8  | | "
+"ssd-resnet34 1200x1200 | onnx | mAP 0.20 | coco resized to 1200x1200 | "
+"from zenodo opset-11 | from zenodo converted using this script | fp32 | "
+"Converted from the tensorflow model and uses the same interface as the "
+"tensorflow model. |   |   |   |"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:27
+msgid "Common CK setup"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:33
+msgid ""
+"We suggest you to create a virtual CK environment using MLPerf™ inference"
+" dev template as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:43
+msgid ""
+"Alternatively, use the following commands if you want to use your native "
+"environment:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:73
+msgid ""
+"You can explore available packages in the CK GitHub repo or using the "
+"cKnowledge.io platform."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:76
+msgid "Pull CK repo with the latest MLPerf™ automations from OctoML:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:81
+msgid ""
+"CK will pull and install GitHub repository from "
+"https://github.com/mlcommons/ck-mlops. Note that you can pull any Git "
+"repository in the CK format as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:87
+msgid "CK setup for the COCO 2017 val dataset (5000 images) converted to 300x300"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:90
+msgid "You can install COCO 2017 val dataset as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:96
+msgid ""
+"Feel free to check the CK JSON meta and CK installation scripts for Linux"
+" and Windows for the CK COCO2017 val dataset package."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:101
+msgid ""
+"Please check this doc to see how you can preprocess this data set in "
+"multiple ways with the help of CK."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:104
+msgid ""
+"Feel free to check the CK JSON meta and CK Python customization script to"
+" detect this data set on your machine."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:108
+msgid ""
+"You can see other software detection plugins in the CK repository or "
+"using the cKnowledge.io platform."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:114
+msgid "CK setup for different models and hardware"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:116
+msgid "ONNX-based models for CPU"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:122
+msgid ""
+"You will be asked to select a specfic version or the latest one. You can "
+"install a specific version as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:127
+msgid "Install SSD-Mobilenet 300x300 non-quantized fp32 for ONNX opset-8"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:133
+msgid "Feel free to check CK JSON meta of this package."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:135
+msgid "Install SSD-Mobilenet 300x300 non-quantized fp32 for ONNX opset-11"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:141
+msgid "Install SSD-ResNet34 1200x1200 non-quantized fp32 for ONNX opset-8"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:149
+msgid "Benchmark"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:151
+msgid "First, check LOADGEN parameters for object detection here."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:157
+msgid "CK will ask you to select a command line from:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:172
+msgid "You can test accuracy in Offline mode while limiting time as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:177
+msgid ""
+"You can test performance in SingleStream mode while limiting time as "
+"follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:182
+msgid ""
+"Feel free to check the CK JSON meta and CK dependencies for this "
+"benchmark!"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:185
+msgid ""
+"Note that you can obtain help about any CK module such as \"program\" and"
+" action such as \"run\" as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:190
+msgid "You can then customize your CMD using JSON keys as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:195
+msgid "Record benchmarking results to the CK repository"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:197
+msgid ""
+"You can record results to the CK repository for further analysis (for "
+"example, using CK dashboards) as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:212
+msgid ""
+"Note that you can create a new CK repository to group your experimental "
+"results as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:216
+msgid ""
+"and then substitute 'local' with 'my-cool-experiments' in the above CMD "
+"to run MLPerf™ benchmark."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:218
+msgid "Analyze experimental results"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:220
+msgid ""
+"You can find and check the CK entry with the results (based on FAIR "
+"principles to make sure that results are reproducible) as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:225
+msgid "or"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:231
+msgid "You can see different experiments inside as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:236
+msgid ""
+"Note that you can process, analyze and visualize such CK results from "
+"multiple experiments using Python scripts, CK modules and Jupyter "
+"notebooks as shown in this Jupyter notebook example and CK dashboard."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:242
+msgid "Share experimental results"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:244
+msgid ""
+"You can share experimental results publicly with the community or "
+"privately between different workgroups in the CK repositories or pack "
+"them to ZIP files:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:251
+msgid ""
+"This command will create ckr.zip with all CK experiment entries that you "
+"can share with your colleagues. They can unzip this file into CK local "
+"repository as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:257
+msgid "You can also pack and share the whole CK repository as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:263
+msgid "Delete unused virtual environments"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:265
+msgid "You can delete an unused virtual CK environment as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:270
+msgid "You can delete all virtual CK environments as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:275
+msgid "Use a Docker container"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:277
+msgid ""
+"It is possible to automatically generate containers with the CK workflows"
+" inside while keeping the same CK interface across different projects."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:280
+msgid ""
+"We've prepared a Docker container with pre-installed MLPerf™ inference "
+"benchmark v1.0 with object detection that you can use interactively to "
+"benchmark models and record results in your local repository for further "
+"analysis."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:284
+msgid ""
+"Feel free to check the CK entry with this container. You can also check "
+"adaptive CK containers shared by OctoML and other CK containers shared by"
+" the community."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:289
+msgid "First, build a given Docker container using CK as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:295
+msgid ""
+"Then, create a local CK repository where you would like to record "
+"benchmarking results:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:300
+msgid "Linux: Start Docker while mounting CK repository with experiments:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:310
+msgid "Use this ugly hack to be able to record to your host CK repository:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:316
+msgid "Then try to run some experiments and record results:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:330
+msgid ""
+"After exiting this Docker container, you can see results in your local "
+"ck-experiment repo:"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:337
+msgid "Integration with web services and CI platforms"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:339
+msgid ""
+"All CK modules, automation actions and workflows are accessible as a "
+"micro-service with a unified JSON I/O API to make it easier to integrate "
+"them with web services and CI platforms as described here."
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:345
+msgid "Questions and feedback"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection.md:347
+msgid "Contact: grigori@octoml.ai"
+msgstr ""
+

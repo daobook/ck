@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:3
+msgid "Rapsberry Pi 4 with Ubuntu Server 20.04.2 LTS 64-bit with Coral Edge TPU"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:5
+msgid "First install the board and the dependencies as described here."
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:7
+msgid "Coral Edge TPU setup"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:9
+msgid "You can find extended notes here."
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:11
+msgid "Add Debian package to the system:"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:21
+msgid "Install Edge TPU run-time:"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:26
+msgid "Disconnect and connect again Coral Edge TPU."
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:28
+msgid ""
+"To get maximum performance for MLPerf™, install a package with maximum "
+"operational frequency:"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:34
+msgid ""
+"Add current user to plugdev group (otherwise need to run inference with "
+"sudo)!"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:40
+msgid "Notes"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:42
+msgid "[20210428] Grigori tested basic Edge TPU setup with Python 3.7.10:"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:57
+msgid "[20210428] Grigori tested MLPerf™ inference with libedgetpu1-max v15.0:"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:60
+msgid "Misc"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:62
+msgid "https://wiki.st.com/stm32mpu/wiki/How_to_compile_model_and_run_inference_on_Coral_Edge_TPU_using_STM32MP1"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-coral-ubuntu.md:63
+msgid "https://github.com/google-coral/edgetpu/issues/201"
+msgstr ""
+

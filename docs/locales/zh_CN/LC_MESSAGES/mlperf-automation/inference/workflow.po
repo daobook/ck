@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/inference/workflow.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:3
+msgid "Common workflow for MLPerf inference"
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:5
+msgid "Prototype"
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:7
+msgid ""
+"We have developed the prototype of the automated submission system for "
+"the MLPerf inference benchmark:"
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:9
+msgid "CK module with Readme"
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:10
+msgid "API"
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:13
+msgid "Required functionality"
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:43
+msgid ""
+"This high-level workflow will install relevant CK packages (ctuning@ai / "
+"mlcommons@ck-mlops) and run low-level CK program workflows for MLPerf."
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:47
+msgid "Tested configuration"
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:49
+msgid ""
+"We need to create a CK entry with a list of tested configurations and "
+"related CK workflows and packages to test the user selection in the above"
+" workflow:"
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:56
+msgid "Dashboard"
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:58
+msgid "We prepared a CK dashboard engine for MLPerf (module:mlperf.result)."
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:60
+msgid "Import all MLPerf inference results"
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:62
+msgid ""
+"Import results from all installed CK \"MLPerf inference result\" packages"
+" to the mlperf.result entries"
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:70
+msgid "Export all MLPerf inference results"
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:80
+msgid "Coordinator"
+msgstr ""
+
+#: ../../mlperf-automation/inference/workflow.md:82
+msgid "Grigori Fursin"
+msgstr ""
+

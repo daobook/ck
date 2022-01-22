@@ -1,0 +1,4362 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../src/ck.rst:2
+msgid "Auto-generated CK Python API"
+msgstr ""
+
+#: ../../src/ck.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../src/ck.rst:8
+msgid "ck\\.kernel module"
+msgstr ""
+
+#: ck.kernel.access:26 of
+msgid "Universal access to all CK actions with unified I/O as dictionaries"
+msgstr ""
+
+#: ck.files.load_json_file:2 ck.files.load_text_file:2
+#: ck.files.load_yaml_file:2 ck.files.save_json_to_file:2
+#: ck.files.save_text_file:3 ck.files.save_yaml_to_file:2 ck.kernel.access:2
+#: ck.kernel.cd:2 ck.kernel.cdc:2 ck.kernel.cid:2 ck.kernel.compare_dicts:2
+#: ck.kernel.compare_flat_dicts:2 ck.kernel.convert_file_to_upload_string:2
+#: ck.kernel.convert_iso_time:2 ck.kernel.convert_json_str_to_dict:2
+#: ck.kernel.convert_str_key_to_int:2 ck.kernel.convert_str_tags_to_list:2
+#: ck.kernel.convert_upload_string_to_file:2 ck.kernel.copy_to_clipboard:2
+#: ck.kernel.debug_out:2 ck.kernel.download:2 ck.kernel.dump_json:2
+#: ck.kernel.dumps_json:2 ck.kernel.eout:2 ck.kernel.err:2
+#: ck.kernel.find_path_to_repo:2 ck.kernel.find_string_in_dict_or_list:2
+#: ck.kernel.gen_tmp_file:2 ck.kernel.gen_uid:2 ck.kernel.get_by_flat_key:2
+#: ck.kernel.get_current_date_time:2 ck.kernel.get_from_dicts:2
+#: ck.kernel.get_os_ck:2 ck.kernel.get_version:2 ck.kernel.help:2
+#: ck.kernel.info:2 ck.kernel.inp:2 ck.kernel.input_json:2 ck.kernel.is_uid:2
+#: ck.kernel.is_uoa:2 ck.kernel.jerr:2 ck.kernel.list_files:2
+#: ck.kernel.load_json_file:2 ck.kernel.load_module_from_path:2
+#: ck.kernel.load_text_file:2 ck.kernel.load_yaml_file:2
+#: ck.kernel.merge_dicts:2 ck.kernel.out:2 ck.kernel.path:2
+#: ck.kernel.prepare_special_info_about_entry:2 ck.kernel.python_version:2
+#: ck.kernel.reinit:2 ck.kernel.restore_flattened_dict:2
+#: ck.kernel.restore_state:2 ck.kernel.run_and_get_stdout:2
+#: ck.kernel.safe_float:2 ck.kernel.safe_get_val_from_list:2
+#: ck.kernel.safe_int:2 ck.kernel.save_json_to_file:2 ck.kernel.save_state:2
+#: ck.kernel.save_text_file:3 ck.kernel.save_yaml_to_file:2 ck.kernel.select:2
+#: ck.kernel.select_uoa:2 ck.kernel.set_by_flat_key:2 ck.kernel.short_help:2
+#: ck.kernel.substitute_str_in_file:2 ck.kernel.system_with_timeout:2
+#: ck.kernel.system_with_timeout_kill:2 ck.kernel.tested:2 ck.kernel.uid:2
+#: ck.kernel.unzip_file:2 ck.kernel.version:2
+#: ck.strings.convert_json_str_to_dict:2 ck.strings.copy_to_clipboard:2
+#: ck.strings.dump_json:2 of
+msgid "Target audience: end users"
+msgstr ""
+
+#: ck.kernel.access:4 of
+msgid ""
+"NOTE: If input is a string and it will be converted to the dictionary as "
+"follows (the same as CK command line):"
+msgstr ""
+
+#: ck.kernel.access:6 of
+msgid "key1=value1 -> converted to {key1:value1}"
+msgstr ""
+
+#: ck.kernel.access:8 of
+msgid "-key10 -> converted to {key10:\"yes\"}"
+msgstr ""
+
+#: ck.kernel.access:10 of
+msgid "-key11=value11 -> converted to {key11:value11}"
+msgstr ""
+
+#: ck.kernel.access:14 of
+msgid "--key13=value13 -> converted to {key13:value13}"
+msgstr ""
+
+#: ck.kernel.access:16 of
+msgid "@file_json -> JSON from this file will be merged with INPUT"
+msgstr ""
+
+#: ck.kernel.access:18 of
+msgid ""
+"@@ -> CK will ask user ot enter manually JSON from console and merge with"
+" INPUT"
+msgstr ""
+
+#: ck.kernel.access:20 of
+msgid ""
+"@@key -> Enter JSON manually from console and merge with INPUT under this"
+" key"
+msgstr ""
+
+#: ck.kernel.access:22 of
+msgid ""
+"@@@cmd_json -> convert string to JSON (special format) and merge with "
+"INPUT"
+msgstr ""
+
+#: ck.kernel.access:26 of
+msgid ""
+"When string is converted to INPUT dictionary, \"cmd\" variable is set to "
+"True"
+msgstr ""
+
+#: ck.files.load_json_file ck.files.load_text_file ck.files.load_yaml_file
+#: ck.files.save_json_to_file ck.files.save_yaml_to_file ck.kernel.access
+#: ck.kernel.access_index_server ck.kernel.add ck.kernel.add_action
+#: ck.kernel.add_index ck.kernel.browser ck.kernel.cd ck.kernel.cdc
+#: ck.kernel.check_lock ck.kernel.check_version ck.kernel.check_writing
+#: ck.kernel.cid ck.kernel.compare_dicts ck.kernel.compare_flat_dicts
+#: ck.kernel.convert_ck_list_to_dict ck.kernel.convert_cm_to_ck
+#: ck.kernel.convert_entry_to_cid ck.kernel.convert_file_to_upload_string
+#: ck.kernel.convert_iso_time ck.kernel.convert_json_str_to_dict
+#: ck.kernel.convert_str_key_to_int ck.kernel.convert_str_tags_to_list
+#: ck.kernel.convert_upload_string_to_file ck.kernel.copy
+#: ck.kernel.copy_path_to_clipboard ck.kernel.copy_to_clipboard ck.kernel.cp
+#: ck.kernel.create_entry ck.kernel.debug_out ck.kernel.delete
+#: ck.kernel.delete_alias ck.kernel.delete_directory ck.kernel.delete_file
+#: ck.kernel.delete_index ck.kernel.detect_cid_in_current_path
+#: ck.kernel.download ck.kernel.dump_json ck.kernel.dumps_json ck.kernel.edit
+#: ck.kernel.eout ck.kernel.err ck.kernel.find ck.kernel.find_path_to_data
+#: ck.kernel.find_path_to_entry ck.kernel.find_path_to_repo
+#: ck.kernel.find_repo_by_path ck.kernel.find_string_in_dict_or_list
+#: ck.kernel.flatten_dict_internal ck.kernel.flatten_dict_internal_check_key
+#: ck.kernel.gen_tmp_file ck.kernel.gen_uid ck.kernel.get_api
+#: ck.kernel.get_by_flat_key ck.kernel.get_current_date_time
+#: ck.kernel.get_from_dicts ck.kernel.get_os_ck ck.kernel.get_split_dir_number
+#: ck.kernel.guide ck.kernel.help ck.kernel.index_module ck.kernel.info
+#: ck.kernel.init ck.kernel.inp ck.kernel.input_json ck.kernel.is_uid
+#: ck.kernel.is_uoa ck.kernel.jerr ck.kernel.list_actions
+#: ck.kernel.list_all_files ck.kernel.list_data ck.kernel.list_files
+#: ck.kernel.list_tags ck.kernel.load ck.kernel.load_json_file
+#: ck.kernel.load_meta_from_path ck.kernel.load_module_from_path
+#: ck.kernel.load_repo_info_from_cache ck.kernel.load_text_file
+#: ck.kernel.load_yaml_file ck.kernel.lower_list ck.kernel.merge_dicts
+#: ck.kernel.move ck.kernel.mv ck.kernel.out ck.kernel.parse_cid ck.kernel.path
+#: ck.kernel.perform_action ck.kernel.perform_remote_action
+#: ck.kernel.prepare_special_info_about_entry ck.kernel.print_input
+#: ck.kernel.process_meta_for_inheritance ck.kernel.pull ck.kernel.push
+#: ck.kernel.pwiki ck.kernel.python_version ck.kernel.reinit
+#: ck.kernel.reload_repo_cache ck.kernel.remove ck.kernel.remove_action
+#: ck.kernel.ren ck.kernel.rename ck.kernel.restore_flattened_dict
+#: ck.kernel.restore_state ck.kernel.rm ck.kernel.run_and_get_stdout
+#: ck.kernel.safe_float ck.kernel.safe_get_val_from_list ck.kernel.safe_int
+#: ck.kernel.save_json_to_file ck.kernel.save_repo_cache ck.kernel.save_state
+#: ck.kernel.save_yaml_to_file ck.kernel.search ck.kernel.search_filter
+#: ck.kernel.search_string_filter ck.kernel.select ck.kernel.select_uoa
+#: ck.kernel.set_by_flat_key ck.kernel.set_lock ck.kernel.short_help
+#: ck.kernel.split_name ck.kernel.status ck.kernel.substitute_str_in_file
+#: ck.kernel.system_with_timeout ck.kernel.system_with_timeout_kill
+#: ck.kernel.tested ck.kernel.uid ck.kernel.unzip_file ck.kernel.update
+#: ck.kernel.version ck.kernel.webapi ck.kernel.webhelp ck.kernel.wiki
+#: ck.kernel.zip ck.net.access_ck_api ck.net.request
+#: ck.strings.convert_json_str_to_dict ck.strings.copy_to_clipboard
+#: ck.strings.dump_json of
+msgid "参数"
+msgstr ""
+
+#: ck.kernel.access:28 of
+msgid ""
+"**Unified input as dictionary or string** (*converted to dict*) -- action"
+" (str): automation action"
+msgstr ""
+
+#: ck.kernel.access:30 of
+msgid "module_uoa (str): CK module UOA for the automation action"
+msgstr ""
+
+#: ck.kernel.access:31 ck.kernel.perform_action:10 ck.kernel.pull:11
+#: ck.kernel.push:11 of
+msgid "or"
+msgstr ""
+
+#: ck.kernel.access:32 of
+msgid ""
+"(cid1) (str): if doesn't have = and doesn't start from -- or - or @ -> "
+"appended to cids[] (cid2) (str): if doesn't have = and doesn't start from"
+" -- or - or @ -> appended to cids[] (cid3) (str): if doesn't have = and "
+"doesn't start from -- or - or @ -> appended to cids[]"
+msgstr ""
+
+#: ck.kernel.access:36 of
+msgid ""
+"(repo_uoa) (str): CK repo UOA if action is applied to some CK entry "
+"(data_uoa) (str): CK entry name(s)"
+msgstr ""
+
+#: ck.kernel.access:44 of
+msgid "(out) (str): output for a given action"
+msgstr ""
+
+#: ck.kernel.access:40 of
+msgid "if '', none"
+msgstr ""
+
+#: ck.kernel.access:41 of
+msgid "if 'con', console interaction (if from CMD, default)"
+msgstr ""
+
+#: ck.kernel.access:42 of
+msgid "if 'json', print return dict as json to console"
+msgstr ""
+
+#: ck.kernel.access:43 of
+msgid "if 'json_with_sep', separation line and return dict as json to console"
+msgstr ""
+
+#: ck.kernel.access:44 of
+msgid "if 'json_file', save return dict to JSON file"
+msgstr ""
+
+#: ck.kernel.access:46 of
+msgid ""
+"(out_file) (str): Name of the file to save return dict if "
+"'out'=='json_file'"
+msgstr ""
+
+#: ck.kernel.access:48 of
+msgid ""
+"(con_encoding) (str): force encoding for I/O (ck_profile) (str): if "
+"'yes', profile CK"
+msgstr ""
+
+#: ck.kernel.access:51 of
+msgid "Keys for a given CK automation action"
+msgstr ""
+
+#: ck.files.load_json_file ck.files.load_text_file ck.files.load_yaml_file
+#: ck.files.save_json_to_file ck.files.save_yaml_to_file ck.kernel.access
+#: ck.kernel.access_index_server ck.kernel.add ck.kernel.add_action
+#: ck.kernel.add_index ck.kernel.browser ck.kernel.cd ck.kernel.cdc
+#: ck.kernel.check_lock ck.kernel.check_version ck.kernel.check_writing
+#: ck.kernel.cid ck.kernel.compare_dicts ck.kernel.compare_flat_dicts
+#: ck.kernel.convert_ck_list_to_dict ck.kernel.convert_cm_to_ck
+#: ck.kernel.convert_entry_to_cid ck.kernel.convert_file_to_upload_string
+#: ck.kernel.convert_iso_time ck.kernel.convert_json_str_to_dict
+#: ck.kernel.convert_str_key_to_int ck.kernel.convert_str_tags_to_list
+#: ck.kernel.convert_upload_string_to_file ck.kernel.copy
+#: ck.kernel.copy_path_to_clipboard ck.kernel.copy_to_clipboard ck.kernel.cp
+#: ck.kernel.create_entry ck.kernel.debug_out ck.kernel.delete
+#: ck.kernel.delete_alias ck.kernel.delete_directory ck.kernel.delete_file
+#: ck.kernel.delete_index ck.kernel.detect_cid_in_current_path
+#: ck.kernel.download ck.kernel.dump_json ck.kernel.dumps_json ck.kernel.edit
+#: ck.kernel.eout ck.kernel.err ck.kernel.find ck.kernel.find_path_to_data
+#: ck.kernel.find_path_to_entry ck.kernel.find_path_to_repo
+#: ck.kernel.find_repo_by_path ck.kernel.find_string_in_dict_or_list
+#: ck.kernel.flatten_dict_internal ck.kernel.flatten_dict_internal_check_key
+#: ck.kernel.gen_tmp_file ck.kernel.gen_uid ck.kernel.get_api
+#: ck.kernel.get_by_flat_key ck.kernel.get_current_date_time
+#: ck.kernel.get_default_repo ck.kernel.get_from_dicts ck.kernel.get_os_ck
+#: ck.kernel.get_split_dir_number ck.kernel.get_version ck.kernel.guide
+#: ck.kernel.help ck.kernel.index_module ck.kernel.info ck.kernel.init
+#: ck.kernel.inp ck.kernel.input_json ck.kernel.is_uid ck.kernel.is_uoa
+#: ck.kernel.jerr ck.kernel.list_actions ck.kernel.list_all_files
+#: ck.kernel.list_data ck.kernel.list_files ck.kernel.list_tags ck.kernel.load
+#: ck.kernel.load_json_file ck.kernel.load_meta_from_path
+#: ck.kernel.load_module_from_path ck.kernel.load_repo_info_from_cache
+#: ck.kernel.load_text_file ck.kernel.load_yaml_file ck.kernel.lower_list
+#: ck.kernel.merge_dicts ck.kernel.move ck.kernel.mv ck.kernel.out
+#: ck.kernel.parse_cid ck.kernel.path ck.kernel.perform_action
+#: ck.kernel.perform_remote_action ck.kernel.prepare_special_info_about_entry
+#: ck.kernel.print_input ck.kernel.process_meta_for_inheritance ck.kernel.pull
+#: ck.kernel.push ck.kernel.pwiki ck.kernel.python_version ck.kernel.reinit
+#: ck.kernel.reload_repo_cache ck.kernel.remove ck.kernel.remove_action
+#: ck.kernel.ren ck.kernel.rename ck.kernel.restore_flattened_dict
+#: ck.kernel.restore_state ck.kernel.rm ck.kernel.run_and_get_stdout
+#: ck.kernel.safe_float ck.kernel.safe_get_val_from_list ck.kernel.safe_int
+#: ck.kernel.save_json_to_file ck.kernel.save_repo_cache ck.kernel.save_state
+#: ck.kernel.save_yaml_to_file ck.kernel.search ck.kernel.search_filter
+#: ck.kernel.search_string_filter ck.kernel.select ck.kernel.select_uoa
+#: ck.kernel.set_by_flat_key ck.kernel.set_lock ck.kernel.short_help
+#: ck.kernel.split_name ck.kernel.status ck.kernel.substitute_str_in_file
+#: ck.kernel.system_with_timeout ck.kernel.system_with_timeout_kill
+#: ck.kernel.tested ck.kernel.uid ck.kernel.unzip_file ck.kernel.update
+#: ck.kernel.version ck.kernel.webapi ck.kernel.webhelp ck.kernel.wiki
+#: ck.kernel.zip ck.net.access_ck_api ck.net.request
+#: ck.strings.convert_json_str_to_dict ck.strings.copy_to_clipboard
+#: ck.strings.dump_json of
+msgid "返回"
+msgstr ""
+
+#: ck.kernel.access:53 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    Output from the given CK automation action"
+msgstr ""
+
+#: ck.files.load_json_file:6 ck.files.load_text_file:13
+#: ck.files.load_yaml_file:6 ck.files.save_json_to_file:9
+#: ck.files.save_yaml_to_file:7 ck.kernel.access:53
+#: ck.kernel.access_index_server:10 ck.kernel.add:43 ck.kernel.add_action:12
+#: ck.kernel.add_index:11 ck.kernel.browser:10 ck.kernel.cd:10 ck.kernel.cdc:10
+#: ck.kernel.check_lock:7 ck.kernel.check_version:6 ck.kernel.check_writing:11
+#: ck.kernel.cid:9 ck.kernel.compare_dicts:18 ck.kernel.compare_flat_dicts:10
+#: ck.kernel.convert_ck_list_to_dict:6 ck.kernel.convert_cm_to_ck:12
+#: ck.kernel.convert_entry_to_cid:11 ck.kernel.convert_file_to_upload_string:6
+#: ck.kernel.convert_iso_time:6 ck.kernel.convert_json_str_to_dict:6
+#: ck.kernel.convert_upload_string_to_file:7 ck.kernel.copy_path_to_clipboard:6
+#: ck.kernel.copy_to_clipboard:6 ck.kernel.cp:17 ck.kernel.create_entry:13
+#: ck.kernel.debug_out:6 ck.kernel.delete_alias:12 ck.kernel.delete_directory:6
+#: ck.kernel.delete_file:10 ck.kernel.delete_index:10
+#: ck.kernel.detect_cid_in_current_path:6 ck.kernel.download:14
+#: ck.kernel.dump_json:8 ck.kernel.dumps_json:8 ck.kernel.edit:12
+#: ck.kernel.find:8 ck.kernel.find_path_to_data:10
+#: ck.kernel.find_path_to_entry:9 ck.kernel.find_path_to_repo:6
+#: ck.kernel.find_repo_by_path:6 ck.kernel.find_string_in_dict_or_list:8
+#: ck.kernel.flatten_dict_internal:9 ck.kernel.gen_tmp_file:8
+#: ck.kernel.gen_uid:6 ck.kernel.get_api:10 ck.kernel.get_by_flat_key:7
+#: ck.kernel.get_current_date_time:6 ck.kernel.get_default_repo:6
+#: ck.kernel.get_os_ck:6 ck.kernel.get_version:6 ck.kernel.guide:6
+#: ck.kernel.help:6 ck.kernel.info:8 ck.kernel.init:6 ck.kernel.inp:8
+#: ck.kernel.input_json:6 ck.kernel.list_actions:8 ck.kernel.list_all_files:16
+#: ck.kernel.list_data:33 ck.kernel.list_files:9 ck.kernel.list_tags:6
+#: ck.kernel.load:20 ck.kernel.load_json_file:6 ck.kernel.load_meta_from_path:9
+#: ck.kernel.load_module_from_path:10 ck.kernel.load_repo_info_from_cache:6
+#: ck.kernel.load_text_file:13 ck.kernel.load_yaml_file:6
+#: ck.kernel.merge_dicts:10 ck.kernel.mv:14 ck.kernel.parse_cid:8
+#: ck.kernel.path:6 ck.kernel.perform_action:14
+#: ck.kernel.prepare_special_info_about_entry:6 ck.kernel.print_input:8
+#: ck.kernel.process_meta_for_inheritance:9 ck.kernel.pull:22 ck.kernel.push:18
+#: ck.kernel.pwiki:10 ck.kernel.python_version:6 ck.kernel.reload_repo_cache:6
+#: ck.kernel.remove_action:9 ck.kernel.ren:17
+#: ck.kernel.restore_flattened_dict:6 ck.kernel.rm:15
+#: ck.kernel.run_and_get_stdout:7 ck.kernel.save_json_to_file:9
+#: ck.kernel.save_repo_cache:6 ck.kernel.save_yaml_to_file:7
+#: ck.kernel.search:36 ck.kernel.search_filter:11
+#: ck.kernel.search_string_filter:10 ck.kernel.select:11
+#: ck.kernel.select_uoa:10 ck.kernel.set_by_flat_key:8 ck.kernel.set_lock:11
+#: ck.kernel.short_help:6 ck.kernel.status:6 ck.kernel.substitute_str_in_file:8
+#: ck.kernel.system_with_timeout:7 ck.kernel.uid:6 ck.kernel.unzip_file:9
+#: ck.kernel.update:42 ck.kernel.version:6 ck.kernel.webapi:6
+#: ck.kernel.webhelp:6 ck.kernel.wiki:10 ck.kernel.zip:14
+#: ck.net.access_ck_api:7 ck.net.request:7
+#: ck.strings.convert_json_str_to_dict:6 ck.strings.copy_to_clipboard:6
+#: ck.strings.dump_json:8 of
+msgid "*(dict)* --"
+msgstr ""
+
+#: ck.files.load_json_file:8 ck.files.load_text_file:15
+#: ck.files.load_yaml_file:8 ck.files.save_json_to_file:11
+#: ck.files.save_yaml_to_file:9 ck.kernel.access:55
+#: ck.kernel.access_index_server:12 ck.kernel.add:45 ck.kernel.add_action:14
+#: ck.kernel.add_index:13 ck.kernel.browser:12 ck.kernel.cd:12 ck.kernel.cdc:12
+#: ck.kernel.check_lock:9 ck.kernel.check_version:8 ck.kernel.check_writing:13
+#: ck.kernel.cid:11 ck.kernel.compare_dicts:20 ck.kernel.compare_flat_dicts:12
+#: ck.kernel.convert_ck_list_to_dict:8 ck.kernel.convert_cm_to_ck:14
+#: ck.kernel.convert_entry_to_cid:13 ck.kernel.convert_file_to_upload_string:8
+#: ck.kernel.convert_iso_time:8 ck.kernel.convert_json_str_to_dict:8
+#: ck.kernel.convert_upload_string_to_file:9 ck.kernel.copy_path_to_clipboard:8
+#: ck.kernel.copy_to_clipboard:8 ck.kernel.cp:19 ck.kernel.create_entry:15
+#: ck.kernel.debug_out:8 ck.kernel.delete_alias:14 ck.kernel.delete_directory:8
+#: ck.kernel.delete_file:12 ck.kernel.delete_index:12
+#: ck.kernel.detect_cid_in_current_path:8 ck.kernel.download:16
+#: ck.kernel.dump_json:10 ck.kernel.dumps_json:10 ck.kernel.edit:14
+#: ck.kernel.find:10 ck.kernel.find_path_to_data:12
+#: ck.kernel.find_path_to_entry:11 ck.kernel.find_path_to_repo:8
+#: ck.kernel.find_repo_by_path:8 ck.kernel.find_string_in_dict_or_list:10
+#: ck.kernel.flatten_dict_internal:11 ck.kernel.gen_tmp_file:10
+#: ck.kernel.gen_uid:8 ck.kernel.get_api:12 ck.kernel.get_by_flat_key:9
+#: ck.kernel.get_current_date_time:8 ck.kernel.get_default_repo:8
+#: ck.kernel.get_os_ck:8 ck.kernel.get_version:8 ck.kernel.guide:8
+#: ck.kernel.help:8 ck.kernel.info:10 ck.kernel.init:8 ck.kernel.inp:10
+#: ck.kernel.input_json:8 ck.kernel.list_actions:10 ck.kernel.list_all_files:18
+#: ck.kernel.list_data:35 ck.kernel.list_files:11 ck.kernel.list_tags:8
+#: ck.kernel.load:22 ck.kernel.load_json_file:8
+#: ck.kernel.load_meta_from_path:11 ck.kernel.load_module_from_path:12
+#: ck.kernel.load_repo_info_from_cache:8 ck.kernel.load_text_file:15
+#: ck.kernel.load_yaml_file:8 ck.kernel.merge_dicts:12 ck.kernel.mv:16
+#: ck.kernel.parse_cid:10 ck.kernel.path:8 ck.kernel.perform_action:16
+#: ck.kernel.prepare_special_info_about_entry:8 ck.kernel.print_input:10
+#: ck.kernel.process_meta_for_inheritance:11 ck.kernel.pull:24
+#: ck.kernel.push:20 ck.kernel.pwiki:12 ck.kernel.python_version:8
+#: ck.kernel.reload_repo_cache:8 ck.kernel.remove_action:11 ck.kernel.ren:19
+#: ck.kernel.restore_flattened_dict:8 ck.kernel.rm:17
+#: ck.kernel.run_and_get_stdout:9 ck.kernel.save_json_to_file:11
+#: ck.kernel.save_repo_cache:8 ck.kernel.save_yaml_to_file:9
+#: ck.kernel.search:38 ck.kernel.search_filter:13
+#: ck.kernel.search_string_filter:12 ck.kernel.select:13
+#: ck.kernel.select_uoa:12 ck.kernel.set_by_flat_key:10 ck.kernel.set_lock:13
+#: ck.kernel.short_help:8 ck.kernel.status:8
+#: ck.kernel.substitute_str_in_file:10 ck.kernel.system_with_timeout:9
+#: ck.kernel.uid:8 ck.kernel.unzip_file:11 ck.kernel.update:44
+#: ck.kernel.version:8 ck.kernel.webapi:8 ck.kernel.webhelp:8 ck.kernel.wiki:12
+#: ck.kernel.zip:16 ck.net.access_ck_api:9 ck.net.request:9
+#: ck.strings.convert_json_str_to_dict:8 ck.strings.copy_to_clipboard:8
+#: ck.strings.dump_json:10 of
+msgid "Unified CK dictionary:"
+msgstr ""
+
+#: ck.files.load_json_file:10 ck.files.load_text_file:17
+#: ck.files.load_yaml_file:10 ck.files.save_json_to_file:13
+#: ck.files.save_text_file:14 ck.files.save_yaml_to_file:11 ck.kernel.access:57
+#: ck.kernel.access_index_server:14 ck.kernel.add:47 ck.kernel.add_action:16
+#: ck.kernel.add_index:15 ck.kernel.browser:14 ck.kernel.cd:14 ck.kernel.cdc:14
+#: ck.kernel.check_lock:11 ck.kernel.check_version:10
+#: ck.kernel.check_writing:15 ck.kernel.cid:13 ck.kernel.compare_dicts:22
+#: ck.kernel.compare_flat_dicts:14 ck.kernel.convert_ck_list_to_dict:10
+#: ck.kernel.convert_cm_to_ck:16 ck.kernel.convert_entry_to_cid:15
+#: ck.kernel.convert_file_to_upload_string:10 ck.kernel.convert_iso_time:10
+#: ck.kernel.convert_json_str_to_dict:10
+#: ck.kernel.convert_upload_string_to_file:11
+#: ck.kernel.copy_path_to_clipboard:10 ck.kernel.copy_to_clipboard:10
+#: ck.kernel.cp:21 ck.kernel.create_entry:17 ck.kernel.delete_alias:16
+#: ck.kernel.delete_directory:10 ck.kernel.delete_file:14
+#: ck.kernel.delete_index:14 ck.kernel.detect_cid_in_current_path:10
+#: ck.kernel.download:18 ck.kernel.dump_json:12 ck.kernel.dumps_json:12
+#: ck.kernel.edit:16 ck.kernel.find:12 ck.kernel.find_path_to_data:14
+#: ck.kernel.find_path_to_entry:13 ck.kernel.find_path_to_repo:10
+#: ck.kernel.find_repo_by_path:10 ck.kernel.find_string_in_dict_or_list:12
+#: ck.kernel.flatten_dict_internal:13 ck.kernel.gen_tmp_file:12
+#: ck.kernel.gen_uid:10 ck.kernel.get_api:14 ck.kernel.get_by_flat_key:11
+#: ck.kernel.get_current_date_time:10 ck.kernel.get_default_repo:10
+#: ck.kernel.get_os_ck:10 ck.kernel.get_version:10 ck.kernel.guide:10
+#: ck.kernel.help:10 ck.kernel.info:12 ck.kernel.init:10 ck.kernel.inp:12
+#: ck.kernel.input_json:10 ck.kernel.list_actions:12
+#: ck.kernel.list_all_files:20 ck.kernel.list_data:37 ck.kernel.list_files:13
+#: ck.kernel.list_tags:10 ck.kernel.load:24 ck.kernel.load_json_file:10
+#: ck.kernel.load_meta_from_path:13 ck.kernel.load_module_from_path:14
+#: ck.kernel.load_repo_info_from_cache:10 ck.kernel.load_text_file:17
+#: ck.kernel.load_yaml_file:10 ck.kernel.merge_dicts:14 ck.kernel.mv:18
+#: ck.kernel.parse_cid:12 ck.kernel.path:10 ck.kernel.perform_action:18
+#: ck.kernel.prepare_special_info_about_entry:10 ck.kernel.print_input:12
+#: ck.kernel.process_meta_for_inheritance:13 ck.kernel.pull:26
+#: ck.kernel.push:22 ck.kernel.pwiki:14 ck.kernel.python_version:10
+#: ck.kernel.reload_repo_cache:10 ck.kernel.remove_action:13 ck.kernel.ren:21
+#: ck.kernel.restore_flattened_dict:10 ck.kernel.rm:19
+#: ck.kernel.run_and_get_stdout:11 ck.kernel.save_json_to_file:13
+#: ck.kernel.save_repo_cache:10 ck.kernel.save_text_file:14
+#: ck.kernel.save_yaml_to_file:11 ck.kernel.search:40
+#: ck.kernel.search_filter:15 ck.kernel.search_string_filter:14
+#: ck.kernel.select:15 ck.kernel.select_uoa:14 ck.kernel.set_by_flat_key:12
+#: ck.kernel.set_lock:15 ck.kernel.short_help:10 ck.kernel.status:10
+#: ck.kernel.substitute_str_in_file:12 ck.kernel.system_with_timeout:11
+#: ck.kernel.uid:10 ck.kernel.unzip_file:13 ck.kernel.update:46
+#: ck.kernel.version:10 ck.kernel.webapi:10 ck.kernel.webhelp:10
+#: ck.kernel.wiki:14 ck.kernel.zip:18 ck.net.access_ck_api:11 ck.net.request:11
+#: ck.strings.convert_json_str_to_dict:10 ck.strings.copy_to_clipboard:10
+#: ck.strings.dump_json:12 of
+msgid "return (int): return code =  0, if successful"
+msgstr ""
+
+#: ck.files.load_json_file:11 ck.files.load_text_file:18
+#: ck.files.load_yaml_file:11 ck.files.save_json_to_file:14
+#: ck.files.save_text_file:15 ck.files.save_yaml_to_file:12 ck.kernel.access:58
+#: ck.kernel.access_index_server:15 ck.kernel.add:48 ck.kernel.add_action:17
+#: ck.kernel.add_index:16 ck.kernel.browser:15 ck.kernel.cd:15 ck.kernel.cdc:15
+#: ck.kernel.check_lock:12 ck.kernel.check_version:11
+#: ck.kernel.check_writing:16 ck.kernel.cid:14 ck.kernel.compare_dicts:23
+#: ck.kernel.compare_flat_dicts:15 ck.kernel.convert_ck_list_to_dict:11
+#: ck.kernel.convert_cm_to_ck:17 ck.kernel.convert_entry_to_cid:16
+#: ck.kernel.convert_file_to_upload_string:11 ck.kernel.convert_iso_time:11
+#: ck.kernel.convert_json_str_to_dict:11
+#: ck.kernel.convert_upload_string_to_file:12
+#: ck.kernel.copy_path_to_clipboard:11 ck.kernel.copy_to_clipboard:11
+#: ck.kernel.cp:22 ck.kernel.create_entry:18 ck.kernel.delete_alias:17
+#: ck.kernel.delete_directory:11 ck.kernel.delete_file:15
+#: ck.kernel.delete_index:15 ck.kernel.detect_cid_in_current_path:11
+#: ck.kernel.download:19 ck.kernel.dump_json:13 ck.kernel.dumps_json:13
+#: ck.kernel.edit:17 ck.kernel.find:13 ck.kernel.find_path_to_data:15
+#: ck.kernel.find_path_to_entry:14 ck.kernel.find_path_to_repo:11
+#: ck.kernel.find_repo_by_path:11 ck.kernel.find_string_in_dict_or_list:13
+#: ck.kernel.flatten_dict:15 ck.kernel.flatten_dict_internal:14
+#: ck.kernel.gen_tmp_file:13 ck.kernel.gen_uid:11 ck.kernel.get_api:15
+#: ck.kernel.get_by_flat_key:12 ck.kernel.get_current_date_time:11
+#: ck.kernel.get_default_repo:11 ck.kernel.get_os_ck:11
+#: ck.kernel.get_version:11 ck.kernel.guide:11 ck.kernel.help:11
+#: ck.kernel.info:13 ck.kernel.init:11 ck.kernel.inp:13 ck.kernel.input_json:11
+#: ck.kernel.list_actions:13 ck.kernel.list_all_files:21 ck.kernel.list_data:38
+#: ck.kernel.list_files:14 ck.kernel.list_tags:11 ck.kernel.load:25
+#: ck.kernel.load_json_file:11 ck.kernel.load_meta_from_path:14
+#: ck.kernel.load_module_from_path:15 ck.kernel.load_repo_info_from_cache:11
+#: ck.kernel.load_text_file:18 ck.kernel.load_yaml_file:11
+#: ck.kernel.merge_dicts:15 ck.kernel.mv:19 ck.kernel.parse_cid:13
+#: ck.kernel.path:11 ck.kernel.perform_action:19
+#: ck.kernel.prepare_special_info_about_entry:11 ck.kernel.print_input:13
+#: ck.kernel.process_meta_for_inheritance:14 ck.kernel.pull:27
+#: ck.kernel.push:23 ck.kernel.pwiki:15 ck.kernel.python_version:11
+#: ck.kernel.reload_repo_cache:11 ck.kernel.remove_action:14 ck.kernel.ren:22
+#: ck.kernel.restore_flattened_dict:11 ck.kernel.rm:20
+#: ck.kernel.run_and_get_stdout:12 ck.kernel.save_json_to_file:14
+#: ck.kernel.save_repo_cache:11 ck.kernel.save_text_file:15
+#: ck.kernel.save_yaml_to_file:12 ck.kernel.search:41
+#: ck.kernel.search_filter:16 ck.kernel.search_string_filter:15
+#: ck.kernel.select:16 ck.kernel.select_uoa:15 ck.kernel.set_by_flat_key:13
+#: ck.kernel.set_lock:16 ck.kernel.short_help:11 ck.kernel.status:11
+#: ck.kernel.substitute_str_in_file:13 ck.kernel.system_with_timeout:12
+#: ck.kernel.tested:13 ck.kernel.uid:11 ck.kernel.unzip_file:14
+#: ck.kernel.update:47 ck.kernel.version:11 ck.kernel.webapi:11
+#: ck.kernel.webhelp:11 ck.kernel.wiki:15 ck.kernel.zip:19
+#: ck.net.access_ck_api:12 ck.net.request:12
+#: ck.strings.convert_json_str_to_dict:11 ck.strings.copy_to_clipboard:11
+#: ck.strings.dump_json:13 of
+msgid ">  0, if error"
+msgstr ""
+
+#: ck.files.load_json_file:12 ck.files.load_text_file:19
+#: ck.files.load_yaml_file:12 ck.files.save_json_to_file:15
+#: ck.files.save_text_file:16 ck.files.save_yaml_to_file:13 ck.kernel.access:59
+#: ck.kernel.access_index_server:16 ck.kernel.add:49 ck.kernel.add_action:18
+#: ck.kernel.add_index:17 ck.kernel.browser:16 ck.kernel.cd:16 ck.kernel.cdc:16
+#: ck.kernel.check_lock:13 ck.kernel.check_version:12
+#: ck.kernel.check_writing:17 ck.kernel.cid:15 ck.kernel.compare_dicts:24
+#: ck.kernel.compare_flat_dicts:16 ck.kernel.convert_ck_list_to_dict:12
+#: ck.kernel.convert_cm_to_ck:18 ck.kernel.convert_entry_to_cid:17
+#: ck.kernel.convert_file_to_upload_string:12 ck.kernel.convert_iso_time:12
+#: ck.kernel.convert_json_str_to_dict:12
+#: ck.kernel.convert_upload_string_to_file:13
+#: ck.kernel.copy_path_to_clipboard:12 ck.kernel.copy_to_clipboard:12
+#: ck.kernel.cp:23 ck.kernel.create_entry:19 ck.kernel.delete_alias:18
+#: ck.kernel.delete_directory:12 ck.kernel.delete_file:16
+#: ck.kernel.delete_index:16 ck.kernel.detect_cid_in_current_path:12
+#: ck.kernel.download:20 ck.kernel.dump_json:14 ck.kernel.dumps_json:14
+#: ck.kernel.edit:18 ck.kernel.find:14 ck.kernel.find_path_to_data:16
+#: ck.kernel.find_path_to_entry:15 ck.kernel.find_path_to_repo:12
+#: ck.kernel.find_repo_by_path:12 ck.kernel.find_string_in_dict_or_list:14
+#: ck.kernel.flatten_dict_internal:15 ck.kernel.gen_tmp_file:14
+#: ck.kernel.gen_uid:12 ck.kernel.get_api:16 ck.kernel.get_by_flat_key:13
+#: ck.kernel.get_current_date_time:12 ck.kernel.get_default_repo:12
+#: ck.kernel.get_os_ck:12 ck.kernel.get_version:12 ck.kernel.guide:12
+#: ck.kernel.help:12 ck.kernel.info:14 ck.kernel.init:12 ck.kernel.inp:14
+#: ck.kernel.input_json:12 ck.kernel.list_actions:14
+#: ck.kernel.list_all_files:22 ck.kernel.list_data:39 ck.kernel.list_files:15
+#: ck.kernel.list_tags:12 ck.kernel.load:26 ck.kernel.load_json_file:12
+#: ck.kernel.load_meta_from_path:15 ck.kernel.load_module_from_path:16
+#: ck.kernel.load_repo_info_from_cache:12 ck.kernel.load_text_file:19
+#: ck.kernel.load_yaml_file:12 ck.kernel.merge_dicts:16 ck.kernel.mv:20
+#: ck.kernel.parse_cid:14 ck.kernel.path:12 ck.kernel.perform_action:20
+#: ck.kernel.prepare_special_info_about_entry:12 ck.kernel.print_input:14
+#: ck.kernel.process_meta_for_inheritance:15 ck.kernel.pull:28
+#: ck.kernel.push:24 ck.kernel.pwiki:16 ck.kernel.python_version:12
+#: ck.kernel.reload_repo_cache:12 ck.kernel.remove_action:15 ck.kernel.ren:23
+#: ck.kernel.restore_flattened_dict:12 ck.kernel.rm:21
+#: ck.kernel.run_and_get_stdout:13 ck.kernel.save_json_to_file:15
+#: ck.kernel.save_repo_cache:12 ck.kernel.save_text_file:16
+#: ck.kernel.save_yaml_to_file:13 ck.kernel.search:42
+#: ck.kernel.search_filter:17 ck.kernel.search_string_filter:16
+#: ck.kernel.select:17 ck.kernel.select_uoa:16 ck.kernel.set_by_flat_key:14
+#: ck.kernel.set_lock:17 ck.kernel.short_help:12 ck.kernel.status:12
+#: ck.kernel.substitute_str_in_file:14 ck.kernel.system_with_timeout:13
+#: ck.kernel.tested:14 ck.kernel.uid:12 ck.kernel.unzip_file:15
+#: ck.kernel.update:48 ck.kernel.version:12 ck.kernel.webapi:12
+#: ck.kernel.webhelp:12 ck.kernel.wiki:16 ck.kernel.zip:20
+#: ck.net.access_ck_api:13 ck.net.request:13
+#: ck.strings.convert_json_str_to_dict:12 ck.strings.copy_to_clipboard:12
+#: ck.strings.dump_json:14 of
+msgid "(error) (str): error text if return > 0"
+msgstr ""
+
+#: ck.kernel.access:61 of
+msgid "Output from the given CK automation action"
+msgstr ""
+
+#: ck.kernel.access_index_server:2 of
+msgid "Access index server (usually ElasticSearch)"
+msgstr ""
+
+#: ck.kernel.access_index_server:2 ck.kernel.add_index:2 ck.kernel.browser:2
+#: ck.kernel.check_lock:2 ck.kernel.check_version:2 ck.kernel.check_writing:2
+#: ck.kernel.convert_ck_list_to_dict:2 ck.kernel.convert_entry_to_cid:2
+#: ck.kernel.copy_path_to_clipboard:2 ck.kernel.create_entry:2
+#: ck.kernel.delete_alias:2 ck.kernel.delete_directory:2
+#: ck.kernel.delete_file:2 ck.kernel.delete_index:2
+#: ck.kernel.detect_cid_in_current_path:2 ck.kernel.find_path_to_data:2
+#: ck.kernel.find_path_to_entry:2 ck.kernel.find_repo_by_path:2
+#: ck.kernel.get_api:2 ck.kernel.get_default_repo:2
+#: ck.kernel.get_split_dir_number:2 ck.kernel.guide:2 ck.kernel.index_module:2
+#: ck.kernel.list_data:2 ck.kernel.load_meta_from_path:2
+#: ck.kernel.load_repo_info_from_cache:2 ck.kernel.parse_cid:2
+#: ck.kernel.perform_action:2 ck.kernel.perform_remote_action:2
+#: ck.kernel.print_input:2 ck.kernel.process_meta_for_inheritance:2
+#: ck.kernel.pull:2 ck.kernel.push:2 ck.kernel.pwiki:2
+#: ck.kernel.reload_repo_cache:2 ck.kernel.save_repo_cache:2
+#: ck.kernel.search_filter:2 ck.kernel.search_string_filter:2
+#: ck.kernel.set_lock:2 ck.kernel.split_name:2 ck.kernel.status:2
+#: ck.kernel.webapi:2 ck.kernel.webhelp:2 ck.kernel.wiki:2 ck.kernel.zip:2
+#: ck.net.access_ck_api:2 ck.net.request:2 of
+msgid "Target audience: CK kernel and low-level developers"
+msgstr ""
+
+#: ck.kernel.access_index_server:4 of
+msgid "**request** (*str*) -- request type ('PUT' | 'DELETE' | 'TEST' | 'GET')"
+msgstr ""
+
+#: ck.kernel.access_index_server:5 of
+msgid "**(path)** (*str*) -- ES \"path\" with indexing info"
+msgstr ""
+
+#: ck.kernel.access_index_server:6 of
+msgid "**(dict)** (*dict*) -- send this query as dict"
+msgstr ""
+
+#: ck.kernel.access_index_server:7 of
+msgid "**(limit_size)** (*int*) -- limit queries using this number (if 'GET')"
+msgstr ""
+
+#: ck.kernel.access_index_server:8 of
+msgid "**(start_from)** (*int*) -- start from a given entry in a query"
+msgstr ""
+
+#: ck.kernel.access_index_server:10 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    dict (dict): dictionary from ElasticSearch "
+"with all entries"
+msgstr ""
+
+#: ck.kernel.access_index_server:18 of
+msgid "dict (dict): dictionary from ElasticSearch with all entries"
+msgstr ""
+
+#: ck.kernel.add:2 of
+msgid ""
+"CK action: create CK entry with a given meta-description in a CK "
+"repository"
+msgstr ""
+
+#: ck.kernel.add:2 ck.kernel.add_action:2 ck.kernel.copy:2 ck.kernel.cp:2
+#: ck.kernel.delete:2 ck.kernel.edit:2 ck.kernel.find:2
+#: ck.kernel.list_actions:2 ck.kernel.list_tags:2 ck.kernel.load:2
+#: ck.kernel.move:2 ck.kernel.mv:2 ck.kernel.remove:2 ck.kernel.remove_action:2
+#: ck.kernel.ren:2 ck.kernel.rename:2 ck.kernel.rm:2 ck.kernel.search:2
+#: ck.kernel.update:2 of
+msgid "Target audience: should use via ck.kernel.access"
+msgstr ""
+
+#: ck.kernel.add:4 ck.kernel.add_action:4 ck.kernel.browser:5 ck.kernel.cd:4
+#: ck.kernel.cdc:4 ck.kernel.cid:4 ck.kernel.convert_entry_to_cid:4
+#: ck.kernel.cp:4 ck.kernel.delete_file:4 ck.kernel.download:4 ck.kernel.find:4
+#: ck.kernel.find_path_to_data:6 ck.kernel.info:4 ck.kernel.list_actions:4
+#: ck.kernel.list_files:4 ck.kernel.load:4 ck.kernel.mv:4
+#: ck.kernel.process_meta_for_inheritance:4 ck.kernel.pull:4 ck.kernel.push:4
+#: ck.kernel.pwiki:6 ck.kernel.remove_action:4 ck.kernel.ren:4 ck.kernel.rm:4
+#: ck.kernel.tested:4 ck.kernel.update:4 ck.kernel.wiki:6 of
+msgid "**(repo_uoa)** (*str*) -- CK repo UOA"
+msgstr ""
+
+#: ck.kernel.add:5 ck.kernel.cd:5 ck.kernel.cdc:5 ck.kernel.cp:5
+#: ck.kernel.delete_file:5 ck.kernel.find:5 ck.kernel.find_path_to_data:7
+#: ck.kernel.info:5 ck.kernel.load:5 ck.kernel.mv:5
+#: ck.kernel.process_meta_for_inheritance:5 ck.kernel.ren:5 ck.kernel.rm:5
+#: ck.kernel.search_filter:5 ck.kernel.search_string_filter:5
+#: ck.kernel.update:5 of
+msgid "**module_uoa** (*str*) -- CK module UOA"
+msgstr ""
+
+#: ck.kernel.add:6 ck.kernel.cp:6 ck.kernel.delete_file:6 ck.kernel.find:6
+#: ck.kernel.load:6 ck.kernel.mv:6 ck.kernel.process_meta_for_inheritance:6
+#: ck.kernel.ren:6 ck.kernel.rm:6 ck.kernel.search_filter:6 ck.kernel.update:6
+#: of
+msgid "**data_uoa** (*str*) -- CK entry (data) UOA"
+msgstr ""
+
+#: ck.kernel.add:7 ck.kernel.update:7 of
+msgid "**(data_uid)** (*str*) -- CK entry (data) UID (if UOA is an alias)"
+msgstr ""
+
+#: ck.kernel.add:8 ck.kernel.update:8 of
+msgid "**(data_name)** (*str*) -- User-friendly name of this entry"
+msgstr ""
+
+#: ck.kernel.add:9 ck.kernel.update:9 of
+msgid ""
+"**(dict)** (*dict*) -- meta description for this entry (will be recorded "
+"to meta.json)"
+msgstr ""
+
+#: ck.kernel.add:10 of
+msgid "**(update)** (*str*) -- if == 'yes' and CK entry exists, update it"
+msgstr ""
+
+#: ck.kernel.add:11 ck.kernel.update:10 of
+msgid ""
+"**(substitute)** (*str*) -- if 'yes' and update=='yes' substitute "
+"dictionaries, otherwise merge!"
+msgstr ""
+
+#: ck.kernel.add:12 ck.kernel.update:11 of
+msgid ""
+"**(dict_from_cid)** (*str*) -- if !=\"\", merge dict to meta description "
+"from this CID (analog of copy)"
+msgstr ""
+
+#: ck.kernel.add:13 ck.kernel.update:12 of
+msgid "**(dict_from_repo_uoa)** (*str*) -- merge dict from this CK repo UOA"
+msgstr ""
+
+#: ck.kernel.add:14 ck.kernel.update:13 of
+msgid "**(dict_from_module_uoa)** (*str*) -- merge dict from this CK module UOA"
+msgstr ""
+
+#: ck.kernel.add:15 ck.kernel.update:14 of
+msgid "**(dict_from_data_uoa)** (*str*) -- merge dict from this CK entry UOA"
+msgstr ""
+
+#: ck.kernel.add:16 ck.kernel.update:15 of
+msgid ""
+"**(desc)** (*dict*) -- under development - defining SPECs for meta "
+"description in the CK flat format"
+msgstr ""
+
+#: ck.kernel.add:17 ck.kernel.update:16 of
+msgid ""
+"**(extra_json_files)** (*dict*) -- dict with extra json files to save to "
+"this CK entry (keys in this dictionary are filenames)"
+msgstr ""
+
+#: ck.kernel.add:19 ck.kernel.update:18 of
+msgid "**(tags)** (*str*) -- list or comma separated list of tags to add to entry"
+msgstr ""
+
+#: ck.kernel.add:20 ck.kernel.update:19 of
+msgid "**(info)** (*dict*) -- entry info to record - normally, should not use it!"
+msgstr ""
+
+#: ck.kernel.add:21 ck.kernel.update:20 of
+msgid "**(extra_info)** (*dict*) --"
+msgstr ""
+
+#: ck.kernel.add:23 ck.kernel.update:22 of
+msgid "enforce extra info such as"
+msgstr ""
+
+#: ck.kernel.add:25 ck.kernel.update:24 of
+msgid "author"
+msgstr ""
+
+#: ck.kernel.add:26 ck.kernel.update:25 of
+msgid "author_email"
+msgstr ""
+
+#: ck.kernel.add:27 ck.kernel.update:26 of
+msgid "author_webpage"
+msgstr ""
+
+#: ck.kernel.add:28 ck.kernel.update:27 of
+msgid "license"
+msgstr ""
+
+#: ck.kernel.add:29 ck.kernel.update:28 of
+msgid "copyright"
+msgstr ""
+
+#: ck.kernel.add:31 ck.kernel.update:30 of
+msgid "If not specified then take it from the CK kernel (prefix 'default_')"
+msgstr ""
+
+#: ck.kernel.add:32 ck.kernel.update:31 of
+msgid ""
+"**(updates)** (*dict*) -- entry updates info to record - normally, should"
+" not use it!"
+msgstr ""
+
+#: ck.kernel.add:33 ck.kernel.convert_cm_to_ck:9 ck.kernel.update:32 of
+msgid "**(ignore_update)** (*str*) -- if 'yes', do not add info about update"
+msgstr ""
+
+#: ck.kernel.add:34 ck.kernel.update:33 of
+msgid "**(ask)** (*str*) -- if 'yes', ask questions, otherwise silent"
+msgstr ""
+
+#: ck.kernel.add:35 ck.kernel.update:34 of
+msgid "**(unlock_uid)** (*str*) -- unlock UID if was previously locked"
+msgstr ""
+
+#: ck.kernel.add:36 ck.kernel.update:35 of
+msgid "**(sort_keys)** (*str*) -- by default, 'yes'"
+msgstr ""
+
+#: ck.kernel.add:37 ck.kernel.update:36 of
+msgid "**(share)** (*str*) -- if 'yes', try to add via GIT"
+msgstr ""
+
+#: ck.kernel.add:38 ck.kernel.update:37 of
+msgid ""
+"**(skip_indexing)** (*str*) -- if 'yes', skip indexing even if it is "
+"globally on"
+msgstr ""
+
+#: ck.kernel.add:39 ck.kernel.update:38 of
+msgid ""
+"**(allow_multiple_aliases)** (*str*) -- if 'yes', allow multiple aliases "
+"for the same UID (needed for cKnowledge.io to publish renamed components "
+"with the same UID)"
+msgstr ""
+
+#: ck.kernel.add:43 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    Output from the 'create_entry' function"
+msgstr ""
+
+#: ck.kernel.add:51 of
+msgid "Output from the 'create_entry' function"
+msgstr ""
+
+#: ck.kernel.add_action:2 of
+msgid "Add a new action to the given CK module"
+msgstr ""
+
+#: ck.kernel.add_action:5 ck.kernel.list_actions:5 ck.kernel.pull:5
+#: ck.kernel.push:5 ck.kernel.remove_action:5 of
+msgid "**module_uoa** (*str*) -- must be \"module\""
+msgstr ""
+
+#: ck.kernel.add_action:6 ck.kernel.list_actions:6 ck.kernel.pull:6
+#: ck.kernel.push:6 ck.kernel.remove_action:6 of
+msgid "**data_uoa** (*str*) -- UOA of the module for the new action"
+msgstr ""
+
+#: ck.kernel.add_action:7 ck.kernel.remove_action:7 of
+msgid "**func** (*str*) -- action name"
+msgstr ""
+
+#: ck.kernel.add_action:8 of
+msgid "**(desc)** (*str*) -- action description"
+msgstr ""
+
+#: ck.kernel.add_action:9 of
+msgid ""
+"**(for_web)** (*str*) -- if 'yes', make it compatible with the CK web "
+"API, i.e. allow an access to this function in the CK server"
+msgstr ""
+
+#: ck.kernel.add_action:10 of
+msgid "**(skip_appending_dummy_code)** (*str*) -- if 'yes', do not append code"
+msgstr ""
+
+#: ck.kernel.add_action:12 ck.kernel.remove_action:9 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    Output from the 'update' function for the "
+"given CK module"
+msgstr ""
+
+#: ck.kernel.add_action:20 ck.kernel.remove_action:17 of
+msgid "Output from the 'update' function for the given CK module"
+msgstr ""
+
+#: ck.kernel.add_index:2 of
+msgid "Index CK entries using ElasticSearch or similar tools"
+msgstr ""
+
+#: ck.kernel.add_index:4 ck.kernel.convert_cm_to_ck:4 ck.kernel.delete_index:4
+#: ck.kernel.zip:4 of
+msgid "**(repo_uoa)** (*str*) -- CK repo UOA with wild cards"
+msgstr ""
+
+#: ck.kernel.add_index:5 ck.kernel.convert_cm_to_ck:5 ck.kernel.delete_index:5
+#: ck.kernel.zip:5 of
+msgid "**(module_uoa)** (*str*) -- CK module UOA with wild cards"
+msgstr ""
+
+#: ck.kernel.add_index:6 ck.kernel.convert_cm_to_ck:6 ck.kernel.delete_index:6
+#: ck.kernel.zip:6 of
+msgid "**(data_uoa)** (*str*) -- CK entry (data) UOA with wild cards"
+msgstr ""
+
+#: ck.kernel.add_index:7 ck.kernel.convert_cm_to_ck:7 of
+msgid ""
+"**(print_full)** (*str*) -- if 'yes', show CID "
+"(repo_uoa:module_uoa:data_uoa)"
+msgstr ""
+
+#: ck.kernel.add_index:8 ck.kernel.convert_cm_to_ck:8 ck.kernel.delete_index:7
+#: of
+msgid "**(print_time)** (*str*) -- if 'yes'. print elapse time at the end"
+msgstr ""
+
+#: ck.kernel.add_index:9 ck.kernel.convert_cm_to_ck:10 of
+msgid "**(time_out)** (*float*) -- time out in sec. (default -1, i.e. no timeout)"
+msgstr ""
+
+#: ck.files.save_json_to_file:9 ck.files.save_yaml_to_file:7
+#: ck.kernel.add_index:11 ck.kernel.browser:10 ck.kernel.check_lock:7
+#: ck.kernel.convert_cm_to_ck:12 ck.kernel.copy_path_to_clipboard:6
+#: ck.kernel.copy_to_clipboard:6 ck.kernel.delete_alias:12
+#: ck.kernel.delete_directory:6 ck.kernel.delete_file:10
+#: ck.kernel.delete_index:10 ck.kernel.download:14 ck.kernel.edit:12
+#: ck.kernel.guide:6 ck.kernel.init:6 ck.kernel.push:18 ck.kernel.pwiki:10
+#: ck.kernel.reload_repo_cache:6 ck.kernel.ren:17 ck.kernel.rm:15
+#: ck.kernel.save_json_to_file:9 ck.kernel.save_repo_cache:6
+#: ck.kernel.save_yaml_to_file:7 ck.kernel.substitute_str_in_file:8
+#: ck.kernel.webapi:6 ck.kernel.webhelp:6 ck.kernel.wiki:10 ck.kernel.zip:14
+#: ck.strings.copy_to_clipboard:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0"
+msgstr ""
+
+#: ck.kernel.browser:2 of
+msgid "Open web browser with the API if exists"
+msgstr ""
+
+#: ck.kernel.browser:4 of
+msgid "**(template)** (*str*) -- use this web template (CK wfe module)"
+msgstr ""
+
+#: ck.kernel.browser:6 ck.kernel.cid:5 ck.kernel.convert_entry_to_cid:6
+#: ck.kernel.download:5 ck.kernel.help:4 ck.kernel.list_files:5
+#: ck.kernel.pwiki:7 ck.kernel.tested:5 ck.kernel.wiki:7 of
+msgid "**(module_uoa)** (*str*) -- CK module UOA"
+msgstr ""
+
+#: ck.kernel.browser:7 ck.kernel.cid:6 ck.kernel.convert_entry_to_cid:8
+#: ck.kernel.info:6 ck.kernel.pwiki:8 ck.kernel.wiki:8 of
+msgid "**(data_uoa)** (*str*) -- CK entry (data) UOA"
+msgstr ""
+
+#: ck.kernel.browser:8 of
+msgid "**(extra_url)** (*str*) -- Extra URL"
+msgstr ""
+
+#: ck.kernel.cd:2 of
+msgid "CK action: print 'cd {path to CID}'"
+msgstr ""
+
+#: ck.kernel.cd:6 ck.kernel.cdc:6 of
+msgid "**data_uoa** (*str*) -- CK entry (data) UOA or"
+msgstr ""
+
+#: ck.kernel.cd:8 ck.kernel.cdc:8 of
+msgid "**cid** (*str*) -- CK CID"
+msgstr ""
+
+#: ck.kernel.cd:10 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    Output from the 'load' function    string "
+"(str): prepared string 'cd {path to entry}'"
+msgstr ""
+
+#: ck.kernel.cd:18 ck.kernel.cdc:18 ck.kernel.find:16 of
+msgid "Output from the 'load' function"
+msgstr ""
+
+#: ck.kernel.cd:20 of
+msgid "string (str): prepared string 'cd {path to entry}'"
+msgstr ""
+
+#: ck.kernel.cdc:2 of
+msgid "CK action: print 'cd {path to CID}' and copy to clipboard"
+msgstr ""
+
+#: ck.kernel.cdc:10 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    Output from the 'load' function"
+msgstr ""
+
+#: ck.kernel.check_lock:2 of
+msgid "Check if a given path is locked. Unlock if requested."
+msgstr ""
+
+#: ck.kernel.check_lock:4 of
+msgid "**path** (*str*) -- path to be checked/unlocked"
+msgstr ""
+
+#: ck.kernel.check_lock:5 ck.kernel.load:14 ck.kernel.set_lock:9 of
+msgid "**(unlock_uid)** (*str*) -- UID of the lock to release it"
+msgstr ""
+
+#: ck.kernel.check_version:2 of
+msgid "Compare a given version with the CK version"
+msgstr ""
+
+#: ck.kernel.check_version:4 of
+msgid "**version** (*str*) -- your version"
+msgstr ""
+
+#: ck.kernel.check_version:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    ok (str): if 'yes', your CK kernel version is"
+" outdated    current_version (str): your CK kernel version"
+msgstr ""
+
+#: ck.kernel.check_version:14 of
+msgid "ok (str): if 'yes', your CK kernel version is outdated"
+msgstr ""
+
+#: ck.kernel.check_version:16 of
+msgid "current_version (str): your CK kernel version"
+msgstr ""
+
+#: ck.kernel.check_writing:2 of
+msgid "Check is writing to a given repo with a given module is allowed"
+msgstr ""
+
+#: ck.kernel.check_writing:4 of
+msgid "**(module_uoa)** (*str*) -- module UOA"
+msgstr ""
+
+#: ck.kernel.check_writing:5 of
+msgid "**(module_uid)** (*str*) -- module UID"
+msgstr ""
+
+#: ck.kernel.check_writing:6 ck.kernel.edit:4 of
+msgid "**(repo_uoa)** (*str*) -- repo UOA"
+msgstr ""
+
+#: ck.kernel.check_writing:7 of
+msgid "**(repo_uid)** (*str*) -- repo UID"
+msgstr ""
+
+#: ck.kernel.check_writing:8 of
+msgid ""
+"**(repo_dict)** (*dict*) -- repo meta description with potential "
+"read/write permissions"
+msgstr ""
+
+#: ck.kernel.check_writing:9 of
+msgid ""
+"**(delete)** (*str*) -- if 'yes', check if global delete operation is "
+"allowed"
+msgstr ""
+
+#: ck.kernel.check_writing:11 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    (repo_dict) (dict): repo meta description if "
+"available"
+msgstr ""
+
+#: ck.kernel.check_writing:19 of
+msgid "(repo_dict) (dict): repo meta description if available"
+msgstr ""
+
+#: ck.kernel.cid:2 of
+msgid "CK action: get CID from the current path or from the input"
+msgstr ""
+
+#: ck.kernel.cid:7 of
+msgid "**If above is empty, detect CID in the current path !**"
+msgstr ""
+
+#: ck.kernel.cid:9 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    data_uoa (str): CK entry (data) UOA    "
+"module_uoa (str): CK module UOA    (repo_uoa) (str): CK repo UOA"
+msgstr ""
+
+#: ck.kernel.cid:17 ck.kernel.load:57 of
+msgid "data_uoa (str): CK entry (data) UOA"
+msgstr ""
+
+#: ck.kernel.cid:19 ck.kernel.find_path_to_data:30 ck.kernel.load:51
+#: ck.kernel.parse_cid:18 of
+msgid "module_uoa (str): CK module UOA"
+msgstr ""
+
+#: ck.kernel.cid:21 ck.kernel.parse_cid:20 of
+msgid "(repo_uoa) (str): CK repo UOA"
+msgstr ""
+
+#: ck.kernel.compare_dicts:12 of
+msgid "Compare two dictionaries recursively"
+msgstr ""
+
+#: ck.kernel.compare_dicts:4 of
+msgid "Note that if dict1 and dict2 has lists, the results will be as follows:"
+msgstr ""
+
+#: ck.kernel.compare_dicts:6 of
+msgid "dict1={\"key\":['a','b','c']} dict2={\"key\":['a','b']} EQUAL"
+msgstr ""
+
+#: ck.kernel.compare_dicts:10 of
+msgid "dict1={\"key\":['a','b']} dict2={\"key\":['a','b','c']} NOT EQUAL"
+msgstr ""
+
+#: ck.kernel.compare_dicts:14 ck.kernel.compare_flat_dicts:4 of
+msgid "**dict1** (*dict*) -- dictionary 1"
+msgstr ""
+
+#: ck.kernel.compare_dicts:15 ck.kernel.compare_flat_dicts:5 of
+msgid "**dict2** (*dict*) -- dictionary 2"
+msgstr ""
+
+#: ck.kernel.compare_dicts:16 ck.kernel.compare_flat_dicts:6
+#: ck.kernel.search_filter:9 of
+msgid "**(ignore_case)** (*str*) -- if 'yes', ignore case of letters"
+msgstr ""
+
+#: ck.kernel.compare_dicts:18 ck.kernel.compare_flat_dicts:10 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    equal (str); if 'yes' then dictionaries are "
+"equal"
+msgstr ""
+
+#: ck.kernel.compare_dicts:26 ck.kernel.compare_flat_dicts:18 of
+msgid "equal (str); if 'yes' then dictionaries are equal"
+msgstr ""
+
+#: ck.kernel.compare_flat_dicts:2 of
+msgid "Compare two CK flat dictionaries"
+msgstr ""
+
+#: ck.kernel.compare_flat_dicts:7 of
+msgid "**(space_as_none)** (*str*) -- if 'yes', consider \"\" as None"
+msgstr ""
+
+#: ck.kernel.compare_flat_dicts:8 of
+msgid "**(keys_to_ignore)** (*list*) -- list of keys to ignore (can be wildcards)"
+msgstr ""
+
+#: ck.kernel.convert_ck_list_to_dict:2 of
+msgid ""
+"Convert CK list to CK dict with unicode in UTF-8 (unification of "
+"interfaces)"
+msgstr ""
+
+#: ck.kernel.convert_ck_list_to_dict:4 of
+msgid "**(list)** -- list from the 'action' function in this kernel"
+msgstr ""
+
+#: ck.kernel.convert_ck_list_to_dict:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    ck_dict (dict):         action (str): CK "
+"action         cid (str): CK module UOA or CID (x means that it may not "
+"be really CID and has to be processed specially         cids (list): a "
+"list of multple CIDs from CMD (commands like copy, move, etc) [cid1, "
+"cid2, cid3, ...]         key1 (str): value1 from --key1=value1 or "
+"-key1=value1 or key1=value         key2 (str):         ...          key10"
+" (str):         ...         keys (str): keys/values from file specified "
+"by \"file_json\"; if file extension is .tmp,  it will be deleted after "
+"read!         keys (str): keys/values from cmd_json         unparsed "
+"(str): unparsed command line after --"
+msgstr ""
+
+#: ck.kernel.convert_ck_list_to_dict:14 of
+msgid "ck_dict (dict):"
+msgstr ""
+
+#: ck.kernel.convert_ck_list_to_dict:16 of
+msgid "action (str): CK action"
+msgstr ""
+
+#: ck.kernel.convert_ck_list_to_dict:18 of
+msgid ""
+"cid (str): CK module UOA or CID (x means that it may not be really CID "
+"and has to be processed specially"
+msgstr ""
+
+#: ck.kernel.convert_ck_list_to_dict:20 of
+msgid ""
+"cids (list): a list of multple CIDs from CMD (commands like copy, move, "
+"etc) [cid1, cid2, cid3, ...]"
+msgstr ""
+
+#: ck.kernel.convert_ck_list_to_dict:22 of
+msgid "key1 (str): value1 from --key1=value1 or -key1=value1 or key1=value"
+msgstr ""
+
+#: ck.kernel.convert_ck_list_to_dict:24 of
+msgid "key2 (str):"
+msgstr ""
+
+#: ck.kernel.convert_ck_list_to_dict:26 ck.kernel.convert_ck_list_to_dict:31 of
+msgid "..."
+msgstr ""
+
+#: ck.kernel.convert_ck_list_to_dict:29 of
+msgid "key10 (str):"
+msgstr ""
+
+#: ck.kernel.convert_ck_list_to_dict:33 of
+msgid ""
+"keys (str): keys/values from file specified by \"file_json\"; if file "
+"extension is .tmp,  it will be deleted after read!"
+msgstr ""
+
+#: ck.kernel.convert_ck_list_to_dict:35 of
+msgid "keys (str): keys/values from cmd_json"
+msgstr ""
+
+#: ck.kernel.convert_ck_list_to_dict:37 of
+msgid "unparsed (str): unparsed command line after --"
+msgstr ""
+
+#: ck.kernel.convert_cm_to_ck:2 ck.kernel.list_files:2 of
+msgid "List files in a given CK entry"
+msgstr ""
+
+#: ck.kernel.convert_cm_to_ck:2 ck.kernel.lower_list:2 of
+msgid "Target audience: internal"
+msgstr ""
+
+#: ck.kernel.convert_entry_to_cid:2 of
+msgid "Convert info about CK entry to CID"
+msgstr ""
+
+#: ck.kernel.convert_entry_to_cid:5 of
+msgid "**(repo_uid)** (*str*) -- CK repo UID"
+msgstr ""
+
+#: ck.kernel.convert_entry_to_cid:7 of
+msgid "**(module_uid)** (*str*) -- CK module UID"
+msgstr ""
+
+#: ck.kernel.convert_entry_to_cid:9 of
+msgid "**(data_uid)** (*str*) -- CK entry (data) UID"
+msgstr ""
+
+#: ck.kernel.convert_entry_to_cid:11 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    cuoa (str); module_uoa:data_uoa           "
+"(substituted with ? if can't find)    cid (str): module_uid:data_uid"
+"           (substituted with ? if can't find)    xcuoa (str): "
+"repo_uoa:module_uoa:data_uoa  (substituted with ? if can't find)    xcid "
+"(str): repo_uid:module_uid:data_uid  (substituted with ? if can't find)"
+msgstr ""
+
+#: ck.kernel.convert_entry_to_cid:19 of
+msgid ""
+"cuoa (str); module_uoa:data_uoa           (substituted with ? if can't "
+"find)"
+msgstr ""
+
+#: ck.kernel.convert_entry_to_cid:21 of
+msgid ""
+"cid (str): module_uid:data_uid           (substituted with ? if can't "
+"find)"
+msgstr ""
+
+#: ck.kernel.convert_entry_to_cid:23 of
+msgid ""
+"xcuoa (str): repo_uoa:module_uoa:data_uoa  (substituted with ? if can't "
+"find)"
+msgstr ""
+
+#: ck.kernel.convert_entry_to_cid:25 of
+msgid ""
+"xcid (str): repo_uid:module_uid:data_uid  (substituted with ? if can't "
+"find)"
+msgstr ""
+
+#: ck.kernel.convert_file_to_upload_string:2 of
+msgid "Convert file to a string for web-based upload"
+msgstr ""
+
+#: ck.kernel.convert_file_to_upload_string:4 of
+msgid "**filename** (*str*) -- file name to convert"
+msgstr ""
+
+#: ck.kernel.convert_file_to_upload_string:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    file_content_base64 (str): string that can be"
+" transmitted through Internet"
+msgstr ""
+
+#: ck.kernel.convert_file_to_upload_string:14 of
+msgid "file_content_base64 (str): string that can be transmitted through Internet"
+msgstr ""
+
+#: ck.kernel.convert_iso_time:2 of
+msgid "Convert iso text time to a datetime object"
+msgstr ""
+
+#: ck.kernel.convert_iso_time:4 of
+msgid "**iso_datetime** (*str*) -- date time as string in ISO standard"
+msgstr ""
+
+#: ck.kernel.convert_iso_time:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    datetime_obj (obj): datetime object"
+msgstr ""
+
+#: ck.kernel.convert_iso_time:14 of
+msgid "datetime_obj (obj): datetime object"
+msgstr ""
+
+#: ck.kernel.convert_json_str_to_dict:2 ck.strings.convert_json_str_to_dict:2
+#: of
+msgid "Convert string in a special format to dict (JSON)"
+msgstr ""
+
+#: ck.kernel.convert_json_str_to_dict:4 ck.strings.convert_json_str_to_dict:4
+#: of
+msgid ""
+"**str** (*str*) -- string (use ' instead of \", i.e. {'a':'b'} to avoid "
+"issues in CMD in Windows and Linux!)"
+msgstr ""
+
+#: ck.kernel.convert_json_str_to_dict:6 ck.strings.convert_json_str_to_dict:6
+#: of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    dict (dict): dict from json file"
+msgstr ""
+
+#: ck.kernel.convert_json_str_to_dict:14 ck.strings.convert_json_str_to_dict:14
+#: of
+msgid "dict (dict): dict from json file"
+msgstr ""
+
+#: ck.kernel.convert_str_key_to_int:2 of
+msgid "Support function for safe convert str to int"
+msgstr ""
+
+#: ck.kernel.convert_str_key_to_int:4 of
+msgid "**key** (*str*) -- variable to be converted to int"
+msgstr ""
+
+#: ck.kernel.convert_str_key_to_int:6 of
+msgid "*(int)* -- int(key) if key can be converted to int, or 0 otherwise"
+msgstr ""
+
+#: ck.kernel.convert_str_tags_to_list:4 of
+msgid "Split string by comma into a list of stripped strings"
+msgstr ""
+
+#: ck.kernel.convert_str_tags_to_list:4 of
+msgid "Used to process and strip tags"
+msgstr ""
+
+#: ck.kernel.convert_str_tags_to_list:6 of
+msgid "**i** (*list or string*) -- list or string to be splitted and stripped"
+msgstr ""
+
+#: ck.kernel.convert_str_tags_to_list:8 of
+msgid "*(list)* -- list of stripped strings"
+msgstr ""
+
+#: ck.kernel.convert_upload_string_to_file:2 of
+msgid "Convert upload string to file"
+msgstr ""
+
+#: ck.kernel.convert_upload_string_to_file:4 of
+msgid "**file_content_base64** (*str*) -- string transmitted through Internet"
+msgstr ""
+
+#: ck.kernel.convert_upload_string_to_file:5 of
+msgid "**(filename)** (*str*) -- file name to write (if empty, generate tmp file)"
+msgstr ""
+
+#: ck.kernel.convert_upload_string_to_file:7 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    filename (str): filename with full path    "
+"filename_ext (str): filename extension"
+msgstr ""
+
+#: ck.kernel.convert_upload_string_to_file:15 of
+msgid "filename (str): filename with full path"
+msgstr ""
+
+#: ck.kernel.convert_upload_string_to_file:17 of
+msgid "filename_ext (str): filename extension"
+msgstr ""
+
+#: ck.kernel.copy:2 ck.kernel.cp:2 of
+msgid "CK action: copy or move CK entry"
+msgstr ""
+
+#: ck.kernel.copy:4 of
+msgid "**See \"cp\" function**"
+msgstr ""
+
+#: ck.kernel.copy:6 of
+msgid "See \"cp\" function"
+msgstr ""
+
+#: ck.kernel.copy_path_to_clipboard:2 of
+msgid "Copy current path to clipboard (productivity function)"
+msgstr ""
+
+#: ck.kernel.copy_path_to_clipboard:4 of
+msgid "**(add_quotes)** (*str*) -- if 'yes', add quotes"
+msgstr ""
+
+#: ck.kernel.copy_to_clipboard:2 ck.strings.copy_to_clipboard:2 of
+msgid "Copy string to clipboard if supported by OS (requires Tk or pyperclip)"
+msgstr ""
+
+#: ck.kernel.copy_to_clipboard:4 ck.strings.copy_to_clipboard:4 of
+msgid "**string** (*str*) -- string to copy"
+msgstr ""
+
+#: ck.kernel.cp:7 ck.kernel.mv:7 of
+msgid ""
+"**xcids** (*list*) -- use original name from xcids[0] and new name from "
+"xcids[1] ({'repo_uoa', 'module_uoa', 'data_uoa'}) or"
+msgstr ""
+
+#: ck.kernel.cp:9 ck.kernel.mv:9 of
+msgid "**(new_repo_uoa)** (*str*) -- new CK repo UOA"
+msgstr ""
+
+#: ck.kernel.cp:10 ck.kernel.mv:10 of
+msgid "**(new_module_uoa)** (*str*) -- new CK module UOA"
+msgstr ""
+
+#: ck.kernel.cp:11 of
+msgid "**new_data_uoa** (*str*) -- new CK data alias"
+msgstr ""
+
+#: ck.kernel.cp:12 ck.kernel.mv:12 of
+msgid ""
+"**(new_data_uid)** (*str*) -- new CK entry (data) UID (leave empty to "
+"generate the new one)"
+msgstr ""
+
+#: ck.kernel.cp:13 of
+msgid "**(move)** (*str*) -- if 'yes', remove the old entry"
+msgstr ""
+
+#: ck.kernel.cp:14 of
+msgid "**(keep_old_uid)** (*str*) -- if 'yes', keep the old UID"
+msgstr ""
+
+#: ck.kernel.cp:15 of
+msgid "**(without_files)** (*str*) -- if 'yes', do not move/copy files"
+msgstr ""
+
+#: ck.kernel.cp:17 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    Output from the \"add\" function"
+msgstr ""
+
+#: ck.kernel.cp:25 of
+msgid "Output from the \"add\" function"
+msgstr ""
+
+#: ck.kernel.create_entry:2 of
+msgid "Create a CK entry with UID or alias in the given path"
+msgstr ""
+
+#: ck.kernel.create_entry:4 of
+msgid "**path** (*str*) -- path where to create an entry"
+msgstr ""
+
+#: ck.kernel.create_entry:5 of
+msgid ""
+"**(split_dirs)** (*int*) -- number of first characters to split directory"
+" into subdirectories to be able to handle many entries (similar to "
+"Mediawiki)"
+msgstr ""
+
+#: ck.kernel.create_entry:7 of
+msgid "**(data_uoa)** (*str*) -- CK entry UOA"
+msgstr ""
+
+#: ck.kernel.create_entry:8 of
+msgid "**(data_uid)** (*str*) -- if data_uoa is an alias, we can force data UID"
+msgstr ""
+
+#: ck.kernel.create_entry:9 of
+msgid ""
+"**(force)** (*str*) -- if 'yes', force to create CK entry even if related"
+" directory already exists"
+msgstr ""
+
+#: ck.kernel.create_entry:10 of
+msgid ""
+"**(allow_multiple_aliases)** (*str*) -- (needed for cKnowledge.io to "
+"publish renamed components with the same UID)"
+msgstr ""
+
+#: ck.kernel.create_entry:13 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    path (str): path to the created CK entry    "
+"data_uid (str): UID of the created CK entry    data_alias (str): alias of"
+" the created CK entry    data_uoa (str): alias or UID (if alias==\"\") of"
+" the created CK entry"
+msgstr ""
+
+#: ck.kernel.create_entry:21 of
+msgid "path (str): path to the created CK entry"
+msgstr ""
+
+#: ck.kernel.create_entry:23 of
+msgid "data_uid (str): UID of the created CK entry"
+msgstr ""
+
+#: ck.kernel.create_entry:25 of
+msgid "data_alias (str): alias of the created CK entry"
+msgstr ""
+
+#: ck.kernel.create_entry:27 of
+msgid "data_uoa (str): alias or UID (if alias==\"\") of the created CK entry"
+msgstr ""
+
+#: ck.kernel.debug_out:2 of
+msgid "Universal debug print of a dictionary while removing unprintable parts"
+msgstr ""
+
+#: ck.kernel.debug_out:4 of
+msgid "**i** (*dict*) -- dictionary to print"
+msgstr ""
+
+#: ck.kernel.debug_out:6 of
+msgid "*(dict)* --  Unified CK dictionary:     return (int): 0"
+msgstr ""
+
+#: ck.kernel.debug_out:10 of
+msgid "return (int): 0"
+msgstr ""
+
+#: ck.kernel.delete:2 ck.kernel.remove:2 ck.kernel.rm:2 of
+msgid "CK action: delete CK entry or CK entries"
+msgstr ""
+
+#: ck.kernel.delete:4 ck.kernel.remove:4 of
+msgid "**See \"rm\" function**"
+msgstr ""
+
+#: ck.kernel.delete:6 ck.kernel.remove:6 of
+msgid "See \"rm\" function"
+msgstr ""
+
+#: ck.kernel.delete_alias:2 of
+msgid "Delete the CK entry alias from a given path"
+msgstr ""
+
+#: ck.kernel.delete_alias:4 of
+msgid "**path** (*str*) -- path to the CK entry"
+msgstr ""
+
+#: ck.kernel.delete_alias:5 of
+msgid "**data_uid** (*str*) -- CK entry UID"
+msgstr ""
+
+#: ck.kernel.delete_alias:6 of
+msgid "**(data_alias)** (*str*) -- CK entry alias"
+msgstr ""
+
+#: ck.kernel.delete_alias:7 of
+msgid ""
+"**(repo_dict)** (*str*) -- meta description of a given CK repository to "
+"check if there is an automatic sync with a Git repository"
+msgstr ""
+
+#: ck.kernel.delete_alias:10 of
+msgid "**(share)** (*str*) -- if 'yes', try to delete using the Git client"
+msgstr ""
+
+#: ck.kernel.delete_directory:2 of
+msgid "Delete a given directory with all sub-directories (must be very careful)"
+msgstr ""
+
+#: ck.kernel.delete_directory:4 of
+msgid "**path** (*str*) -- path to delete"
+msgstr ""
+
+#: ck.kernel.delete_file:2 of
+msgid "Delete file from the CK entry"
+msgstr ""
+
+#: ck.kernel.delete_file:7 of
+msgid "**filename** (*str*) -- filename to delete including relative path"
+msgstr ""
+
+#: ck.kernel.delete_file:8 of
+msgid "**(force)** (*str*) -- if 'yes', force deleting without questions"
+msgstr ""
+
+#: ck.kernel.delete_index:2 of
+msgid ""
+"Delete index for a given CK entry in the ElasticSearch or a similar "
+"services"
+msgstr ""
+
+#: ck.kernel.delete_index:8 of
+msgid "**(time_out)** (*float*) -- in sec. (default -1, i.e. no timeout)"
+msgstr ""
+
+#: ck.kernel.detect_cid_in_current_path:2 of
+msgid "Detect CID in the current directory"
+msgstr ""
+
+#: ck.kernel.detect_cid_in_current_path:4 of
+msgid "**(path)** (*str*) -- path, or current directory if path==\"\""
+msgstr ""
+
+#: ck.kernel.detect_cid_in_current_path:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    repo_uoa (str): CK repo UOA    repo_uid "
+"(str): CK repo UID    repo_alias (str): CK repo alias    (module_uoa) "
+"(str): CK module UOA    (module_uid) (str): CK module UID    "
+"(module_alias) (str): CK module alias    (data_uoa) (str): CK entry "
+"(data) UOA    (data_uid) (str): CK entry (data) UID    (data_alias) "
+"(str): CK entry (data) alias"
+msgstr ""
+
+#: ck.kernel.detect_cid_in_current_path:14 ck.kernel.find_path_to_data:24
+#: ck.kernel.find_path_to_repo:17 ck.kernel.find_repo_by_path:14
+#: ck.kernel.load:45 ck.kernel.load_repo_info_from_cache:14 of
+msgid "repo_uoa (str): CK repo UOA"
+msgstr ""
+
+#: ck.kernel.detect_cid_in_current_path:16 ck.kernel.find_path_to_data:26
+#: ck.kernel.find_path_to_repo:19 ck.kernel.find_repo_by_path:16
+#: ck.kernel.load:47 ck.kernel.load_repo_info_from_cache:16 of
+msgid "repo_uid (str): CK repo UID"
+msgstr ""
+
+#: ck.kernel.detect_cid_in_current_path:18 ck.kernel.find_path_to_data:28
+#: ck.kernel.find_path_to_repo:21 ck.kernel.find_repo_by_path:18
+#: ck.kernel.load:49 ck.kernel.load_repo_info_from_cache:18 of
+msgid "repo_alias (str): CK repo alias"
+msgstr ""
+
+#: ck.kernel.detect_cid_in_current_path:20 of
+msgid "(module_uoa) (str): CK module UOA"
+msgstr ""
+
+#: ck.kernel.detect_cid_in_current_path:22 of
+msgid "(module_uid) (str): CK module UID"
+msgstr ""
+
+#: ck.kernel.detect_cid_in_current_path:24 of
+msgid "(module_alias) (str): CK module alias"
+msgstr ""
+
+#: ck.kernel.detect_cid_in_current_path:26 of
+msgid "(data_uoa) (str): CK entry (data) UOA"
+msgstr ""
+
+#: ck.kernel.detect_cid_in_current_path:28 of
+msgid "(data_uid) (str): CK entry (data) UID"
+msgstr ""
+
+#: ck.kernel.detect_cid_in_current_path:30 of
+msgid "(data_alias) (str): CK entry (data) alias"
+msgstr ""
+
+#: ck.kernel.download:2 of
+msgid "Download CK entry from remote host (experimental)"
+msgstr ""
+
+#: ck.kernel.download:6 ck.kernel.tested:6 of
+msgid "**(data_uoa)** (*str*) -- CK data UOA"
+msgstr ""
+
+#: ck.kernel.download:7 of
+msgid "**(version)** (*str*) -- version (the latest one if skipped)"
+msgstr ""
+
+#: ck.kernel.download:8 of
+msgid "**(new_repo_uoa)** (*str*) -- target CK repo UOA, \"local\" by default"
+msgstr ""
+
+#: ck.kernel.download:9 of
+msgid ""
+"**(skip_module_check)** (*str*) -- if 'yes', do not check if module for a"
+" given component exists"
+msgstr ""
+
+#: ck.kernel.download:10 of
+msgid "**(all)** (*str*) -- if 'yes', download dependencies"
+msgstr ""
+
+#: ck.kernel.download:11 of
+msgid ""
+"**(force)** (*str*) -- if 'yes, force download even if components already"
+" exists"
+msgstr ""
+
+#: ck.kernel.download:12 of
+msgid ""
+"**(tags)** (*str*) -- download components using tags separated by comma "
+"(usually soft/package)"
+msgstr ""
+
+#: ck.kernel.dump_json:2 ck.kernel.dumps_json:2 ck.strings.dump_json:2 of
+msgid "Dump dictionary (json) to a string"
+msgstr ""
+
+#: ck.kernel.dump_json:4 ck.kernel.dumps_json:4 ck.strings.dump_json:4 of
+msgid "**dict** (*dict*) -- dictionary to convert to a string"
+msgstr ""
+
+#: ck.kernel.dump_json:5 ck.kernel.dumps_json:5 ck.strings.dump_json:5 of
+msgid "**(skip_indent)** (*str*) -- if 'yes', skip indent"
+msgstr ""
+
+#: ck.files.save_json_to_file:6 ck.kernel.dump_json:6 ck.kernel.dumps_json:6
+#: ck.kernel.save_json_to_file:6 ck.strings.dump_json:6 of
+msgid "**(sort_keys)** (*str*) -- if 'yes', sort keys"
+msgstr ""
+
+#: ck.kernel.dump_json:8 ck.kernel.dumps_json:8 ck.strings.dump_json:8 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    string (str): JSON string"
+msgstr ""
+
+#: ck.kernel.dump_json:16 ck.kernel.dumps_json:16 ck.strings.dump_json:16 of
+msgid "string (str): JSON string"
+msgstr ""
+
+#: ck.kernel.edit:2 of
+msgid "CK action: edit data meta-description through external editor"
+msgstr ""
+
+#: ck.kernel.edit:5 of
+msgid "**module_uoa** (*str*) -- module UOA"
+msgstr ""
+
+#: ck.kernel.edit:6 of
+msgid "**data_uoa** (*str*) -- data UOA"
+msgstr ""
+
+#: ck.kernel.edit:7 of
+msgid ""
+"**(ignore_update)** (*str*) -- (default==yes) if 'yes', do not add info "
+"about update"
+msgstr ""
+
+#: ck.kernel.edit:8 of
+msgid "**(sort_keys)** (*str*) -- (default==yes) if 'yes', sort keys"
+msgstr ""
+
+#: ck.kernel.edit:9 of
+msgid ""
+"**(edit_desc)** (*str*) -- if 'yes', edit description rather than meta "
+"(useful for compiler descriptions)"
+msgstr ""
+
+#: ck.kernel.eout:4 of
+msgid ""
+"Universal print of a unicode error string in the UTF-8 or other format to"
+" stderr"
+msgstr ""
+
+#: ck.kernel.eout:4 ck.kernel.out:4 of
+msgid "Supports: Python 2.x and 3.x"
+msgstr ""
+
+#: ck.kernel.eout:6 ck.kernel.out:7 of
+msgid "**s** (*str*) -- unicode string to print"
+msgstr ""
+
+#: ck.kernel.eout:8 ck.kernel.out:9 ck.kernel.system_with_timeout_kill:6 of
+msgid "None"
+msgstr ""
+
+#: ck.kernel.err:11 of
+msgid "Print error to stderr and exit with a given return code"
+msgstr ""
+
+#: ck.kernel.err:4 of
+msgid "Used in Bash and Python scripts to exit on error"
+msgstr ""
+
+#: ck.kernel.err:11 ck.kernel.jerr:11 of
+msgid "Example:"
+msgstr ""
+
+#: ck.kernel.err:7 ck.kernel.jerr:7 of
+msgid "import ck.kernel as ck"
+msgstr ""
+
+#: ck.kernel.err:9 ck.kernel.jerr:9 of
+msgid ""
+"r=ck.access({'action':'load', 'module_uoa':'tmp', 'data_uoa':'some tmp "
+"entry'})"
+msgstr ""
+
+#: ck.kernel.err:11 of
+msgid "if r['return']>0: ck.err(r)"
+msgstr ""
+
+#: ck.kernel.err:13 ck.kernel.jerr:13 of
+msgid "**r** (*dict*) -- output dictionary of any standard CK function:"
+msgstr ""
+
+#: ck.kernel.err:15 ck.kernel.jerr:15 of
+msgid "return (int): return code"
+msgstr ""
+
+#: ck.kernel.err:17 ck.kernel.jerr:17 of
+msgid "(error) (str): error string if return>0"
+msgstr ""
+
+#: ck.kernel.err:19 of
+msgid "None - exits script!"
+msgstr ""
+
+#: ck.kernel.find:2 of
+msgid "CK action: find CK entry via the 'load' function"
+msgstr ""
+
+#: ck.kernel.find:8 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    Output from the 'load' function    "
+"number_of_entries (int): total number of found entries"
+msgstr ""
+
+#: ck.kernel.find:18 of
+msgid "number_of_entries (int): total number of found entries"
+msgstr ""
+
+#: ck.kernel.find_path_to_data:4 of
+msgid "Find path to CK sub-directory"
+msgstr ""
+
+#: ck.kernel.find_path_to_data:4 of
+msgid ""
+"First search in the default repo, then in the local repo, and then in all"
+" installed repos"
+msgstr ""
+
+#: ck.kernel.find_path_to_data:8 ck.kernel.search_string_filter:6 of
+msgid "**data_uoa** (*str*) -- CK data UOA"
+msgstr ""
+
+#: ck.kernel.find_path_to_data:10 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    path (str): path to CK entry (CK data)    "
+"path_module (str): path to CK module entry (part of the CK entry)    "
+"path_repo (str): path to the CK repository with this entry    repo_uoa "
+"(str): CK repo UOA    repo_uid (str): CK repo UID    repo_alias (str): CK"
+" repo alias    module_uoa (str): CK module UOA    module_uid (str): CK "
+"module UID    module_alias (str): CK module alias    uoa (str): CK sub-"
+"directory UOA    uid (str): CK sub-directory UID    alias (str): CK sub-"
+"directory alias"
+msgstr ""
+
+#: ck.kernel.find_path_to_data:18 of
+msgid "path (str): path to CK entry (CK data)"
+msgstr ""
+
+#: ck.kernel.find_path_to_data:20 of
+msgid "path_module (str): path to CK module entry (part of the CK entry)"
+msgstr ""
+
+#: ck.kernel.find_path_to_data:22 of
+msgid "path_repo (str): path to the CK repository with this entry"
+msgstr ""
+
+#: ck.kernel.find_path_to_data:32 ck.kernel.load:53 of
+msgid "module_uid (str): CK module UID"
+msgstr ""
+
+#: ck.kernel.find_path_to_data:34 ck.kernel.load:55 of
+msgid "module_alias (str): CK module alias"
+msgstr ""
+
+#: ck.kernel.find_path_to_data:36 of
+msgid "uoa (str): CK sub-directory UOA"
+msgstr ""
+
+#: ck.kernel.find_path_to_data:38 of
+msgid "uid (str): CK sub-directory UID"
+msgstr ""
+
+#: ck.kernel.find_path_to_data:40 of
+msgid "alias (str): CK sub-directory alias"
+msgstr ""
+
+#: ck.kernel.find_path_to_entry:2 of
+msgid "Find path to CK entry (CK data) while checking both UID and alias."
+msgstr ""
+
+#: ck.kernel.find_path_to_entry:4 ck.kernel.load_meta_from_path:4 of
+msgid "**path** (*str*) -- path to a data entry"
+msgstr ""
+
+#: ck.kernel.find_path_to_entry:5 of
+msgid "**data_uoa** (*str*) -- CK entry UOA (CK data)"
+msgstr ""
+
+#: ck.kernel.find_path_to_entry:6 of
+msgid ""
+"**(split_dirs)** (*int/str*) -- number of first characters to split "
+"directory into subdirectories to be able to handle many entries (similar "
+"to Mediawiki)"
+msgstr ""
+
+#: ck.kernel.find_path_to_entry:9 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    path (str): path to CK entry    data_uid "
+"(str): CK entry UID    data_alias (str): CK entry alias    data_uoa "
+"(str): CK entry alias of UID, if alias is empty"
+msgstr ""
+
+#: ck.kernel.find_path_to_entry:17 of
+msgid "path (str): path to CK entry"
+msgstr ""
+
+#: ck.kernel.find_path_to_entry:19 of
+msgid "data_uid (str): CK entry UID"
+msgstr ""
+
+#: ck.kernel.find_path_to_entry:21 of
+msgid "data_alias (str): CK entry alias"
+msgstr ""
+
+#: ck.kernel.find_path_to_entry:23 of
+msgid "data_uoa (str): CK entry alias of UID, if alias is empty"
+msgstr ""
+
+#: ck.kernel.find_path_to_repo:2 of
+msgid "Find path for a given CK repo"
+msgstr ""
+
+#: ck.kernel.find_path_to_repo:4 of
+msgid ""
+"**(repo_uoa)** (*str*) -- CK repo UOA. If empty, get the path to the "
+"default repo (inside CK framework)"
+msgstr ""
+
+#: ck.kernel.find_path_to_repo:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    dict (dict): CK repo meta description from "
+"the cache   path (str): path to this repo    repo_uoa (str): CK repo UOA"
+"    repo_uid (str): CK repo UID    repo_alias (str): CK repo alias"
+msgstr ""
+
+#: ck.kernel.find_path_to_repo:14 of
+msgid ""
+"dict (dict): CK repo meta description from the cache path (str): path to "
+"this repo"
+msgstr ""
+
+#: ck.kernel.find_repo_by_path:2 of
+msgid "Find CK repo info by path"
+msgstr ""
+
+#: ck.kernel.find_repo_by_path:4 of
+msgid "**path** (*str*)"
+msgstr ""
+
+#: ck.kernel.find_repo_by_path:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    repo_uoa (str): CK repo UOA    repo_uid "
+"(str): CK repo UID    repo_alias (str): CK repo alias"
+msgstr ""
+
+#: ck.kernel.find_string_in_dict_or_list:2 of
+msgid "Find a string in a dict or list"
+msgstr ""
+
+#: ck.kernel.find_string_in_dict_or_list:4 of
+msgid "**dict** (*dict or list*) -- dict or list to search"
+msgstr ""
+
+#: ck.kernel.find_string_in_dict_or_list:5 of
+msgid "**(search_string)** (*str*) -- search string"
+msgstr ""
+
+#: ck.kernel.find_string_in_dict_or_list:6 of
+msgid "**(ignore_case)** (*str*) -- if 'yes' then ignore case of letters"
+msgstr ""
+
+#: ck.kernel.find_string_in_dict_or_list:8 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    found (str): if 'yes', string found"
+msgstr ""
+
+#: ck.kernel.find_string_in_dict_or_list:16 of
+msgid "found (str): if 'yes', string found"
+msgstr ""
+
+#: ck.kernel.flatten_dict:1 of
+msgid ""
+"Any list item is converted to @number=value Any dict item is converted to"
+" #key=value # is always added at the beginning"
+msgstr ""
+
+#: ck.kernel.flatten_dict:11 of
+msgid "Input:  {"
+msgstr ""
+
+#: ck.kernel.flatten_dict:6 of
+msgid "dict         - python dictionary"
+msgstr ""
+
+#: ck.kernel.flatten_dict:8 of
+msgid "(prefix)     - prefix (for recursion)"
+msgstr ""
+
+#: ck.kernel.flatten_dict:10 of
+msgid "(prune_keys) - list of keys to prune (can have wildcards)"
+msgstr ""
+
+#: ck.kernel.flatten_dict:11 ck.kernel.flatten_dict:18 ck.kernel.list_data:54
+#: ck.kernel.list_tags:18 ck.kernel.perform_action:26 ck.kernel.search:56 of
+msgid "}"
+msgstr ""
+
+#: ck.kernel.flatten_dict:17 of
+msgid "Output: {"
+msgstr ""
+
+#: ck.kernel.flatten_dict:14 of
+msgid "return  - return code =  0, if successful"
+msgstr ""
+
+#: ck.kernel.flatten_dict:16 of
+msgid "(error) - error text if return > 0 dict    - flattened dictionary"
+msgstr ""
+
+#: ck.kernel.flatten_dict_internal:2
+#: ck.kernel.flatten_dict_internal_check_key:2 of
+msgid "Convert dictionary into the CK flat format"
+msgstr ""
+
+#: ck.kernel.flatten_dict_internal:2 of
+msgid "Target audience: internal use for recursion"
+msgstr ""
+
+#: ck.kernel.flatten_dict_internal:4 of
+msgid "**a** (*any*)"
+msgstr ""
+
+#: ck.kernel.flatten_dict_internal:5 of
+msgid "**aa** (*dict*) -- target dict"
+msgstr ""
+
+#: ck.kernel.flatten_dict_internal:6
+#: ck.kernel.flatten_dict_internal_check_key:4 of
+msgid "**prefix** (*str*) -- key prefix"
+msgstr ""
+
+#: ck.kernel.flatten_dict_internal:7
+#: ck.kernel.flatten_dict_internal_check_key:5 of
+msgid "**pk** -- aggregated key?"
+msgstr ""
+
+#: ck.kernel.flatten_dict_internal:9 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    dict (dict): pass dict a from the input"
+msgstr ""
+
+#: ck.kernel.flatten_dict_internal:17 of
+msgid "dict (dict): pass dict a from the input"
+msgstr ""
+
+#: ck.kernel.flatten_dict_internal_check_key:2 ck.kernel.init:2 of
+msgid "Target audience: internal use"
+msgstr ""
+
+#: ck.kernel.flatten_dict_internal_check_key:7 of
+msgid "*(bool)* -- key must be added if True"
+msgstr ""
+
+#: ck.kernel.gen_tmp_file:2 of
+msgid "Generate temporary files"
+msgstr ""
+
+#: ck.kernel.gen_tmp_file:4 of
+msgid "**(suffix)** (*str*) -- temp file suffix"
+msgstr ""
+
+#: ck.kernel.gen_tmp_file:5 of
+msgid "**(prefix)** (*str*) -- temp file prefix"
+msgstr ""
+
+#: ck.kernel.gen_tmp_file:6 of
+msgid "**(remove_dir)** (*str*) -- if 'yes', remove dir"
+msgstr ""
+
+#: ck.kernel.gen_tmp_file:8 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    file_name (str): temp file name"
+msgstr ""
+
+#: ck.kernel.gen_tmp_file:16 of
+msgid "file_name (str): temp file name"
+msgstr ""
+
+#: ck.kernel.gen_uid:2 of
+msgid "Generate valid CK UID"
+msgstr ""
+
+#: ck.kernel.gen_uid:4 ck.kernel.reinit:4 ck.kernel.save_state:7 of
+msgid "**None**"
+msgstr ""
+
+#: ck.kernel.gen_uid:6 ck.kernel.uid:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    data_uid (str): UID in string format (16 "
+"lowercase characters 0..9,a..f)"
+msgstr ""
+
+#: ck.kernel.gen_uid:14 ck.kernel.uid:14 of
+msgid "data_uid (str): UID in string format (16 lowercase characters 0..9,a..f)"
+msgstr ""
+
+#: ck.kernel.get_api:2 of
+msgid "Print API from the CK module for a given action"
+msgstr ""
+
+#: ck.kernel.get_api:4 of
+msgid ""
+"**(path)** (*str*) -- path to a CK module, if comes from the access "
+"function or"
+msgstr ""
+
+#: ck.kernel.get_api:6 of
+msgid "**(module_uoa)** (*str*) -- if comes from CMD"
+msgstr ""
+
+#: ck.kernel.get_api:7 of
+msgid "**(func)** -- API function name"
+msgstr ""
+
+#: ck.kernel.get_api:8 of
+msgid "**(out)** -- how to output this info"
+msgstr ""
+
+#: ck.kernel.get_api:10 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    title (str): title string    desc (str): "
+"original description    module (str): CK module name    api (str): api"
+"    line (str): description string in the CK module"
+msgstr ""
+
+#: ck.kernel.get_api:18 of
+msgid "title (str): title string"
+msgstr ""
+
+#: ck.kernel.get_api:20 of
+msgid "desc (str): original description"
+msgstr ""
+
+#: ck.kernel.get_api:22 of
+msgid "module (str): CK module name"
+msgstr ""
+
+#: ck.kernel.get_api:24 of
+msgid "api (str): api"
+msgstr ""
+
+#: ck.kernel.get_api:26 of
+msgid "line (str): description string in the CK module"
+msgstr ""
+
+#: ck.kernel.get_by_flat_key:2 of
+msgid "Get a value from a dict by the CK flat key"
+msgstr ""
+
+#: ck.kernel.get_by_flat_key:4 ck.kernel.set_by_flat_key:4 of
+msgid "**dict** (*dict*) -- dictionary"
+msgstr ""
+
+#: ck.kernel.get_by_flat_key:5 ck.kernel.set_by_flat_key:5 of
+msgid "**key** (*str*) -- CK flat key"
+msgstr ""
+
+#: ck.kernel.get_by_flat_key:7 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    value (any): value or None, if key doesn't "
+"exist"
+msgstr ""
+
+#: ck.kernel.get_by_flat_key:15 of
+msgid "value (any): value or None, if key doesn't exist"
+msgstr ""
+
+#: ck.kernel.get_current_date_time:2 of
+msgid "Get current date and time"
+msgstr ""
+
+#: ck.kernel.get_current_date_time:4 ck.kernel.guide:4 ck.kernel.init:4
+#: ck.kernel.path:4 ck.kernel.python_version:4 ck.kernel.save_repo_cache:4
+#: ck.kernel.short_help:4 ck.kernel.status:4 ck.kernel.uid:4
+#: ck.kernel.version:4 of
+msgid "**(dict)** -- empty dict"
+msgstr ""
+
+#: ck.kernel.get_current_date_time:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    array (dict); dict with date and time      - "
+"date_year (str)     - date_month (str)     - date_day (str)     - "
+"time_hour (str)     - time_minute (str)     - time_second (str)    "
+"iso_datetime (str): date and time in ISO format"
+msgstr ""
+
+#: ck.kernel.get_current_date_time:14 of
+msgid "array (dict); dict with date and time"
+msgstr ""
+
+#: ck.kernel.get_current_date_time:16 of
+msgid "date_year (str)"
+msgstr ""
+
+#: ck.kernel.get_current_date_time:17 of
+msgid "date_month (str)"
+msgstr ""
+
+#: ck.kernel.get_current_date_time:18 of
+msgid "date_day (str)"
+msgstr ""
+
+#: ck.kernel.get_current_date_time:19 of
+msgid "time_hour (str)"
+msgstr ""
+
+#: ck.kernel.get_current_date_time:20 of
+msgid "time_minute (str)"
+msgstr ""
+
+#: ck.kernel.get_current_date_time:21 of
+msgid "time_second (str)"
+msgstr ""
+
+#: ck.kernel.get_current_date_time:23 of
+msgid "iso_datetime (str): date and time in ISO format"
+msgstr ""
+
+#: ck.kernel.get_default_repo:2 of
+msgid "Print path to the default repo"
+msgstr ""
+
+#: ck.files.save_text_file:6 ck.kernel.get_default_repo:4
+#: ck.kernel.save_text_file:6 of
+msgid "Args:"
+msgstr ""
+
+#: ck.kernel.get_default_repo:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    path (str): path"
+msgstr ""
+
+#: ck.kernel.get_default_repo:14 of
+msgid "path (str): path"
+msgstr ""
+
+#: ck.kernel.get_from_dicts:2 of
+msgid "Get value from one dict, remove it from there and move to another"
+msgstr ""
+
+#: ck.kernel.get_from_dicts:4 of
+msgid "**dict1** (*dict*) -- first check in this dict (and remove if there)"
+msgstr ""
+
+#: ck.kernel.get_from_dicts:5 of
+msgid "**key** (*str*) -- key in the dict1"
+msgstr ""
+
+#: ck.kernel.get_from_dicts:6 of
+msgid "**default_value** (*str*) -- default value if not found"
+msgstr ""
+
+#: ck.kernel.get_from_dicts:7 of
+msgid "**dict2** (*dict*) -- then check key in this dict"
+msgstr ""
+
+#: ck.kernel.get_from_dicts:9 of
+msgid "*(any)* -- value from the dictionary"
+msgstr ""
+
+#: ck.kernel.get_os_ck:2 of
+msgid "Get host platform name (currently win or linux) and OS bits"
+msgstr ""
+
+#: ck.kernel.get_os_ck:4 of
+msgid "**(bits)** (*int*) -- force OS bits"
+msgstr ""
+
+#: ck.kernel.get_os_ck:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    platform (str): 'win' or 'linux'    bits "
+"(str): OS bits in string (32 or 64)    python_bits (str): Python "
+"installation bits (32 or 64)"
+msgstr ""
+
+#: ck.kernel.get_os_ck:14 of
+msgid "platform (str): 'win' or 'linux'"
+msgstr ""
+
+#: ck.kernel.get_os_ck:16 of
+msgid "bits (str): OS bits in string (32 or 64)"
+msgstr ""
+
+#: ck.kernel.get_os_ck:18 of
+msgid "python_bits (str): Python installation bits (32 or 64)"
+msgstr ""
+
+#: ck.kernel.get_split_dir_number:2 of
+msgid "Support function for checking splitting entry number"
+msgstr ""
+
+#: ck.kernel.get_split_dir_number:4 of
+msgid "**repo_dict** (*dict*) -- dictionary with CK repositories"
+msgstr ""
+
+#: ck.kernel.get_split_dir_number:5 of
+msgid "**module_uid** (*str*) -- requested CK module UID"
+msgstr ""
+
+#: ck.kernel.get_split_dir_number:6 of
+msgid "**module_uoa** (*str*) -- requested CK module UOA"
+msgstr ""
+
+#: ck.kernel.get_split_dir_number:8 of
+msgid ""
+"*(int)* --  number of sub-directories for CK entries -        useful when"
+" holding millions of entries"
+msgstr ""
+
+#: ck.kernel.get_split_dir_number:8 of
+msgid "*(int)* --"
+msgstr ""
+
+#: ck.kernel.get_split_dir_number:10 of
+msgid "number of sub-directories for CK entries -"
+msgstr ""
+
+#: ck.kernel.get_split_dir_number:11 of
+msgid "useful when holding millions of entries"
+msgstr ""
+
+#: ck.kernel.get_version:2 of
+msgid "Get CK version"
+msgstr ""
+
+#: ck.kernel.get_version:4 of
+msgid "Args:    None"
+msgstr ""
+
+#: ck.kernel.get_version:6 ck.kernel.version:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    version (list): list of sub-versions starting"
+" from major version number    version_str (str): version string"
+msgstr ""
+
+#: ck.kernel.get_version:14 ck.kernel.version:14 of
+msgid "version (list): list of sub-versions starting from major version number"
+msgstr ""
+
+#: ck.kernel.get_version:16 ck.kernel.version:16 of
+msgid "version_str (str): version string"
+msgstr ""
+
+#: ck.kernel.guide:2 of
+msgid "Open web browser with the user/developer guide wiki"
+msgstr ""
+
+#: ck.kernel.help:2 of
+msgid "CK action: print help for a given module"
+msgstr ""
+
+#: ck.kernel.help:6 ck.kernel.short_help:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    help (str): string with the help text"
+msgstr ""
+
+#: ck.kernel.help:14 ck.kernel.short_help:14 of
+msgid "help (str): string with the help text"
+msgstr ""
+
+#: ck.kernel.index_module:4 of
+msgid ""
+"Support function for checking whether to index data using ElasticSearch "
+"or not ..."
+msgstr ""
+
+#: ck.kernel.index_module:4 of
+msgid "Useful to skip some sensitive data from global indexing."
+msgstr ""
+
+#: ck.kernel.index_module:6 of
+msgid "**module_uoa** (*str*) -- CK module UID or alias"
+msgstr ""
+
+#: ck.kernel.index_module:7 of
+msgid "**repo_uoa** (*str*) -- CK repo UID or alias"
+msgstr ""
+
+#: ck.kernel.index_module:9 of
+msgid "*(bool)* -- True if needs to index"
+msgstr ""
+
+#: ck.kernel.info:2 of
+msgid "CK action: print CK info about a given CK entry"
+msgstr ""
+
+#: ck.kernel.info:8 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    Keys from the \"load\" function"
+msgstr ""
+
+#: ck.kernel.info:16 of
+msgid "Keys from the \"load\" function"
+msgstr ""
+
+#: ck.kernel.init:2 of
+msgid "Inititalize CK (current instance - has a global state!)"
+msgstr ""
+
+#: ck.kernel.inp:4 of
+msgid "Universal input of unicode string in UTF-8 or other format"
+msgstr ""
+
+#: ck.kernel.inp:4 of
+msgid "Supports Python 2.x and 3.x"
+msgstr ""
+
+#: ck.kernel.inp:6 of
+msgid "**text** (*str*) -- text to print before the input"
+msgstr ""
+
+#: ck.kernel.inp:8 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    string (str): entered string"
+msgstr ""
+
+#: ck.kernel.inp:16 ck.kernel.input_json:14 of
+msgid "string (str): entered string"
+msgstr ""
+
+#: ck.kernel.input_json:2 of
+msgid "Input JSON from console (double enter to finish)"
+msgstr ""
+
+#: ck.kernel.input_json:4 of
+msgid "**text** (*str*) -- text to print"
+msgstr ""
+
+#: ck.kernel.input_json:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    string (str): entered string    dict (str): "
+"dictionary from JSON string"
+msgstr ""
+
+#: ck.kernel.input_json:16 of
+msgid "dict (str): dictionary from JSON string"
+msgstr ""
+
+#: ck.kernel.is_uid:2 of
+msgid "Check if a string is a valid CK UID"
+msgstr ""
+
+#: ck.kernel.is_uid:4 ck.kernel.is_uoa:4 of
+msgid "**s** (*str*) -- string"
+msgstr ""
+
+#: ck.kernel.is_uid:6 of
+msgid "*(bool)* -- True if a string is a valid CK UID"
+msgstr ""
+
+#: ck.kernel.is_uoa:2 of
+msgid ""
+"Check if string is correct CK UOA, i.e. it does not have special "
+"characters including *, ?"
+msgstr ""
+
+#: ck.kernel.is_uoa:6 of
+msgid "*(bool)* -- True if a string is a valid CK UID or alias"
+msgstr ""
+
+#: ck.kernel.jerr:11 of
+msgid ""
+"Print error message for CK functions in the Jupyter Notebook and raise "
+"KeyboardInterrupt"
+msgstr ""
+
+#: ck.kernel.jerr:4 of
+msgid "Used in Jupyter Notebook"
+msgstr ""
+
+#: ck.kernel.jerr:11 of
+msgid "if r['return']>0: ck.jerr(r)"
+msgstr ""
+
+#: ck.kernel.jerr:19 of
+msgid "None - exits script with KeyboardInterrupt!"
+msgstr ""
+
+#: ck.kernel.list_actions:2 of
+msgid "List actions in the given CK module"
+msgstr ""
+
+#: ck.kernel.list_actions:8 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    actions (dict): dict with actions in the "
+"given CK module"
+msgstr ""
+
+#: ck.kernel.list_actions:16 ck.kernel.pull:30 of
+msgid "actions (dict): dict with actions in the given CK module"
+msgstr ""
+
+#: ck.kernel.list_all_files:2 of
+msgid "List all files recursively in a given directory"
+msgstr ""
+
+#: ck.kernel.list_all_files:2 of
+msgid "Target audience: all users"
+msgstr ""
+
+#: ck.kernel.list_all_files:4 of
+msgid "**path** (*str*) -- top level path"
+msgstr ""
+
+#: ck.kernel.list_all_files:5 of
+msgid "**(file_name)** (*str*) -- search for a specific file name"
+msgstr ""
+
+#: ck.kernel.list_all_files:6 ck.kernel.pull:17 of
+msgid "**(pattern)** (*str*) -- return only files with this pattern"
+msgstr ""
+
+#: ck.kernel.list_all_files:7 of
+msgid "**(path_ext)** (*str*) -- path extension (needed for recursion)"
+msgstr ""
+
+#: ck.kernel.list_all_files:8 of
+msgid ""
+"**(limit)** (*str*) -- limit number of files (if directories with a large"
+" number of files)"
+msgstr ""
+
+#: ck.kernel.list_all_files:9 of
+msgid "**(number)** (*int*) -- current number of files"
+msgstr ""
+
+#: ck.kernel.list_all_files:10 of
+msgid "**(all)** (*str*) -- if 'yes' do not ignore special directories (like .cm)"
+msgstr ""
+
+#: ck.kernel.list_all_files:11 of
+msgid "**(ignore_names)** (*list*) -- list of names to ignore"
+msgstr ""
+
+#: ck.kernel.list_all_files:12 of
+msgid ""
+"**(ignore_symb_dirs)** (*str*) -- if 'yes', ignore symbolically linked "
+"dirs (to avoid recursion such as in LLVM)"
+msgstr ""
+
+#: ck.kernel.list_all_files:14 of
+msgid "**(add_path)** (*str*)"
+msgstr ""
+
+#: ck.kernel.list_all_files:16 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    list (dict): dictionary of all files:"
+"                {\"file_with_full_path\":{\"size\":.., \"path\":..}    "
+"sizes (dict): sizes of all files (the same order as above \"list\")    "
+"number (int): (internal) total number of files in a current directory "
+"(needed for recursion)"
+msgstr ""
+
+#: ck.kernel.list_all_files:25 of
+msgid "list (dict): dictionary of all files:"
+msgstr ""
+
+#: ck.kernel.list_all_files:25 of
+msgid "{\"file_with_full_path\":{\"size\":.., \"path\":..}"
+msgstr ""
+
+#: ck.kernel.list_all_files:27 of
+msgid "sizes (dict): sizes of all files (the same order as above \"list\")"
+msgstr ""
+
+#: ck.kernel.list_all_files:29 of
+msgid ""
+"number (int): (internal) total number of files in a current directory "
+"(needed for recursion)"
+msgstr ""
+
+#: ck.kernel.list_data:2 of
+msgid "List CK entries"
+msgstr ""
+
+#: ck.kernel.list_data:4 ck.kernel.search:4 of
+msgid "**(repo_uoa)** (*str*) -- CK repo UOA with wildcards"
+msgstr ""
+
+#: ck.kernel.list_data:5 ck.kernel.search:5 of
+msgid "**(module_uoa)** (*str*) -- CK module UOA with wildcards"
+msgstr ""
+
+#: ck.kernel.list_data:6 ck.kernel.search:6 of
+msgid "**(data_uoa)** (*str*) -- CK entry (data) UOA with wildcards"
+msgstr ""
+
+#: ck.kernel.list_data:7 ck.kernel.search:7 of
+msgid "**(repo_uoa_list)** (*list*) -- list of CK repos to search"
+msgstr ""
+
+#: ck.kernel.list_data:8 ck.kernel.search:8 of
+msgid "**(module_uoa_list)** (*list*) -- list of CK modules to search"
+msgstr ""
+
+#: ck.kernel.list_data:9 ck.kernel.search:9 of
+msgid "**(data_uoa_list)** (*list*) -- list of CK entries to search"
+msgstr ""
+
+#: ck.kernel.list_data:10 ck.kernel.search:10 of
+msgid ""
+"**(filter_func)** (*str*) -- name of the filter function to customize "
+"search"
+msgstr ""
+
+#: ck.kernel.list_data:11 ck.kernel.search:11 of
+msgid "**(filter_func_addr)** (*obj*) -- Python address of the filter function"
+msgstr ""
+
+#: ck.kernel.list_data:12 ck.kernel.search:12 of
+msgid ""
+"**(add_if_date_before)** (*str*) -- add only entries with date before "
+"this date"
+msgstr ""
+
+#: ck.kernel.list_data:13 ck.kernel.search:13 of
+msgid ""
+"**(add_if_date_after)** (*str*) -- add only entries with date after this "
+"date"
+msgstr ""
+
+#: ck.kernel.list_data:14 ck.kernel.search:14 of
+msgid "**(add_if_date)** (*str*) -- add only entries with this date"
+msgstr ""
+
+#: ck.kernel.list_data:15 ck.kernel.search:15 of
+msgid ""
+"**(ignore_update)** (*str*) -- if 'yes', do not add info about update "
+"(when updating in filter)"
+msgstr ""
+
+#: ck.kernel.list_data:16 ck.kernel.search:16 of
+msgid "**(search_by_name)** (*str*) -- search by name"
+msgstr ""
+
+#: ck.kernel.list_data:17 ck.kernel.search:17 of
+msgid "**(search_dict)** (*dict*) -- search if this dict is a part of the entry"
+msgstr ""
+
+#: ck.kernel.list_data:18 ck.kernel.search:18 of
+msgid "**(ignore_case)** (*str*) -- ignore string case when searching!"
+msgstr ""
+
+#: ck.kernel.list_data:19 ck.kernel.search:19 of
+msgid "**(print_time)** (*str*) -- if 'yes', print elapsed time at the end"
+msgstr ""
+
+#: ck.kernel.list_data:20 ck.kernel.search:20 of
+msgid "**(do_not_add_to_lst)** (*str*) -- if 'yes', do not add entries to lst"
+msgstr ""
+
+#: ck.kernel.list_data:21 ck.kernel.search:21 of
+msgid "**(time_out)** (*float*) -- in secs, default=30 (if -1, no timeout)"
+msgstr ""
+
+#: ck.kernel.list_data:22 of
+msgid "**(limit_size)** (*int*) -- if >0, limit the number of returned entries"
+msgstr ""
+
+#: ck.kernel.list_data:23 ck.kernel.search:22 of
+msgid ""
+"**(print_full)** (*str*) -- if 'yes', show CID "
+"(repo_uoa:module_uoa:data_uoa) or"
+msgstr ""
+
+#: ck.kernel.list_data:25 ck.kernel.search:24 of
+msgid "**(all)** (*str*) -- the same as above"
+msgstr ""
+
+#: ck.kernel.list_data:26 ck.kernel.search:25 of
+msgid "**(print_uid)** (*str*) -- if 'yes', print UID in brackets"
+msgstr ""
+
+#: ck.kernel.list_data:27 ck.kernel.search:26 of
+msgid ""
+"**(print_name)** (*str*) -- if 'yes', print name (and add info to the "
+"list) or"
+msgstr ""
+
+#: ck.kernel.list_data:29 ck.kernel.search:28 of
+msgid "**(name)** (*str*) -- the same as above"
+msgstr ""
+
+#: ck.kernel.list_data:30 ck.kernel.search:29 of
+msgid "**(add_info)** (*str*) -- if 'yes', add info about entry to the list"
+msgstr ""
+
+#: ck.kernel.list_data:31 ck.kernel.search:30 of
+msgid "**(add_meta)** (*str*) -- if 'yes', add meta about entry to the list"
+msgstr ""
+
+#: ck.kernel.list_data:33 of
+msgid ""
+"*(dict)* --    Unified CK dictionary:      return (int): return code =  "
+"0, if successful                               >  0, if error     (error)"
+" (str): error text if return > 0      lst (list): [{'repo_uoa', "
+"'repo_uid',                   'module_uoa', 'module_uid',"
+"                   'data_uoa','data_uid',                   'path'"
+"                   (,meta)                   (,meta_orig) # If meta had "
+"inheritance from another entry                   (,info) ..."
+"                  }]      elapsed_time (float): elapsed time in string"
+"      (timed_out) (str): if 'yes', timed out or limited by size  }"
+msgstr ""
+
+#: ck.kernel.list_data:48 ck.kernel.search:50 of
+msgid "lst (list): [{'repo_uoa', 'repo_uid',"
+msgstr ""
+
+#: ck.kernel.list_data:42 of
+msgid ""
+"'module_uoa', 'module_uid', 'data_uoa','data_uid', 'path' (,meta) "
+"(,meta_orig) # If meta had inheritance from another entry (,info) ..."
+msgstr ""
+
+#: ck.kernel.list_data:48 ck.kernel.search:50 of
+msgid "}]"
+msgstr ""
+
+#: ck.kernel.list_data:50 ck.kernel.search:52 of
+msgid "elapsed_time (float): elapsed time in string"
+msgstr ""
+
+#: ck.kernel.list_data:52 ck.kernel.search:54 of
+msgid "(timed_out) (str): if 'yes', timed out or limited by size"
+msgstr ""
+
+#: ck.kernel.list_files:6 of
+msgid "**(data_uoa)** -- CK entry (data) UOA"
+msgstr ""
+
+#: ck.kernel.list_files:7 of
+msgid "**See other keys for the \"list_all_files\" function**"
+msgstr ""
+
+#: ck.kernel.list_files:9 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    Output from the \"list_al_files\" function"
+msgstr ""
+
+#: ck.kernel.list_files:17 of
+msgid "Output from the \"list_al_files\" function"
+msgstr ""
+
+#: ck.kernel.list_tags:2 of
+msgid "CK action: list tags in found CK entries (uses search function)"
+msgstr ""
+
+#: ck.kernel.list_tags:4 of
+msgid "**The same as in \"search\" function**"
+msgstr ""
+
+#: ck.kernel.list_tags:6 of
+msgid ""
+"*(dict)* --    Unified CK dictionary:      return (int): return code =  "
+"0, if successful                               >  0, if error     (error)"
+" (str): error text if return > 0      tags (list): sorted list of all "
+"found tags      The same as from \"search\" function  }"
+msgstr ""
+
+#: ck.kernel.list_tags:14 of
+msgid "tags (list): sorted list of all found tags"
+msgstr ""
+
+#: ck.kernel.list_tags:16 of
+msgid "The same as from \"search\" function"
+msgstr ""
+
+#: ck.kernel.load:2 of
+msgid "CK action: load meta description from the CK entry"
+msgstr ""
+
+#: ck.kernel.load:7 ck.kernel.set_lock:5 of
+msgid "**(get_lock)** (*str*) -- if 'yes', lock this entry"
+msgstr ""
+
+#: ck.kernel.load:8 of
+msgid "**(lock_retries)** (*int*) -- number of retries to aquire lock (default=5)"
+msgstr ""
+
+#: ck.kernel.load:9 of
+msgid ""
+"**(lock_retry_delay)** (*float*) -- delay in seconds before trying to "
+"aquire lock again (default=10)"
+msgstr ""
+
+#: ck.kernel.load:10 ck.kernel.set_lock:8 of
+msgid ""
+"**(lock_expire_time)** (*float*) -- number of seconds before lock expires"
+" (default=30)"
+msgstr ""
+
+#: ck.kernel.load:11 ck.kernel.load_meta_from_path:5 of
+msgid "**(skip_updates)** (*str*) -- if 'yes', do not load updates"
+msgstr ""
+
+#: ck.kernel.load:12 of
+msgid "**(skip_desc)** (*str*) -- if 'yes', do not load descriptions"
+msgstr ""
+
+#: ck.kernel.load:13 of
+msgid ""
+"**(load_extra_json_files)** (*str*) -- list of files to load from the "
+"entry"
+msgstr ""
+
+#: ck.kernel.load:15 of
+msgid ""
+"**(min)** (*str*) -- show minimum when output to console (i.e. meta and "
+"desc)"
+msgstr ""
+
+#: ck.kernel.load:16 of
+msgid ""
+"**(create_if_not_found)** (*str*) -- if 'yes', create, if entry is not "
+"found - useful to create and lock entries"
+msgstr ""
+
+#: ck.kernel.load:17 of
+msgid ""
+"**(ignore_inheritance)** (*str*) -- if 'yes', ignore inheritance via "
+"_base_entry key (used for low-level copy and move routines)"
+msgstr ""
+
+#: ck.kernel.load:20 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    dict (dict): CK entry meta description   "
+"(dict_orig) (dict): original CK entry meta if there was inheritance"
+"                       from another entry    (info) (dict): CK entry info"
+"    (updates) (dict): CK entry updates    (desc) (dict): CK entry "
+"description     path (str): path to the CK entry    path_module (str):  "
+"path to the CK module entry for this CK entry    path_repo (str): path to"
+" the CK repository for this CK entry    repo_uoa (str): CK repo UOA    "
+"repo_uid (str): CK repo UID    repo_alias (str): CK repo alias    "
+"module_uoa (str): CK module UOA    module_uid (str): CK module UID    "
+"module_alias (str): CK module alias    data_uoa (str): CK entry (data) "
+"UOA    data_uid (str): CK entry (data) UID    data_alias (str): CK entry "
+"(data) alias    data_name (str): CK entry user friendly name     "
+"(extra_json_files) (dict): merged dict from JSON files specified by "
+"'load_extra_json_files' key     (lock_uid) (str): unlock UID, if locked "
+"successfully"
+msgstr ""
+
+#: ck.kernel.load:28 of
+msgid ""
+"dict (dict): CK entry meta description (dict_orig) (dict): original CK "
+"entry meta if there was inheritance"
+msgstr ""
+
+#: ck.kernel.load:30 of
+msgid "from another entry"
+msgstr ""
+
+#: ck.kernel.load:32 of
+msgid "(info) (dict): CK entry info"
+msgstr ""
+
+#: ck.kernel.load:34 of
+msgid "(updates) (dict): CK entry updates"
+msgstr ""
+
+#: ck.kernel.load:36 of
+msgid "(desc) (dict): CK entry description"
+msgstr ""
+
+#: ck.kernel.load:39 of
+msgid "path (str): path to the CK entry"
+msgstr ""
+
+#: ck.kernel.load:41 of
+msgid "path_module (str):  path to the CK module entry for this CK entry"
+msgstr ""
+
+#: ck.kernel.load:43 of
+msgid "path_repo (str): path to the CK repository for this CK entry"
+msgstr ""
+
+#: ck.kernel.load:59 of
+msgid "data_uid (str): CK entry (data) UID"
+msgstr ""
+
+#: ck.kernel.load:61 of
+msgid "data_alias (str): CK entry (data) alias"
+msgstr ""
+
+#: ck.kernel.load:63 of
+msgid "data_name (str): CK entry user friendly name"
+msgstr ""
+
+#: ck.kernel.load:66 of
+msgid ""
+"(extra_json_files) (dict): merged dict from JSON files specified by "
+"'load_extra_json_files' key"
+msgstr ""
+
+#: ck.kernel.load:69 of
+msgid "(lock_uid) (str): unlock UID, if locked successfully"
+msgstr ""
+
+#: ck.files.load_json_file:2 ck.kernel.load_json_file:2 of
+msgid "Load json from file into dict"
+msgstr ""
+
+#: ck.files.load_json_file:4 ck.kernel.load_json_file:4 of
+msgid "**json_file** (*str*) -- name of a json file"
+msgstr ""
+
+#: ck.files.load_json_file:6 ck.kernel.load_json_file:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    dict (dict or list): dict or list from the "
+"json file"
+msgstr ""
+
+#: ck.files.load_json_file:14 ck.kernel.load_json_file:14 of
+msgid "dict (dict or list): dict or list from the json file"
+msgstr ""
+
+#: ck.kernel.load_meta_from_path:2 of
+msgid "Load CK meta description from a path"
+msgstr ""
+
+#: ck.kernel.load_meta_from_path:6 of
+msgid ""
+"**(skip_desc)** (*str*) -- if 'yes', do not load descriptions to be able "
+"to handle many entries (similar to Mediawiki)"
+msgstr ""
+
+#: ck.kernel.load_meta_from_path:9 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    dict (dict): dict with CK meta description"
+"    path (str): path to json file with meta description    (info) (dict):"
+" dict with CK info (provenance) if exists    (path_info) (str): path to "
+"json file with info    (updates) (dict): dict with updates if exists    "
+"(path_updates) (str): path to json file with updates    (path_desc) "
+"(str): path to json file with API description"
+msgstr ""
+
+#: ck.kernel.load_meta_from_path:17 of
+msgid "dict (dict): dict with CK meta description"
+msgstr ""
+
+#: ck.kernel.load_meta_from_path:19 of
+msgid "path (str): path to json file with meta description"
+msgstr ""
+
+#: ck.kernel.load_meta_from_path:21 of
+msgid "(info) (dict): dict with CK info (provenance) if exists"
+msgstr ""
+
+#: ck.kernel.load_meta_from_path:23 of
+msgid "(path_info) (str): path to json file with info"
+msgstr ""
+
+#: ck.kernel.load_meta_from_path:25 of
+msgid "(updates) (dict): dict with updates if exists"
+msgstr ""
+
+#: ck.kernel.load_meta_from_path:27 of
+msgid "(path_updates) (str): path to json file with updates"
+msgstr ""
+
+#: ck.kernel.load_meta_from_path:29 of
+msgid "(path_desc) (str): path to json file with API description"
+msgstr ""
+
+#: ck.kernel.load_module_from_path:2 of
+msgid "Load (CK) python module"
+msgstr ""
+
+#: ck.kernel.load_module_from_path:4 of
+msgid "**path** (*str*) -- path to a Python module"
+msgstr ""
+
+#: ck.kernel.load_module_from_path:5 of
+msgid "**module_code_name** (*str*) -- Python module name"
+msgstr ""
+
+#: ck.kernel.load_module_from_path:6 of
+msgid "**(cfg)** (*dict*) -- CK module configuration if exists"
+msgstr ""
+
+#: ck.kernel.load_module_from_path:7 of
+msgid "**(skip_init)** (*str*) -- if 'yes', skip init of the CK module"
+msgstr ""
+
+#: ck.kernel.load_module_from_path:8 of
+msgid "**(data_uoa)** (*str*) -- CK module UOA (useful when printing errors)"
+msgstr ""
+
+#: ck.kernel.load_module_from_path:10 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    code (obj): Python code object    path (str):"
+" full path to the module    cuid (str): automatically generated unique ID"
+" for the module in the internal cache of modules"
+msgstr ""
+
+#: ck.kernel.load_module_from_path:18 of
+msgid "code (obj): Python code object"
+msgstr ""
+
+#: ck.kernel.load_module_from_path:20 of
+msgid "path (str): full path to the module"
+msgstr ""
+
+#: ck.kernel.load_module_from_path:22 of
+msgid ""
+"cuid (str): automatically generated unique ID for the module in the "
+"internal cache of modules"
+msgstr ""
+
+#: ck.kernel.load_repo_info_from_cache:2 of
+msgid "Load repo meta description from cache"
+msgstr ""
+
+#: ck.kernel.load_repo_info_from_cache:4 ck.kernel.search_filter:4
+#: ck.kernel.search_string_filter:4 of
+msgid "**repo_uoa** (*str*) -- CK repo UOA"
+msgstr ""
+
+#: ck.kernel.load_repo_info_from_cache:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    repo_uoa (str): CK repo UOA    repo_uid "
+"(str): CK repo UID    repo_alias (str): CK repo alias    all other keys "
+"from repo dict"
+msgstr ""
+
+#: ck.kernel.load_repo_info_from_cache:20 of
+msgid "all other keys from repo dict"
+msgstr ""
+
+#: ck.files.load_text_file:2 ck.kernel.load_text_file:2 of
+msgid "Load a text file to a string or list"
+msgstr ""
+
+#: ck.files.load_text_file:4 ck.kernel.load_text_file:4 of
+msgid "**text_file** (*str*) -- name of a text file"
+msgstr ""
+
+#: ck.files.load_text_file:5 ck.kernel.load_text_file:5 of
+msgid "**(keep_as_bin)** (*str*) -- if 'yes', return only bin"
+msgstr ""
+
+#: ck.files.load_text_file:6 ck.kernel.load_text_file:6 of
+msgid ""
+"**(encoding)** (*str*) -- by default 'utf8', however sometimes we use "
+"utf16"
+msgstr ""
+
+#: ck.files.load_text_file:7 ck.kernel.load_text_file:7 of
+msgid "**(split_to_list)** (*str*) -- if 'yes', split to list"
+msgstr ""
+
+#: ck.files.load_text_file:8 ck.kernel.load_text_file:8 of
+msgid ""
+"**(convert_to_dict)** (*str*) -- if 'yes', split to list and convert to "
+"dict"
+msgstr ""
+
+#: ck.files.load_text_file:9 ck.kernel.load_text_file:9 of
+msgid ""
+"**(str_split)** (*str*) -- if !='', use as separator of keys/values when "
+"converting to dict"
+msgstr ""
+
+#: ck.files.load_text_file:10 ck.kernel.load_text_file:10 of
+msgid ""
+"**(remove_quotes)** (*str*) -- if 'yes', remove quotes from values when "
+"converting to dict"
+msgstr ""
+
+#: ck.files.load_text_file:11 ck.kernel.load_text_file:11 of
+msgid ""
+"**(delete_after_read)** (*str*) -- if 'yes', delete file after read "
+"(useful when reading tmp files)"
+msgstr ""
+
+#: ck.files.load_text_file:13 ck.kernel.load_text_file:13 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    bin (byte): loaded text file as byte array"
+"    (string) (str): loaded text as string with removed    (lst) (list): "
+"if split_to_list=='yes', split text to list    (dict) (dict): if "
+"convert_to_dict=='yes', return as dict"
+msgstr ""
+
+#: ck.files.load_text_file:21 ck.kernel.load_text_file:21 of
+msgid "bin (byte): loaded text file as byte array"
+msgstr ""
+
+#: ck.files.load_text_file:23 ck.kernel.load_text_file:23 of
+msgid "(string) (str): loaded text as string with removed"
+msgstr ""
+
+#: ck.files.load_text_file:25 ck.kernel.load_text_file:25 of
+msgid "(lst) (list): if split_to_list=='yes', split text to list"
+msgstr ""
+
+#: ck.files.load_text_file:27 ck.kernel.load_text_file:27 of
+msgid "(dict) (dict): if convert_to_dict=='yes', return as dict"
+msgstr ""
+
+#: ck.files.load_yaml_file:2 ck.kernel.load_yaml_file:2 of
+msgid "Load YAML file to dict"
+msgstr ""
+
+#: ck.files.load_yaml_file:4 ck.files.save_yaml_to_file:4
+#: ck.kernel.load_yaml_file:4 ck.kernel.save_yaml_to_file:4 of
+msgid "**yaml_file** (*str*) -- name of a YAML file"
+msgstr ""
+
+#: ck.files.load_yaml_file:6 ck.kernel.load_yaml_file:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    dict (dict): dict from a YAML file"
+msgstr ""
+
+#: ck.files.load_yaml_file:14 ck.kernel.load_yaml_file:14 of
+msgid "dict (dict): dict from a YAML file"
+msgstr ""
+
+#: ck.kernel.lower_list:2 of
+msgid "Support function to convert all strings into lower case in a list"
+msgstr ""
+
+#: ck.kernel.lower_list:4 of
+msgid "**lst** (*list*) -- list of strings"
+msgstr ""
+
+#: ck.kernel.lower_list:6 of
+msgid "*(list)* -- list of lowercased strings"
+msgstr ""
+
+#: ck.kernel.merge_dicts:4 of
+msgid ""
+"Merge intelligently dict1 with dict2 key by key in contrast with "
+"dict1.update(dict2)"
+msgstr ""
+
+#: ck.kernel.merge_dicts:4 of
+msgid "It can merge sub-dictionaries and lists instead of substituting them"
+msgstr ""
+
+#: ck.kernel.merge_dicts:6 of
+msgid ""
+"**dict1** (*dict*) -- merge this dict with dict2 (will be directly "
+"modified!)"
+msgstr ""
+
+#: ck.kernel.merge_dicts:7 of
+msgid "**dict2** (*dict*) -- dict to be merged"
+msgstr ""
+
+#: ck.kernel.merge_dicts:8 of
+msgid ""
+"**append_lists** (*str*) -- if 'yes', append lists instead of creating "
+"the new ones"
+msgstr ""
+
+#: ck.kernel.merge_dicts:10 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    dict1 (dict): dict1 passed through the "
+"function"
+msgstr ""
+
+#: ck.kernel.merge_dicts:18 of
+msgid "dict1 (dict): dict1 passed through the function"
+msgstr ""
+
+#: ck.kernel.move:2 ck.kernel.mv:2 of
+msgid "CK action: move CK entry to another CK repository"
+msgstr ""
+
+#: ck.kernel.move:4 of
+msgid "**See \"mv\" function**"
+msgstr ""
+
+#: ck.kernel.move:6 of
+msgid "See \"mv\" function"
+msgstr ""
+
+#: ck.kernel.mv:11 of
+msgid "**(new_data_uoa)** (*str*) -- new CK data alias"
+msgstr ""
+
+#: ck.kernel.mv:14 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    Output from the \"copy\" function"
+msgstr ""
+
+#: ck.kernel.mv:22 of
+msgid "Output from the \"copy\" function"
+msgstr ""
+
+#: ck.kernel.out:5 of
+msgid "Universal print of a unicode string in UTF-8 or other format"
+msgstr ""
+
+#: ck.kernel.parse_cid:2 of
+msgid "Convert CID to a dict and add missing parts in CID from the current path"
+msgstr ""
+
+#: ck.kernel.parse_cid:4 of
+msgid "**cid** (*str*) -- in format (REPO_UOA:)MODULE_UOA:DATA_UOA"
+msgstr ""
+
+#: ck.kernel.parse_cid:5 of
+msgid ""
+"**(cur_cid)** (*str*) -- output from the \"detect_cid_in_current_path\" "
+"function"
+msgstr ""
+
+#: ck.kernel.parse_cid:6 of
+msgid "**(ignore_error)** (*str*) -- if 'yes', ignore wrong format"
+msgstr ""
+
+#: ck.kernel.parse_cid:8 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    data_uoa (str): CK data UOA    module_uoa "
+"(str): CK module UOA    (repo_uoa) (str): CK repo UOA"
+msgstr ""
+
+#: ck.kernel.parse_cid:16 of
+msgid "data_uoa (str): CK data UOA"
+msgstr ""
+
+#: ck.kernel.path:2 of
+msgid "CK action: get CID from the current path"
+msgstr ""
+
+#: ck.kernel.path:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    Keys from the \"detect_cid_in_current_path\" "
+"function"
+msgstr ""
+
+#: ck.kernel.path:14 of
+msgid "Keys from the \"detect_cid_in_current_path\" function"
+msgstr ""
+
+#: ck.kernel.perform_action:2 of
+msgid "Perform an automation action via CK kernel or from the kernel"
+msgstr ""
+
+#: ck.kernel.perform_action:4 of
+msgid "**()** -- all parameters from the \"access\" function"
+msgstr ""
+
+#: ck.kernel.perform_action:5 of
+msgid "**(web)** (*str*) -- if 'yes', called from the web"
+msgstr ""
+
+#: ck.kernel.perform_action:6 of
+msgid "**(common_func)** (*str*) --"
+msgstr ""
+
+#: ck.kernel.perform_action:8 of
+msgid "if 'yes', ignore search for modules"
+msgstr ""
+
+#: ck.kernel.perform_action:9 of
+msgid "and call common func from the CK kernel"
+msgstr ""
+
+#: ck.kernel.perform_action:11 of
+msgid "**(kernel)** (*str*) -- the same as above"
+msgstr ""
+
+#: ck.kernel.perform_action:12 of
+msgid "**(local)** (*str*) -- if 'yes', run locally even if remote repo ..."
+msgstr ""
+
+#: ck.kernel.perform_action:14 of
+msgid ""
+"*(dict)* --    Unified CK dictionary:      return (int): return code =  "
+"0, if successful                               >  0, if error     (error)"
+" (str): error text if return > 0      (out) (str): if action changes "
+"output, log it      Output from a given action  }"
+msgstr ""
+
+#: ck.kernel.perform_action:22 of
+msgid "(out) (str): if action changes output, log it"
+msgstr ""
+
+#: ck.kernel.perform_action:24 of
+msgid "Output from a given action"
+msgstr ""
+
+#: ck.kernel.perform_remote_action:2 of
+msgid "Perform remote action via CK web service"
+msgstr ""
+
+#: ck.kernel.perform_remote_action:4 of
+msgid "**See \"perform_action\" function**"
+msgstr ""
+
+#: ck.kernel.perform_remote_action:6 of
+msgid "See \"perform_action\" function"
+msgstr ""
+
+#: ck.kernel.prepare_special_info_about_entry:2 of
+msgid "Prepare provenance for a given CK entry (CK used, author, date, etc)"
+msgstr ""
+
+#: ck.kernel.prepare_special_info_about_entry:4 of
+msgid "**i** (*dict*) -- empty dict"
+msgstr ""
+
+#: ck.kernel.prepare_special_info_about_entry:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    dict (dict): dictionary with provenance "
+"information"
+msgstr ""
+
+#: ck.kernel.prepare_special_info_about_entry:14 of
+msgid "dict (dict): dictionary with provenance information"
+msgstr ""
+
+#: ck.kernel.print_input:4 of
+msgid "Print input dictionary to screen for debugging"
+msgstr ""
+
+#: ck.kernel.print_input:4 of
+msgid "Used in console and web applications"
+msgstr ""
+
+#: ck.kernel.print_input:6 of
+msgid "**(dict)** -- input"
+msgstr ""
+
+#: ck.kernel.print_input:8 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    html (str): input as JSON string"
+msgstr ""
+
+#: ck.kernel.print_input:16 of
+msgid "html (str): input as JSON string"
+msgstr ""
+
+#: ck.kernel.process_meta_for_inheritance:2 of
+msgid "Process meta for inheritance"
+msgstr ""
+
+#: ck.kernel.process_meta_for_inheritance:7 of
+msgid "**dict** (*dict*) -- CK meta for a given entry"
+msgstr ""
+
+#: ck.kernel.process_meta_for_inheritance:9 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    dict (dict):        CK updated meta with "
+"inheritance from base entries   (dict_orig) (dict): original CK meta if "
+"CK was updated with a base entry"
+msgstr ""
+
+#: ck.kernel.process_meta_for_inheritance:17 of
+msgid ""
+"dict (dict):        CK updated meta with inheritance from base entries "
+"(dict_orig) (dict): original CK meta if CK was updated with a base entry"
+msgstr ""
+
+#: ck.kernel.pull:2 of
+msgid "Pull CK entries from the CK server"
+msgstr ""
+
+#: ck.kernel.pull:7 ck.kernel.push:7 of
+msgid "**(filename)** (*str*) --"
+msgstr ""
+
+#: ck.kernel.pull:9 ck.kernel.push:9 of
+msgid "filename (with path) (if empty, set archive to 'yes')."
+msgstr ""
+
+#: ck.kernel.pull:10 ck.kernel.push:10 of
+msgid "If empty, create an archive of the entry"
+msgstr ""
+
+#: ck.kernel.pull:12 ck.kernel.push:12 of
+msgid "**(cid[0])** (*str*)"
+msgstr ""
+
+#: ck.kernel.pull:13 of
+msgid ""
+"**(archive)** (*str*) -- if 'yes' pull whole entry as zip archive using "
+"filename or ck_archive.zip"
+msgstr ""
+
+#: ck.kernel.pull:14 of
+msgid ""
+"**(all)** (*str*) -- if 'yes' and archive, add even special directories "
+"(.cm, .svn, .git, etc)"
+msgstr ""
+
+#: ck.kernel.pull:15 of
+msgid "**(out)** (*str*) -- if 'json' or 'json_file', encode file and return in r"
+msgstr ""
+
+#: ck.kernel.pull:16 of
+msgid ""
+"**(skip_writing)** (*str*) -- if 'yes', do not write file (not archive) "
+"to current directory"
+msgstr ""
+
+#: ck.kernel.pull:18 of
+msgid ""
+"**(patterns)** (*str*) -- multiple patterns (useful to pack mutiple "
+"points in experiments)"
+msgstr ""
+
+#: ck.kernel.pull:19 of
+msgid "**(encode_file)** (*str*) -- if 'yes', encode file"
+msgstr ""
+
+#: ck.kernel.pull:20 of
+msgid "**(skip_tmp)** (*str*) -- if 'yes', skip tmp files and directories"
+msgstr ""
+
+#: ck.kernel.pull:22 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    actions (dict): dict with actions in the "
+"given CK module    (file_content_base64) (str): if i['to_json']=='yes', "
+"encoded file    (filename) (str): filename to record locally"
+msgstr ""
+
+#: ck.kernel.pull:32 of
+msgid "(file_content_base64) (str): if i['to_json']=='yes', encoded file"
+msgstr ""
+
+#: ck.kernel.pull:34 of
+msgid "(filename) (str): filename to record locally"
+msgstr ""
+
+#: ck.kernel.push:2 of
+msgid "Push CK entry to the CK server"
+msgstr ""
+
+#: ck.kernel.push:13 of
+msgid ""
+"**(extra_path)** (*str*) -- extra path inside entry (create if doesn't "
+"exist)"
+msgstr ""
+
+#: ck.kernel.push:14 of
+msgid ""
+"**(file_content_base64)** (*str*) -- if !='', take its content and record"
+" into filename"
+msgstr ""
+
+#: ck.kernel.push:15 of
+msgid "**(archive)** (*str*) -- if 'yes' push to entry and unzip ..."
+msgstr ""
+
+#: ck.kernel.push:16 of
+msgid "**(overwrite)** (*str*)"
+msgstr ""
+
+#: ck.kernel.pwiki:4 of
+msgid ""
+"Open web browser with the private discussion wiki page for a given CK "
+"entry"
+msgstr ""
+
+#: ck.kernel.pwiki:4 of
+msgid ""
+"URL is taken from default kernel configuration "
+"cfg['private_wiki_data_web']"
+msgstr ""
+
+#: ck.kernel.python_version:2 of
+msgid "CK action: print python version used by CK"
+msgstr ""
+
+#: ck.kernel.python_version:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    version (str): sys.version    version_info "
+"(str): sys.version_info"
+msgstr ""
+
+#: ck.kernel.python_version:14 of
+msgid "version (str): sys.version"
+msgstr ""
+
+#: ck.kernel.python_version:16 of
+msgid "version_info (str): sys.version_info"
+msgstr ""
+
+#: ck.kernel.reinit:2 of
+msgid "Reinitialize CK"
+msgstr ""
+
+#: ck.kernel.reinit:6 ck.kernel.restore_state:6 of
+msgid "*(dict)* -- output from the \"init\" function"
+msgstr ""
+
+#: ck.kernel.reload_repo_cache:2 of
+msgid "Reload cache with meta-descriptions of all CK repos"
+msgstr ""
+
+#: ck.kernel.reload_repo_cache:4 of
+msgid "**(force)** (*str*) -- if 'yes', force recaching"
+msgstr ""
+
+#: ck.kernel.remove_action:2 of
+msgid "Remove an action from the given module"
+msgstr ""
+
+#: ck.kernel.ren:2 ck.kernel.rename:2 of
+msgid "CK action: rename CK entry"
+msgstr ""
+
+#: ck.kernel.ren:7 of
+msgid "**new_data_uoa** (*str*) -- new CK entry (data) alias or"
+msgstr ""
+
+#: ck.kernel.ren:9 of
+msgid ""
+"**new_data_uid** (*str*) -- new CK entryt (data) UID (leave empty to keep"
+" the old one) or"
+msgstr ""
+
+#: ck.kernel.ren:11 of
+msgid "**xcids** (*list*) -- take new CK entry UOA from xcids[0]['data_uoa']"
+msgstr ""
+
+#: ck.kernel.ren:12 of
+msgid "**(new_uid)** (*str*) -- if 'yes', generate new UID"
+msgstr ""
+
+#: ck.kernel.ren:13 of
+msgid "**(remove_alias)** (*str*) -- if 'yes', remove alias"
+msgstr ""
+
+#: ck.kernel.ren:14 of
+msgid "**(add_uid_to_alias)** (*str*) -- if 'yes', add UID to alias"
+msgstr ""
+
+#: ck.kernel.ren:15 of
+msgid ""
+"**(share)** (*str*) -- if 'yes', try to remove the old entry via GIT and "
+"add the new one"
+msgstr ""
+
+#: ck.kernel.rename:4 of
+msgid "**See \"ren\" function**"
+msgstr ""
+
+#: ck.kernel.rename:6 of
+msgid "See \"ren\" function"
+msgstr ""
+
+#: ck.kernel.restore_flattened_dict:2 of
+msgid "Restore flattened dict"
+msgstr ""
+
+#: ck.kernel.restore_flattened_dict:4 of
+msgid "**dict** (*dict*) -- CK flattened dictionary"
+msgstr ""
+
+#: ck.kernel.restore_flattened_dict:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    dict (dict): restored dict"
+msgstr ""
+
+#: ck.kernel.restore_flattened_dict:14 of
+msgid "dict (dict): restored dict"
+msgstr ""
+
+#: ck.kernel.restore_state:2 of
+msgid "Restore CK state"
+msgstr ""
+
+#: ck.kernel.restore_state:4 of
+msgid "**r** (*dict*) -- saved CK state"
+msgstr ""
+
+#: ck.kernel.rm:7 of
+msgid "**(force)** (*str*) -- if 'yes', force deleting without questions or"
+msgstr ""
+
+#: ck.kernel.rm:9 of
+msgid "**(f)** (*str*) -- to be compatible with rm -f"
+msgstr ""
+
+#: ck.kernel.rm:10 of
+msgid "**(share)** (*str*) -- if 'yes', try to remove via GIT"
+msgstr ""
+
+#: ck.kernel.rm:11 of
+msgid "**(tags)** (*str*) -- use these tags in format tags=x,y,z to prune rm or"
+msgstr ""
+
+#: ck.kernel.rm:13 of
+msgid "**(search_string)** (*str*)"
+msgstr ""
+
+#: ck.kernel.run_and_get_stdout:2 of
+msgid "Run command and log stdout and stdout"
+msgstr ""
+
+#: ck.kernel.run_and_get_stdout:4 of
+msgid ""
+"**cmd** (*list*) -- list of command line arguments, starting with the "
+"command itself"
+msgstr ""
+
+#: ck.kernel.run_and_get_stdout:5 of
+msgid "**(shell)** (*str*) -- if 'yes', reuse shell environment"
+msgstr ""
+
+#: ck.kernel.run_and_get_stdout:7 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    return_code (int): return code from the "
+"os.system call    stdout (str): standard output of the command    stderr "
+"(str): standard error of the command"
+msgstr ""
+
+#: ck.kernel.run_and_get_stdout:15 ck.kernel.system_with_timeout:15 of
+msgid "return_code (int): return code from the os.system call"
+msgstr ""
+
+#: ck.kernel.run_and_get_stdout:17 of
+msgid "stdout (str): standard output of the command"
+msgstr ""
+
+#: ck.kernel.run_and_get_stdout:19 of
+msgid "stderr (str): standard error of the command"
+msgstr ""
+
+#: ck.kernel.safe_float:2 of
+msgid "Support function for safe float (useful for sorting function)"
+msgstr ""
+
+#: ck.kernel.safe_float:4 ck.kernel.safe_int:4 of
+msgid "**i** (*any*) -- variable with any type"
+msgstr ""
+
+#: ck.kernel.safe_float:5 of
+msgid "**d** (*float*) -- default value"
+msgstr ""
+
+#: ck.kernel.safe_float:7 of
+msgid "*(float)* -- returns i if it can be converted to float or d otherwise"
+msgstr ""
+
+#: ck.kernel.safe_get_val_from_list:4 of
+msgid "Support function to get value from list without error if out of bounds"
+msgstr ""
+
+#: ck.kernel.safe_get_val_from_list:4 of
+msgid "Useful for sorting functions."
+msgstr ""
+
+#: ck.kernel.safe_get_val_from_list:6 of
+msgid "**lst** (*list*) -- list of values"
+msgstr ""
+
+#: ck.kernel.safe_get_val_from_list:7 of
+msgid "**index** (*int*) -- index in a list"
+msgstr ""
+
+#: ck.kernel.safe_get_val_from_list:8 of
+msgid ""
+"**default_value** (*any*) -- if index inside list, return lst[index] or "
+"default value otherwise"
+msgstr ""
+
+#: ck.kernel.safe_get_val_from_list:10 ck.kernel.safe_int:7 of
+msgid "*(int)* -- returns i if it can be converted to int, or d otherwise"
+msgstr ""
+
+#: ck.kernel.safe_int:2 of
+msgid "Support function for safe int (useful for sorting function)"
+msgstr ""
+
+#: ck.kernel.safe_int:5 of
+msgid "**d** (*int*) -- default value"
+msgstr ""
+
+#: ck.files.save_json_to_file:2 ck.kernel.save_json_to_file:2 of
+msgid "Save dict to a json file"
+msgstr ""
+
+#: ck.files.save_json_to_file:4 ck.kernel.save_json_to_file:4 of
+msgid "**json_file** (*str*) -- filename to save dictionary"
+msgstr ""
+
+#: ck.files.save_json_to_file:5 ck.files.save_yaml_to_file:5
+#: ck.kernel.save_json_to_file:5 ck.kernel.save_yaml_to_file:5 of
+msgid "**dict** (*dict*) -- dict to save"
+msgstr ""
+
+#: ck.files.save_json_to_file:7 ck.kernel.save_json_to_file:7 of
+msgid ""
+"**(safe)** (*str*) -- if 'yes', ignore non-JSON values (only for "
+"Debugging - changes original dict!)"
+msgstr ""
+
+#: ck.kernel.save_repo_cache:2 of
+msgid "Save cache with meta-descriptions of all CK repos"
+msgstr ""
+
+#: ck.kernel.save_state:5 of
+msgid "Save CK state"
+msgstr ""
+
+#: ck.kernel.save_state:4 of
+msgid ""
+"FGG: note that in the future we want to implement CK kernel as a Python "
+"class where we will not need such save/restore state ..."
+msgstr ""
+
+#: ck.kernel.save_state:9 of
+msgid "*(dict)* -- current CK state"
+msgstr ""
+
+#: ck.files.save_text_file:1 ck.kernel.save_text_file:1 of
+msgid "Save string to a text file with all removed"
+msgstr ""
+
+#: ck.files.save_text_file:6 ck.kernel.save_text_file:6 of
+msgid ""
+"text_file (str): name of a text file string (str): string to write to a "
+"file (all"
+msgstr ""
+
+#: ck.files.save_text_file:15 ck.kernel.save_text_file:15 of
+msgid "will be removed)"
+msgstr ""
+
+#: ck.files.save_text_file:9 ck.kernel.save_text_file:9 of
+msgid "(append) (str): if 'yes', append to a file"
+msgstr ""
+
+#: ck.files.save_text_file:15 ck.kernel.save_text_file:15 of
+msgid "Returns:"
+msgstr ""
+
+#: ck.files.save_text_file:12 ck.kernel.save_text_file:12 of
+msgid "(dict): Unified CK dictionary:"
+msgstr ""
+
+#: ck.files.save_yaml_to_file:2 ck.kernel.save_yaml_to_file:2 of
+msgid "Save dict to a YAML file"
+msgstr ""
+
+#: ck.kernel.search:2 of
+msgid "CK action: search CK entries"
+msgstr ""
+
+#: ck.kernel.search:31 of
+msgid ""
+"**(internal)** (*str*) -- if 'yes', use internal search even if indexing "
+"is on"
+msgstr ""
+
+#: ck.kernel.search:32 of
+msgid ""
+"**(limit_size)** (*int*) -- limit the number of returned entries. Use "
+"5000 by default or set to -1 if no limit"
+msgstr ""
+
+#: ck.kernel.search:33 of
+msgid ""
+"**(start_from)** (*int*) -- start from a specific entry (only for "
+"ElasticSearch)"
+msgstr ""
+
+#: ck.kernel.search:34 of
+msgid "**(debug)** (*str*) -- if 'yes', print debug info"
+msgstr ""
+
+#: ck.kernel.search:36 of
+msgid ""
+"*(dict)* --    Unified CK dictionary:      return (int): return code =  "
+"0, if successful                               >  0, if error     (error)"
+" (str): error text if return > 0      lst (list): [{'repo_uoa', "
+"'repo_uid',                   'module_uoa', 'module_uid',"
+"                   'data_uoa','data_uid',                   'path'"
+"                   (,meta)                   (,info) ..."
+"                  }]      elapsed_time (float): elapsed time in string"
+"      (timed_out) (str): if 'yes', timed out or limited by size  }"
+msgstr ""
+
+#: ck.kernel.search:45 of
+msgid ""
+"'module_uoa', 'module_uid', 'data_uoa','data_uid', 'path' (,meta) (,info)"
+" ..."
+msgstr ""
+
+#: ck.kernel.search_filter:2 ck.kernel.search_string_filter:2 of
+msgid "Search filter"
+msgstr ""
+
+#: ck.kernel.search_filter:7 of
+msgid "**path** (*str*) -- path to the current entry"
+msgstr ""
+
+#: ck.kernel.search_filter:8 of
+msgid ""
+"**(search_dict)** (*dict*) -- check if this dict is a part of the entry "
+"meta description"
+msgstr ""
+
+#: ck.kernel.search_filter:11 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    skip (str): if 'yes', skip this entry from "
+"search"
+msgstr ""
+
+#: ck.kernel.search_filter:19 of
+msgid "skip (str): if 'yes', skip this entry from search"
+msgstr ""
+
+#: ck.kernel.search_string_filter:7 of
+msgid "**path** (*str*) -- path to the current CK entry"
+msgstr ""
+
+#: ck.kernel.search_string_filter:8 of
+msgid "**(search_string)      - search with expressions *?**"
+msgstr ""
+
+#: ck.kernel.search_string_filter:10 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    skip (str): if 'yes' then skip this entry "
+"from search"
+msgstr ""
+
+#: ck.kernel.search_string_filter:18 of
+msgid "skip (str): if 'yes' then skip this entry from search"
+msgstr ""
+
+#: ck.kernel.select:4 of
+msgid "Universal selector of a dictionary key"
+msgstr ""
+
+#: ck.kernel.select:4 ck.kernel.select_uoa:4 of
+msgid "Note: advanced version available in the CK module \"choice\""
+msgstr ""
+
+#: ck.kernel.select:6 of
+msgid ""
+"**dict** (*dict*) -- dict with values being dicts with 'name' as string "
+"to display and 'sort' as int (for ordering)"
+msgstr ""
+
+#: ck.kernel.select:7 of
+msgid "**(title)** (*str*) -- print title"
+msgstr ""
+
+#: ck.kernel.select:8 of
+msgid "**(error_if_empty)** (*str*) -- if 'yes' and just Enter, return error"
+msgstr ""
+
+#: ck.kernel.select:9 of
+msgid "**(skip_sort)** (*str*) -- if 'yes', do not sort dictionary keys"
+msgstr ""
+
+#: ck.kernel.select:11 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    string (str): selected dictionary key"
+msgstr ""
+
+#: ck.kernel.select:19 of
+msgid "string (str): selected dictionary key"
+msgstr ""
+
+#: ck.kernel.select_uoa:4 of
+msgid "Universal CK entry UOA selector"
+msgstr ""
+
+#: ck.kernel.select_uoa:6 of
+msgid "**choices** (*list*) -- list from the search function"
+msgstr ""
+
+#: ck.kernel.select_uoa:7 of
+msgid ""
+"**(skip_enter)** (*str*) -- if 'yes', do not select 0 when a user presses"
+" Enter"
+msgstr ""
+
+#: ck.kernel.select_uoa:8 of
+msgid "**(skip_sort)** (*str*) -- if 'yes', do not sort list"
+msgstr ""
+
+#: ck.kernel.select_uoa:10 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    choice (str): CK entry UOA"
+msgstr ""
+
+#: ck.kernel.select_uoa:18 of
+msgid "choice (str): CK entry UOA"
+msgstr ""
+
+#: ck.kernel.set_by_flat_key:2 of
+msgid "Set a value in a dictionary using the CK flat key"
+msgstr ""
+
+#: ck.kernel.set_by_flat_key:6 of
+msgid "**value** (*any*) -- value to set"
+msgstr ""
+
+#: ck.kernel.set_by_flat_key:8 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    dict (dict): modified dict"
+msgstr ""
+
+#: ck.kernel.set_by_flat_key:16 of
+msgid "dict (dict): modified dict"
+msgstr ""
+
+#: ck.kernel.set_lock:2 of
+msgid "Set a lock in a given path (to handle parallel writes to CK entries)"
+msgstr ""
+
+#: ck.kernel.set_lock:4 of
+msgid "**path** (*str*) -- path to be locked"
+msgstr ""
+
+#: ck.kernel.set_lock:6 of
+msgid ""
+"**(lock_retries)** (*int*) -- number of retries to aquire lock "
+"(default=11)"
+msgstr ""
+
+#: ck.kernel.set_lock:7 of
+msgid ""
+"**(lock_retry_delay)** (*float*) -- delay in seconds before trying to "
+"aquire lock again (default=3)"
+msgstr ""
+
+#: ck.kernel.set_lock:11 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    (lock_uid) (str):  lock UID, if locked "
+"successfully"
+msgstr ""
+
+#: ck.kernel.set_lock:19 of
+msgid "(lock_uid) (str):  lock UID, if locked successfully"
+msgstr ""
+
+#: ck.kernel.short_help:2 of
+msgid "Print short CK help"
+msgstr ""
+
+#: ck.kernel.split_name:2 of
+msgid "Support function to split entry name (if needed)"
+msgstr ""
+
+#: ck.kernel.split_name:4 of
+msgid "**name** (*str*) -- CK entry name"
+msgstr ""
+
+#: ck.kernel.split_name:5 of
+msgid "**number** (*int*) -- Split number (do not split if 0)"
+msgstr ""
+
+#: ck.kernel.split_name:7 of
+msgid ""
+"(   name1 (str): first part of splitted name    name2 (str): second part "
+"of splitted name )"
+msgstr ""
+
+#: ck.kernel.split_name:11 of
+msgid "("
+msgstr ""
+
+#: ck.kernel.split_name:10 of
+msgid "name1 (str): first part of splitted name"
+msgstr ""
+
+#: ck.kernel.split_name:12 of
+msgid "name2 (str): second part of splitted name"
+msgstr ""
+
+#: ck.kernel.split_name:13 of
+msgid ")"
+msgstr ""
+
+#: ck.kernel.status:2 of
+msgid "CK action: check CK server status"
+msgstr ""
+
+#: ck.kernel.status:6 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    outdated (str): if 'yes', newer version "
+"exists"
+msgstr ""
+
+#: ck.kernel.status:14 of
+msgid "outdated (str): if 'yes', newer version exists"
+msgstr ""
+
+#: ck.kernel.substitute_str_in_file:2 of
+msgid "Substitute string in a file"
+msgstr ""
+
+#: ck.kernel.substitute_str_in_file:4 of
+msgid "**filename** (*str*) -- filename"
+msgstr ""
+
+#: ck.kernel.substitute_str_in_file:5 of
+msgid "**string1** (*str*) -- string to be replaced"
+msgstr ""
+
+#: ck.kernel.substitute_str_in_file:6 of
+msgid "**string2** (*str*) -- replacement string"
+msgstr ""
+
+#: ck.kernel.system_with_timeout:2 of
+msgid "os.system with time out"
+msgstr ""
+
+#: ck.kernel.system_with_timeout:4 of
+msgid "**cmd** (*str*) -- command line"
+msgstr ""
+
+#: ck.kernel.system_with_timeout:5 of
+msgid ""
+"**(timeout)** (*float*) -- timeout in seconds (granularity 0.01 sec) - "
+"may cause some overheads ..."
+msgstr ""
+
+#: ck.kernel.system_with_timeout:7 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    return_code (int): return code from the "
+"os.system call"
+msgstr ""
+
+#: ck.kernel.system_with_timeout_kill:2 of
+msgid "Support function to safely terminate a given process"
+msgstr ""
+
+#: ck.kernel.system_with_timeout_kill:4 of
+msgid "**proc** (*obj*) -- process object"
+msgstr ""
+
+#: ck.kernel.tested:2 of
+msgid "Mark a given CK component as tested"
+msgstr ""
+
+#: ck.kernel.tested:7 of
+msgid "**(name)** (*str*) -- name of a tester"
+msgstr ""
+
+#: ck.kernel.tested:8 of
+msgid "**(email)** (*str*) -- email of a tester"
+msgstr ""
+
+#: ck.kernel.tested:10 of
+msgid ""
+"*return (int)* --  return code =  0, if successful"
+"                           >  0, if error (error) (str): error text if "
+"return > 0"
+msgstr ""
+
+#: ck.kernel.tested:10 of
+msgid "*return (int)* --"
+msgstr ""
+
+#: ck.kernel.tested:12 of
+msgid "return code =  0, if successful"
+msgstr ""
+
+#: ck.kernel.uid:2 of
+msgid "CK action: generate CK UID"
+msgstr ""
+
+#: ck.kernel.unzip_file:2 of
+msgid "Unizip archive file to a given path"
+msgstr ""
+
+#: ck.kernel.unzip_file:4 of
+msgid "**archive_file** (*str*) -- full path to a zip file"
+msgstr ""
+
+#: ck.kernel.unzip_file:5 of
+msgid "**(path)** (*str*) -- path where to unzip (use current path if empty)"
+msgstr ""
+
+#: ck.kernel.unzip_file:6 of
+msgid "**(overwrite)** (*str*) -- if 'yes', overwrite existing files"
+msgstr ""
+
+#: ck.kernel.unzip_file:7 of
+msgid "**(delete_after_unzip)** (*str*)"
+msgstr ""
+
+#: ck.kernel.unzip_file:9 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    skipped (list): list of files that were not "
+"overwritten"
+msgstr ""
+
+#: ck.kernel.unzip_file:17 of
+msgid "skipped (list): list of files that were not overwritten"
+msgstr ""
+
+#: ck.kernel.update:2 of
+msgid "CK action: update CK entry meta-description"
+msgstr ""
+
+#: ck.kernel.update:42 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0     Output from the \"add\" function (the last "
+"\"add\" in case of wildcards)"
+msgstr ""
+
+#: ck.kernel.update:51 of
+msgid "Output from the \"add\" function (the last \"add\" in case of wildcards)"
+msgstr ""
+
+#: ck.kernel.version:2 of
+msgid "CK action: print CK version"
+msgstr ""
+
+#: ck.kernel.webapi:2 of
+msgid "Open web browser with the API page if exists"
+msgstr ""
+
+#: ck.kernel.webapi:4 of
+msgid "**(dict)** -- from the \"access\" function(repo_uoa) (str): CK repo UOA"
+msgstr ""
+
+#: ck.kernel.webhelp:2 of
+msgid "Open web browser with the help page for a given CK entry"
+msgstr ""
+
+#: ck.kernel.webhelp:4 of
+msgid "**(dict)** -- from the \"access\" function"
+msgstr ""
+
+#: ck.kernel.wiki:4 of
+msgid "Open web browser with the discussion wiki page for a given CK entry"
+msgstr ""
+
+#: ck.kernel.wiki:4 of
+msgid "URL is taken from default kernel configuration cfg['wiki_data_web']"
+msgstr ""
+
+#: ck.kernel.zip:2 of
+msgid "Zip CK entries"
+msgstr ""
+
+#: ck.kernel.zip:7 of
+msgid "**(archive_path)** (*str*) -- if '' create inside repo path"
+msgstr ""
+
+#: ck.kernel.zip:8 of
+msgid "**(archive_name)** (*str*) -- if !='' use it for zip name"
+msgstr ""
+
+#: ck.kernel.zip:9 of
+msgid ""
+"**(auto_name)** (*str*) -- if 'yes', generate name name from data_uoa: "
+"ckr-<repo_uoa>.zip"
+msgstr ""
+
+#: ck.kernel.zip:10 of
+msgid ""
+"**(bittorent)** (*str*) -- if 'yes', generate zip name for BitTorrent: "
+"ckr-<repo_uid>-YYYYMMDD.zip"
+msgstr ""
+
+#: ck.kernel.zip:11 of
+msgid "**(overwrite)** (*str*) -- if 'yes', overwrite zip file"
+msgstr ""
+
+#: ck.kernel.zip:12 of
+msgid "**(store)** (*str*) -- if 'yes', store files instead of packing"
+msgstr ""
+
+#: ../../src/ck.rst:17
+msgid "ck\\.files module"
+msgstr ""
+
+#: ../../src/ck.rst:25
+msgid "ck\\.net module"
+msgstr ""
+
+#: ck.net.access_ck_api:2 of
+msgid "Universal web request to the CK server (usually cKnowledge.io)"
+msgstr ""
+
+#: ck.net.access_ck_api:4 of
+msgid "**url** (*str*) -- URL API"
+msgstr ""
+
+#: ck.net.access_ck_api:5 of
+msgid "**(dict)** (*dict*) -- dict to send to above URL"
+msgstr ""
+
+#: ck.net.access_ck_api:7 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    dict (dict): dictionary from the CK server"
+msgstr ""
+
+#: ck.net.access_ck_api:15 of
+msgid "dict (dict): dictionary from the CK server"
+msgstr ""
+
+#: ck.net.request:2 of
+msgid "Web request to cKnowledge.org server"
+msgstr ""
+
+#: ck.net.request:4 of
+msgid "**get** (*dict*) -- GET parameters"
+msgstr ""
+
+#: ck.net.request:5 of
+msgid "**post** (*dict*) -- POST parameters"
+msgstr ""
+
+#: ck.net.request:7 of
+msgid ""
+"*(dict)* --  Unified CK dictionary:    return (int): return code =  0, if"
+" successful                             >  0, if error   (error) (str): "
+"error text if return > 0    string (str): returned string from the server"
+"   dict (dict): JSON string converted to dict (if possible)"
+msgstr ""
+
+#: ck.net.request:15 of
+msgid ""
+"string (str): returned string from the server dict (dict): JSON string "
+"converted to dict (if possible)"
+msgstr ""
+
+#: ../../src/ck.rst:33
+msgid "ck\\.strings module"
+msgstr ""
+
+#: ../../src/ck.rst:42
+msgid "Module contents"
+msgstr ""
+

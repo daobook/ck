@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../src/specs.md:1
+msgid "CK specs"
+msgstr ""
+
+#: ../../src/specs.md:3
+msgid "CK repository"
+msgstr ""
+
+#: ../../src/specs.md:5
+msgid ""
+"Here we describe the structure of a CK repository. You may want to look "
+"at any CK repository such as ck-env to better understand this structure."
+msgstr ""
+
+#: ../../src/specs.md:9
+msgid ""
+"Note that CK creates this structure automatically when you use CK CLI or "
+"Python API."
+msgstr ""
+
+#: ../../src/specs.md:12
+msgid "Root files"
+msgstr ""
+
+#: ../../src/specs.md:14
+msgid ""
+".ckr.json : JSON meta description of this repository including UIDs and "
+"dependencies on other repositories. Most of this information is "
+"automatically generated when a new CK repository is created."
+msgstr ""
+
+#: ../../src/specs.md:38
+msgid "Root directories (CK modules)"
+msgstr ""
+
+#: ../../src/specs.md:40
+msgid ""
+"Root of the CK repository can contain any sub-directories to let users "
+"gradually convert their ad-hoc projects into the CK format. However, if a"
+" directory is related to CK entry, it should have the same name as an "
+"associated CK module and two files in the .cm directory:"
+msgstr ""
+
+#: ../../src/specs.md:43
+msgid "CK module name"
+msgstr ""
+
+#: ../../src/specs.md:44
+msgid ".cm/alias-a-{CK module name} : contains UID of the CK module"
+msgstr ""
+
+#: ../../src/specs.md:45
+msgid ".cm/alias-u-{UID} : contains CK module name (alias)"
+msgstr ""
+
+#: ../../src/specs.md:47
+msgid ""
+"These 2 files in .cm help CK to understand that a given directory inside "
+"CK repository is associated with some CK entry! They also support fast "
+"such for a given CK entry by UIDs or aliases."
+msgstr ""
+
+#: ../../src/specs.md:50
+msgid ""
+"However, in the future, we may want to remove such files and perform "
+"automatic indexing when CK pulls repositories (similar to Git). See this "
+"ticket."
+msgstr ""
+
+#: ../../src/specs.md:52
+msgid "Sub-directories for CK entries"
+msgstr ""
+
+#: ../../src/specs.md:54
+msgid ""
+"If the directory in the CK repository is a valid CK module name, it can "
+"contain CK entries associated with this CK module."
+msgstr ""
+
+#: ../../src/specs.md:56
+msgid ""
+"If CK entry does not have a name (an alias), it will be stored as a CK "
+"UID (16 lowercase hexadecimal characters):"
+msgstr ""
+
+#: ../../src/specs.md:58
+msgid "UID : holder for some artifacts"
+msgstr ""
+
+#: ../../src/specs.md:60
+msgid ""
+"If CK entry has a name (an alias), there will be two more files in the "
+".cm directory:"
+msgstr ""
+
+#: ../../src/specs.md:62
+msgid "CK entry name : holder for some artifacts"
+msgstr ""
+
+#: ../../src/specs.md:63
+msgid ".cm/alias-a-{CK entry name} : contains UID of the CK entry"
+msgstr ""
+
+#: ../../src/specs.md:64
+msgid ".cm/alias-u-{UID} : contains CK entry name (alias)"
+msgstr ""
+
+#: ../../src/specs.md:66
+msgid ""
+"Once again, these .cm files allow CK to quickly find CK entries by UID "
+"and aliases in all CK repositories without the need for any indexing."
+msgstr ""
+
+#: ../../src/specs.md:68
+msgid "CK entry"
+msgstr ""
+
+#: ../../src/specs.md:70
+msgid "Each valid CK entry has at least 3 files in the .cm directory:"
+msgstr ""
+
+#: ../../src/specs.md:72
+msgid ".cm/meta.json : JSON meta description of a given CK entry"
+msgstr ""
+
+#: ../../src/specs.md:73
+msgid ""
+".cm/info.json : provenance for a given CK entry (date of creation, "
+"author, copyright, license, CK used, etc)"
+msgstr ""
+
+#: ../../src/specs.md:74
+msgid ".cm/desc.json : meta description SPECs (under development)"
+msgstr ""
+
+#: ../../src/specs.md:76
+msgid ""
+"This entry can also contain any other files and directories (for example "
+"models, data set files, algorithms, scripts, papers and any other "
+"artifacts)."
+msgstr ""
+

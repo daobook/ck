@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/setup/common.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:3
+msgid "Common setup for the MLPerf inference benchmark"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:5
+msgid "Install CK framework"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:7
+msgid ""
+"Install CK and dependencies as described here (make sure that your "
+"version is >= 2.5.3):"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:13
+#: ../../mlperf-automation/setup/common.md:17
+msgid "or"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:22
+msgid "Check that ck is accessible from the command line:"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:44
+msgid ""
+"Note that you may need to restart your shell after this installation or "
+"add ~.local/bin/ck to your PATH environment variable manually."
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:47
+msgid "Pull CK repo for virtual environments"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:53
+msgid "Check your Python version"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:55
+msgid "Check your python version:"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:60
+msgid ""
+"If your Python version is < 3.6, we suggest you to install python via CK "
+"to be used in the virtual environment:"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:65
+msgid ""
+"You can buid python with enabled optimizations though be careful since it"
+" may take 30..50 minutes:"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:71
+msgid "Set up CK virtual environment"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:78
+msgid ""
+"This CK automation will create a virtual environment and install the "
+"necessary dependencies for the MLPerf inference benchmark v1.1."
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:82
+msgid "Pull MLOps automation repo"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:88
+msgid "Misc"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:90
+msgid ""
+"You can find the installation directories for MLPerf and other packages "
+"as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:95
+msgid ""
+"CK allows you to have multiple versions of all packages installed at the "
+"same time. Each directory contains env.sh or env.bat with a preset "
+"environment variables for a given version."
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:99
+msgid ""
+"CK program workflows will automatically load these files when resolving "
+"dependencies thus allowing users to run the same MLPerf workflow with "
+"different versions of compilers, frameworks, libraries, models and data "
+"sets."
+msgstr ""
+
+#: ../../mlperf-automation/setup/common.md:103
+msgid ""
+"Note that all above steps can be automated via CK virtual environments "
+"too. However, we describe these manual steps to let users experiment with"
+" different versions of dependencies for DSE."
+msgstr ""
+

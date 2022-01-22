@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/tasks/README.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:4
+#: ../../mlperf-automation/tasks/README.md:7
+msgid "CK workflows for the MLPerf inference benchmark"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:9
+msgid ""
+"MLPerf tasks         | PyTorch | TensorFlow | TVM | ONNX | TFLite | "
+"OpenVINO | TensorRT | --- | --- | --- | --- | --- | --- | --- | --- | "
+"Image classification | CK ✓ | CK ✓ | CK ✓ | CK ✓ | CK ± | CK ± |  | "
+"Object detection     |  |  | CK ± | CK ✓ | CK ± |  | CK ± | Medical "
+"imaging      |  |  |  |  |  |  |  | Language             |  |  |  | CK ✓ "
+"|  |  |  | Recommendation       |  |  |  |  |  |  |  | Speech"
+"               | CK ± |  |  |  |  |  |  |"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:21
+msgid "New MLPerf backends"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:23
+msgid "MLPerf with TVM and ONNX"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:25
+msgid "Unsorted notes"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:27
+msgid "Image classification"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:28
+msgid "Object detection"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:29
+msgid "Medical imaging"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:30
+msgid "NLP"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:31
+msgid "Recommendation"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:32
+msgid "Speech recognition"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:34
+msgid "Notes about datasets"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:35
+msgid "Notes about models (issues, quantization, etc)"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:37
+msgid "DLRM: notes, CK packages, CK workflows"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:38
+msgid "Search for CK program workflows with \"mlperf\""
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:39
+msgid "Search for CK program workflows with \"loadgen\""
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:41
+msgid "Feedback"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/README.md:42
+msgid "Contact: grigori@octoml.ai"
+msgstr ""
+

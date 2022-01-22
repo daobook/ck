@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/results/ck-dashboard.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:3
+msgid "Example of CK dashboards for ML Systems DSE"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:5
+msgid ""
+"You can record experiments in the CK \"experiment\" entries and visualize"
+" them using CK dashboards either locally or using the cKnowledge.io "
+"platform"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:10
+#: ../../mlperf-automation/results/ck-dashboard.md:43
+msgid ""
+"Demo of a Docker with MLPerf™ dashboards for ML Systems DSE (Linux and "
+"Windows)"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:12
+#: ../../mlperf-automation/results/ck-dashboard.md:45
+msgid "Container: docker:ck-mlperf-dashboard-demo"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:14
+#: ../../mlperf-automation/results/ck-dashboard.md:51
+msgid "Install CK"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:19
+msgid "Pull CK repository"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:24
+#: ../../mlperf-automation/results/ck-dashboard.md:66
+msgid "Build this container"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:29
+msgid ""
+"Note that it will build and run several MLPerf™ benchmarks while "
+"recording results to the CK 'experiment' entries to be used in the CK "
+"dashboard."
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:32
+msgid "Run this continer"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:37
+msgid "View CK dashboard in your browser"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:39
+msgid "Go to http://localhost:3355/?template=dashboard&scenario=mlperf.mobilenets"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:47
+msgid ""
+"This container demonstrates how to run CK experiments and record results "
+"from the Docker in the local \"mlperf-mobilenets\" repository on the host"
+" machine to be processed in Jupyter notebooks or visualized using CK "
+"dashboards."
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:56
+msgid "Pull ck-ml repository via CK"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:61
+msgid "Create local mlperf-mobilenets repo"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:71
+msgid "Run this container"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:73
+msgid "You must run this container using a special script from this directory:"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:78
+msgid "Linux: docker-start.sh"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:79
+msgid "Windows: docker-start.bat"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:81
+msgid ""
+"This script will mount local CK mlperf-mobilenets repo inside Docker to "
+"be able to record experiments there from the Docker container."
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:84
+msgid ""
+"This script will call a helper script [https://github.com/mlcommons/ck-"
+"mlops/tree/main/docker/ck-mlperf-local-dashboard-demo/docker-helper.sh] "
+"with benchmarks that you can modify to run different experiments."
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:87
+msgid "View CK dashboard localy"
+msgstr ""
+
+#: ../../mlperf-automation/results/ck-dashboard.md:89
+msgid "Run the following command from your host machine to visualize results:"
+msgstr ""
+

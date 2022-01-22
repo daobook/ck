@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:3
+msgid "Nvidia Jetson Nano board"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:5
+msgid "SDK downloaded on 2021-04-20"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:6
+msgid "Ubuntu 18.04"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:7
+msgid "Card: 128GB"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:8
+msgid "CPU: Quad-core ARM® A57 CPU"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:9
+msgid "ARMv8 Processor rev 1 (v8l) x 4"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:10
+msgid "GPU: NVIDIA Tegra X1 (nvgpu)/integrated"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:11
+msgid "128-core NVIDIA Maxwell™ GPU"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:12
+msgid "Memory: 4 GB 64-bit LPDDR4"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:14
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:46
+msgid "Notes"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:16
+msgid ""
+"[20210420] Grigori tested ck venv to prepare CK virtual environment and "
+"build several python versions - it worked fine."
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:19
+msgid ""
+"[20210420] Grigori managed to build the latest loadgen from MLCommons™ "
+"inference (both python version and static library)."
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:24
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:38
+msgid "Test CK automation (platform detection)"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:47
+msgid ""
+"Prebuilt LLVM v12.0.0 doesn't work (requires newer libraries). One should"
+" use 11.0.1:"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:48
+msgid "ck install package --tags=compiler,llvm,prebuilt,v11.0.1"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:50
+msgid "Install TVM with CUDA:"
+msgstr ""
+
+#: ../../mlperf-automation/platform/nvidia-jetson-nano.md:51
+msgid "ck install package --tags=tvm,src,dev-cuda"
+msgstr ""
+

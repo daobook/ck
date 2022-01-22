@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:3
+msgid "Reproduced by Grigori Fursin on 20210808"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:5
+msgid "Platform: x8664"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:6
+msgid "OS: Ubuntu 18.04 64-bit"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:8
+msgid "MLPerf™ Inference v0.5 - Image Classification - OpenVino 2019 R3"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:10
+msgid "System packages"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:12
+msgid "Install system packages for x86."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:14
+msgid "Install Collective Knowledge (CK) and Virtual Environment"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:16
+msgid ""
+"Note that you need Python 3.7+! If you do not have it installed, don't "
+"worry - CK can rebuilt a required version when creating a virtual "
+"environment."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:24
+msgid ""
+"CK will attempt to detect existing python versions and will ask you which"
+" one to use for your virtual environment."
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:26
+msgid "Activate created virtual environment"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:32
+msgid "Pull CK MLOps repository"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:38
+msgid "Remove new MLPerf"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:40
+msgid ""
+"Remove the latest MLPerf (automatically installed by the venv template) "
+"to install the old one:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:46
+msgid "Add CPATH for Boost (to be automated in the future)"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:48
+msgid "Substitute python3.7m with the version you use (check this directory):"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:53
+msgid "Install CK packages"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:71
+msgid "Install OpenVino 2019 R3"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:79
+msgid "Install datasets and calibrate model"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:93
+msgid "Copy val_map.txt to the dataset directory"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:99
+msgid ""
+"If want to use full dataset and detect it - need to copy val_map.txt to "
+"new env!"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:101
+msgid "Check offline accuracy"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:114
+msgid "Check offline performance"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:126
+msgid "Check server performance"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:139
+msgid "Extra flags to play with:"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:141
+msgid "--env.CK_LOADGEN_SAMPLES_PER_QUERY=100  \\"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:142
+msgid "--env.CK_LOADGEN_BUFFER_SIZE=10       \\"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:143
+msgid "--env.CK_LOADGEN_MIN_QUERY_COUNT=1 \\"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:144
+msgid "--env.CK_LOADGEN_MAX_QUERY_COUNT=1  \\"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:145
+msgid "--env.CK_LOADGEN_BUFFER_SIZE=1       \\"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:146
+msgid "--env.CK_LOADGEN_SAMPLES_PER_QUERY=10  \\"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:147
+msgid "--env.CK_LOADGEN_TARGET_QPS=1          \\"
+msgstr ""
+
+#: ../../mlperf-automation/reproduce/ck-image-classification-x86-64-openvino-2019.md:148
+msgid "--env.CK_LOADGEN_TARGET_LATENCY=1"
+msgstr ""
+

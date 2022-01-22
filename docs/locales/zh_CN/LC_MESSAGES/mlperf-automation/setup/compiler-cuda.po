@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/setup/compiler-cuda.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/setup/compiler-cuda.md:3
+msgid "Pull MLOps automation repo"
+msgstr ""
+
+#: ../../mlperf-automation/setup/compiler-cuda.md:9
+msgid "Plug CUDA into CK"
+msgstr ""
+
+#: ../../mlperf-automation/setup/compiler-cuda.md:11
+msgid ""
+"You can detect already installed CUDA versions and automatically plug "
+"them to CK as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/setup/compiler-cuda.md:17
+msgid ""
+"Note that multiple versions of CUDA can coexist in CK. You can run the "
+"above command several times to register required versions"
+msgstr ""
+
+#: ../../mlperf-automation/setup/compiler-cuda.md:20
+msgid "Check registered versions"
+msgstr ""
+
+#: ../../mlperf-automation/setup/compiler-cuda.md:26
+msgid "Detect CUDA capabilities"
+msgstr ""
+
+#: ../../mlperf-automation/setup/compiler-cuda.md:32
+msgid "Detect OpenCL capabilities"
+msgstr ""
+

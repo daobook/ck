@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:3
+msgid "Rapsberry Pi 4 with Ubuntu Server 20.04.2 LTS 64-bit"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:5
+msgid "OS release: 2021-02-04 (64-bit)"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:6
+msgid "Card: 128GB"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:7
+msgid "Memory: 4GB"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:10
+msgid "Notes"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:12
+msgid "[20210816] Grigori updated docs about the power supply and cooling."
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:14
+msgid ""
+"[20210812] Grigori updated docs to set up swap disk to run TVM with large"
+" models."
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:16
+msgid ""
+"[20210422] Grigori tested ck venv to prepare CK virtual environment and "
+"build several python versions - it worked fine."
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:19
+msgid ""
+"[20210423] Grigori managed to build the latest loadgen from MLCommons™ "
+"inference (both python version and static library)."
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:24
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:38
+msgid "Prepare large SWAP disk"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:46
+msgid "Update the following lines (10GB swap):"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:47
+msgid "CONF_SWAPSIZE=10240"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:48
+msgid "CONF_MAXSWAP=10240"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:50
+msgid "Initialize swap disk:"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:58
+msgid "Check power supply and cooling"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:60
+msgid ""
+"You need to make sure that you have a native power supply (5.1V 2.5A) and"
+" cooling to have stable MLPerf results."
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:63
+msgid "See our power supply and cooling used to submit results to MLPerf v1.1."
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:67
+msgid "Set up CK scripts to set CPU frequency to max"
+msgstr ""
+
+#: ../../mlperf-automation/platform/rpi4-ubuntu.md:73
+msgid "Turn off scripts to handle frequency (use dummy linux scripts):"
+msgstr ""
+

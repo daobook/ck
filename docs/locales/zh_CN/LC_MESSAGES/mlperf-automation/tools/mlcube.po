@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/tools/mlcube.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:3
+msgid "MLCube™ project"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:5
+msgid "GitHub: https://github.com/mlcommons/mlcube"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:7
+msgid "Native CMD"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:10
+msgid "Download SSD dataset (~20 GB, ~40 GB space required)"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:15
+msgid "Download ResNet34 feature extractor"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:20
+msgid "Run benchmark"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:26
+msgid "CK automation"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:28
+msgid "Common CK setup"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:30
+msgid ""
+"Install the CK framework as follows (check this guide in case of "
+"problems)."
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:37
+msgid "We suggest you to create a virtual CK environment as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:47
+msgid "Pull repo with CK MLOps, MLCube and MLPerf components:"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:52
+msgid "Install MLCube as a CK package"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:57
+msgid "List MLCube example"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:63
+msgid "List target platforms"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:68
+msgid "Add new target platform"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:74
+msgid "TBD"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:86
+msgid "Notes"
+msgstr ""
+
+#: ../../mlperf-automation/tools/mlcube.md:87
+msgid "Single Stage Detection with MLCube(tm)"
+msgstr ""
+

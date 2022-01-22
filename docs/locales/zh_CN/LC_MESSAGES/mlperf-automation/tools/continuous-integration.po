@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/tools/continuous-integration.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/tools/continuous-integration.md:3
+msgid "Continuous integration for CK workflows"
+msgstr ""
+
+#: ../../mlperf-automation/tools/continuous-integration.md:5
+msgid ""
+"All CK modules and automation actions are accessible as a micro-service "
+"with a unified JSON I/O API."
+msgstr ""
+
+#: ../../mlperf-automation/tools/continuous-integration.md:7
+msgid "For example, have a look at these CLI-based CK commands:"
+msgstr ""
+
+#: ../../mlperf-automation/tools/continuous-integration.md:15
+msgid "They can be implemented in Python as follows:"
+msgstr ""
+
+#: ../../mlperf-automation/tools/continuous-integration.md:35
+msgid ""
+"This allows one to use CK automation actions and workflows as web "
+"services or connect them with any CI platform."
+msgstr ""
+
+#: ../../mlperf-automation/tools/continuous-integration.md:37
+msgid "Examples"
+msgstr ""
+
+#: ../../mlperf-automation/tools/continuous-integration.md:39
+msgid "Python-based CK integration with web platforms:"
+msgstr ""
+
+#: ../../mlperf-automation/tools/continuous-integration.md:40
+msgid ""
+"cKnowledge.io platform uses CK framework as a database of CK objects and "
+"micro-services."
+msgstr ""
+
+#: ../../mlperf-automation/tools/continuous-integration.md:42
+msgid "CMD-based CK integration with CLI platforms:"
+msgstr ""
+
+#: ../../mlperf-automation/tools/continuous-integration.md:44
+msgid "Travis for Linux and MacOS (CK ML repository)"
+msgstr ""
+
+#: ../../mlperf-automation/tools/continuous-integration.md:45
+msgid "AppVeyor for Windows (CK ML repository)"
+msgstr ""
+

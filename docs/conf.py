@@ -31,7 +31,7 @@ version=''
 release=version
 
 edit_on_github_url='https://github.com'
-edit_on_github_project = 'mlcommons/ck'
+edit_on_github_project = 'daobook/ck'
 
 kernel_file=os.path.join('..', 'ck', 'kernel.py')
 
@@ -107,12 +107,12 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'zh_CN'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -141,7 +141,7 @@ html_context = {
     "display_github": True,
     "github_user": "ctuning",
     "github_repo": "ck",
-    "github_version": "master/docs/",
+    "github_version": "xin/docs/",
 }
 
 html_logo = 'static/logo.png'
@@ -248,4 +248,7 @@ intersphinx_mapping = {'https://docs.python.org/': None}
 todo_include_todos = True
 
 def setup(app):
-    app.add_stylesheet('css/custom.css') 
+    app.add_css_file('css/custom.css') 
+
+locale_dirs = ['locales/']  # path is example but recommended.
+gettext_compact = False  # optional.

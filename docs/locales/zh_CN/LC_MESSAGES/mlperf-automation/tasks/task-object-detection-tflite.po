@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/tasks/task-object-detection-tflite.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection-tflite.md:3
+msgid "CK workflows for object detection with TFLite"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection-tflite.md:5
+msgid "Old CK workflow"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection-tflite.md:7
+msgid "Reproducibility studies"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection-tflite.md:9
+msgid "RPi4"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection-tflite.md:10
+msgid "Google Coral TPU"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection-tflite.md:12
+msgid "Future work"
+msgstr ""
+
+#: ../../mlperf-automation/tasks/task-object-detection-tflite.md:14
+msgid ""
+"We plan to update above workflow to be compatible with our new end-to-end"
+" MLPerf submission workflow."
+msgstr ""
+

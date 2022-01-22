@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/results/README.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:3
+msgid "Analyse MLPerf™ inference results"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:5
+msgid "Download and install MLPerf™ inference results via CK"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:19
+msgid "Available results"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:21
+msgid "v1.0"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:23
+msgid "Announcements:"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:24
+msgid "https://mlcommons.org/en/news/mlperf-inference-v10/"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:26
+#: ../../mlperf-automation/results/README.md:48
+msgid "Results:"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:27
+msgid "https://mlcommons.org/en/inference-datacenter-10/"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:28
+msgid "https://mlcommons.org/en/inference-edge-10/"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:30
+#: ../../mlperf-automation/results/README.md:53
+msgid "GitHub with results, code and data:"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:31
+msgid "https://github.com/mlcommons/inference_results_v1.0 (2.8GB)"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:34
+msgid "Notes:"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:35
+msgid "IEEE Spectrum"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:36
+msgid "ZDNet"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:37
+msgid "AnandTech"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:39
+msgid "Meetings:"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:40
+msgid "MLCommons™ community meeting notes"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:43
+msgid "v0.7"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:45
+msgid "Announcement:"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:46
+msgid "https://mlcommons.org/en/news/mlperf-inference-v07/"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:49
+msgid "https://mlcommons.org/en/inference-datacenter-07/"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:50
+msgid "https://mlcommons.org/en/inference-edge-07/"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:51
+msgid "https://mlcommons.org/en/inference-mobile-07/"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:54
+msgid "https://github.com/mlcommons/inference_results_v0.7 (2.5GB)"
+msgstr ""
+
+#: ../../mlperf-automation/results/README.md:55
+msgid "https://github.com/mlcommons/inference_results_v0.5 (13GB)"
+msgstr ""
+

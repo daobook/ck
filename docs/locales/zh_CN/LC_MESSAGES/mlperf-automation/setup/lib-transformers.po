@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/setup/lib-transformers.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/setup/lib-transformers.md:3
+msgid "Pull MLOps automation repo"
+msgstr ""
+
+#: ../../mlperf-automation/setup/lib-transformers.md:9
+msgid "Install CK packages with Transformers library"
+msgstr ""
+
+#: ../../mlperf-automation/setup/lib-transformers.md:15
+msgid "Install any available version"
+msgstr ""
+
+#: ../../mlperf-automation/setup/lib-transformers.md:21
+msgid "Notes"
+msgstr ""
+
+#: ../../mlperf-automation/setup/lib-transformers.md:22
+msgid ""
+"CK makes it possible to install multiple versions of different packages "
+"at the same time. CK workflows can then automatically plug in different "
+"versions of packages (frameworks, libraries, models, data sets) to enable"
+" collaborating testing, benchmarking and optimization of ML Systems."
+msgstr ""
+

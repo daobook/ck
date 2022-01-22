@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/submit/power.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/submit/power.md:3
+msgid ""
+"Seems that the allowed devices to measure power are "
+"(https://www.spec.org/ptdaemon)"
+msgstr ""
+
+#: ../../mlperf-automation/submit/power.md:4
+msgid "Yokogawa (Hioki) WT333E"
+msgstr ""
+
+#: ../../mlperf-automation/submit/power.md:5
+msgid "Yokogawa (Hioki) WT310"
+msgstr ""
+
+#: ../../mlperf-automation/submit/power.md:7
+#, python-format
+msgid ""
+"https://www.businesswire.com/news/home/20210421005868/en/MLCommons%E2%84%A2"
+"-Releases-MLPerf%E2%84%A2-Inference-v1.0-Results-with-First-Power-"
+"Measurements"
+msgstr ""
+
+#: ../../mlperf-automation/submit/power.md:9
+msgid ""
+"WG summary Doc located at : "
+"https://docs.google.com/document/d/1GSVRERhuEMFqS9zljNDoAKqVVfUltV7S09YsUrEAmRU/edit#heading=h.fb5073naucdw"
+msgstr ""
+
+#: ../../mlperf-automation/submit/power.md:10
+msgid ""
+"MLPerf Power Drive (many docs with submission rules): "
+"https://drive.google.com/drive/u/3/folders/1RIXjJhPZHrUItA1CCqd7LvYkjE14aGTm"
+msgstr ""
+
+#: ../../mlperf-automation/submit/power.md:12
+msgid "GitHub repo: https://github.com/mlcommons/power-dev"
+msgstr ""
+
+#: ../../mlperf-automation/submit/power.md:13
+msgid ""
+"PTD client server: https://github.com/mlcommons/power-"
+"dev/tree/master/ptd_client_server"
+msgstr ""
+
+#: ../../mlperf-automation/submit/power.md:14
+msgid "CK program workflow: link"
+msgstr ""
+
+#: ../../mlperf-automation/submit/power.md:15
+msgid ""
+"Log example: "
+"https://github.com/mlcommons/inference_results_v1.0/blob/master/closed/Krai/results"
+"/rpi4coral-fan.off-"
+"tflite-v2.4.1-ruy/resnet50/offline/performance/power/client.log"
+msgstr ""
+

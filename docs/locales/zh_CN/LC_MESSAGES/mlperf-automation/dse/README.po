@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../mlperf-automation/dse/README.md:1
+msgid "[ TOC ]"
+msgstr ""
+
+#: ../../mlperf-automation/dse/README.md:3
+msgid "Automated design space exploration of ML/SW/HW stacks"
+msgstr ""
+
+#: ../../mlperf-automation/dse/README.md:5
+msgid "TBD"
+msgstr ""
+
+#: ../../mlperf-automation/dse/README.md:7
+msgid "CK based object detection DSE"
+msgstr ""
+
+#: ../../mlperf-automation/dse/README.md:9
+msgid "Jupyter notebook"
+msgstr ""
+
+#: ../../mlperf-automation/dse/README.md:10
+#: ../../mlperf-automation/dse/README.md:15
+msgid "CK dashboard"
+msgstr ""
+
+#: ../../mlperf-automation/dse/README.md:12
+msgid "ACM ASPLOS REQUEST DSE tournament"
+msgstr ""
+
+#: ../../mlperf-automation/dse/README.md:14
+msgid "event and report"
+msgstr ""
+
+#: ../../mlperf-automation/dse/README.md:17
+msgid "To run locally:"
+msgstr ""
+
+#: ../../mlperf-automation/dse/README.md:22
+msgid "Start CK dashboard with local CK web server"
+msgstr ""
+

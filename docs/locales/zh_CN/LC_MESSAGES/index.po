@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2020 Grigori Fursin and the cTuning foundation
+# This file is distributed under the same license as the Collective
+# Knowledge framework package.
+# xinetzone <735613050@qq.com>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Collective Knowledge framework 2.6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../index.rst:27
+msgid "Introduction"
+msgstr "简介"
+
+#: ../../index.rst:35
+msgid "Getting Started"
+msgstr "快速上手"
+
+#: ../../index.rst:43
+msgid "User guide"
+msgstr "用户指南"
+
+#: ../../index.rst:52
+msgid "Resources"
+msgstr "资源"
+
+#: ../../index.rst:9
+msgid "CK framework documentation"
+msgstr "CK 框架文档"
+
+#: ../../index.rst:13
+msgid ""
+"Collective Knowledge framework (CK) helps to organize any software "
+"project as a database of reusable components (algorithms, datasets, "
+"models, frameworks, scripts, experimental results, papers, etc) with "
+"common automation actions and extensible meta descriptions based on FAIR "
+"principles (findability, accessibility, interoperability, and "
+"reusability)."
+msgstr ""
+"集体知识框架（CK）有助于将任何软件项目组织成一个可重用组件"
+"（算法、数据集、模型、框架、脚本、实验结果、论文等）的数据库，"
+"具有共同的自动化行为和基于 FAIR 原则（可查找性、可访问性、互操作性和可重用性）的可扩展元描述。"
+
+#: ../../index.rst:19
+msgid ""
+"The ultimate goal is to help everyone share, reuse, and extend their "
+"knowledge in the form of reusable artifacts and portable workflows with a"
+" common API, CLI, and JSON meta description."
+msgstr ""
+"最终目标是通过通用的 API、CLI 和 JSON 元描述，以可重用构件和可移植工作流的形式，帮助每个人共享、重用和扩展他们的知识。"
+
+#: ../../index.rst:23
+msgid ""
+"See how CK helps to support collaborative and reproducible AI, ML, and "
+"systems R&D in some real-world use cases from Arm, General Motors, IBM, "
+"MLPerf(tm), the Raspberry Pi foundation, and ACM: "
+"https://cKnowledge.org/partners."
+msgstr ""
+"在 Arm、通用汽车、IBM、MLPerf(tm)、Raspberry Pi 基金会和 ACM 的一些实际使用案例中，"
+"看看 CK 如何帮助支持协作和可重复的 AI、ML 和系统研发：https://cKnowledge.org/partners。"
+
+#: ../../index.rst:61
+msgid "Index"
+msgstr "索引"
+
+#: ../../index.rst:63
+msgid ":ref:`genindex`"
+msgstr ""
