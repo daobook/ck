@@ -167,7 +167,7 @@ def web_out(i):
 
   tp=i['type']
 
-  if tp=='' or tp=='web': tp='html'
+  if tp in ['', 'web']: tp='html'
 
   tpx=context_types.get(tp,{})
   if len(tpx)==0:

@@ -37,23 +37,19 @@ def dump_json(i):
     d = i['dict']
     si = i.get('skip_indent', '')
 
-    sk = False
-    if i.get('sort_keys', '') == 'yes':
-        sk = True
-
+    sk = i.get('sort_keys', '') == 'yes'
     try:
         if sys.version_info[0] > 2:
             if si == 'yes':
                 s = json.dumps(d, ensure_ascii=False, sort_keys=sk)
             else:
                 s = json.dumps(d, indent=2, ensure_ascii=False, sort_keys=sk)
+        elif si == 'yes':
+            s = json.dumps(d, ensure_ascii=False,
+                           encoding='utf8', sort_keys=sk)
         else:
-            if si == 'yes':
-                s = json.dumps(d, ensure_ascii=False,
-                               encoding='utf8', sort_keys=sk)
-            else:
-                s = json.dumps(d, indent=2, ensure_ascii=False,
-                               encoding='utf8', sort_keys=sk)
+            s = json.dumps(d, indent=2, ensure_ascii=False,
+                           encoding='utf8', sort_keys=sk)
     except Exception as e:
         return {'return': 1, 'error': 'problem converting dict to json ('+format(e)+')'}
 
@@ -61,7 +57,7 @@ def dump_json(i):
 
 
 ##############################################################################
-def copy_to_clipboard(i):  # pragma: no cover
+def copy_to_clipboard(i):    # pragma: no cover
     """Copy string to clipboard if supported by OS (requires Tk or pyperclip)
        Target audience: end users
 
@@ -88,8 +84,6 @@ def copy_to_clipboard(i):  # pragma: no cover
     except Exception as e:
         ee = format(e)
         failed = True
-        pass
-
     if not failed:
         pyperclip.copy(s)
     else:
@@ -101,8 +95,6 @@ def copy_to_clipboard(i):  # pragma: no cover
         except ImportError as e:
             ee = format(e)
             failed = True
-            pass
-
         if failed:
             failed = False
             try:
@@ -110,8 +102,6 @@ def copy_to_clipboard(i):  # pragma: no cover
             except ImportError as e:
                 ee = format(e)
                 failed = True
-                pass
-
         if failed:
             return {'return': 1, 'error': 'none of pyperclip/Tkinter/tkinter packages is installed'}
 

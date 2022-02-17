@@ -35,12 +35,11 @@ def send(i):
     except: from urllib import urlencode
 
     url=i.get('url')
-    if url=='' or url==None:
-       return {'return':1, 'error': 'cK API URL is not defined'}
+    if url == '' or url is None:
+        return {'return':1, 'error': 'cK API URL is not defined'}
 
     # Prepare dict to send to remote server
-    ii={}
-    ii['action']=i.get('action','')
+    ii = {'action': i.get('action', '')}
     ii['dict']=i.get('dict',{})
 
     # Prepare post variables

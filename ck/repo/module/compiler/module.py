@@ -113,7 +113,7 @@ def extract_to_pipeline(i):
         qq=dx[q]
         q1=q
         if q1.startswith('##'): q1=q1[1:]
-        q1='##compiler_flags'+q1
+        q1 = f'##compiler_flags{q1}'
         px['choices_desc'][q1]=qq
 
     # Saving file

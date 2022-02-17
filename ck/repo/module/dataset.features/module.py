@@ -86,7 +86,7 @@ def extract(i):
         duoa=q['data_uoa']
 
         if o=='con':
-           ck.out('Processing '+duoa+' ...')
+            ck.out(f'Processing {duoa} ...')
 
         rx=ck.access({'action':'load',
                       'module_uoa':muoa,
@@ -113,73 +113,70 @@ def extract(i):
 
         if ts!=0: feat['total_size']=ts
 
-        if 'image' in dt:
-           if o=='con':
-              ck.out('  Image detected.')
+        if 'image' in dt and o == 'con':
+            ck.out('  Image detected.')
 
-              for f in df:
-                  p1=os.path.join(p,f)
-                  if os.path.isfile(p1):
-                     try:
-                       from PIL import Image
-                       im = Image.open(p1)
+            for f in df:
+                p1=os.path.join(p,f)
+                if os.path.isfile(p1):
+                   try:
+                     from PIL import Image
+                     im = Image.open(p1)
 
-                       feat['mode']=str(im.mode)
-                       feat['format']=str(im.format)
-                       feat['width']=im.size[0]
-                       feat['height']=im.size[1]
+                     feat['mode']=str(im.mode)
+                     feat['format']=str(im.format)
+                     feat['width']=im.size[0]
+                     feat['height']=im.size[1]
 
-                       inf=im.info
-                       feat['compression']=inf.get('compression','')
-                       dpi=inf.get('dpi',[])
-                       if len(dpi)>1:
-                          feat['xdpi']=dpi[0]
-                          feat['ydpi']=dpi[1]
-                       
-                       feat['raw_info']=im.info
-                     except Exception as e: 
-                        pass
+                     inf=im.info
+                     feat['compression']=inf.get('compression','')
+                     dpi=inf.get('dpi',[])
+                     if len(dpi)>1:
+                        feat['xdpi']=dpi[0]
+                        feat['ydpi']=dpi[1]
 
-        if len(feat)>0:
-           rr=ck.dumps_json({'dict':feat, 'sort_keys':'yes', 'skip_indent':'yes'})
-           if rr['return']>0: 
-              if 'raw_info' in feat: # Usually source of problems
-                 del(feat['raw_info'])
-                 rr=ck.dumps_json({'dict':feat, 'sort_keys':'yes', 'skip_indent':'yes'})
-                 if rr['return']>0: return rr
-              else:
-                 return rr
+                     feat['raw_info']=im.info
+                   except Exception as e: 
+                      pass
 
-           sfeat=rr['string']
-           ck.out('  '+sfeat)
+        if feat:
+            rr=ck.dumps_json({'dict':feat, 'sort_keys':'yes', 'skip_indent':'yes'})
+            if rr['return']>0: 
+                if 'raw_info' not in feat:
+                    return rr
 
-           found=False
-           ry=ck.access({'action':'load',
-                         'module_uoa':work['self_module_uid'],
-                         'data_uoa':duid})
-           if ry['return']==0: 
-              ddd=ry['dict']              
-              found=True
+                del(feat['raw_info'])
+                rr=ck.dumps_json({'dict':feat, 'sort_keys':'yes', 'skip_indent':'yes'})
+            if rr['return']>0: return rr
+            sfeat=rr['string']
+            ck.out(f'  {sfeat}')
 
-           feat1=ddd.get('features',{})
-           rz=ck.merge_dicts({'dict1':feat1, 'dict2':feat})
-           if rz['return']>0: return rz
-           feat1=rz['dict1']
+            found=False
+            ry=ck.access({'action':'load',
+                          'module_uoa':work['self_module_uid'],
+                          'data_uoa':duid})
+            if ry['return']==0: 
+               ddd=ry['dict']              
+               found=True
 
-           ddd['features']=feat1
-           ddd['tags']=otags
+            feat1=ddd.get('features',{})
+            rz=ck.merge_dicts({'dict1':feat1, 'dict2':feat})
+            if rz['return']>0: return rz
+            feat1=rz['dict1']
 
-           ii={}
-           ii['action']='add'
-           if found: ii['action']='update'
-           ii['module_uoa']=work['self_module_uid']
-           ii['data_uoa']=duoa
-           ii['data_uid']=duid
-           ii['repo_uoa']=truoa
-           ii['dict']=ddd
-           ii['substitute']='yes'
-           ry=ck.access(ii)
-           if ry['return']>0: return ry
+            ddd['features']=feat1
+            ddd['tags']=otags
+
+            ii = {'action': 'add'}
+            if found: ii['action']='update'
+            ii['module_uoa']=work['self_module_uid']
+            ii['data_uoa']=duoa
+            ii['data_uid']=duid
+            ii['repo_uoa']=truoa
+            ii['dict']=ddd
+            ii['substitute']='yes'
+            ry=ck.access(ii)
+            if ry['return']>0: return ry
 
     return {'return':0, 'dict':{'features':feat1}}
 

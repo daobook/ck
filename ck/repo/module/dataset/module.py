@@ -68,10 +68,9 @@ def import_all_files(i):
 
     dirList=os.listdir(p)
     for fn in dirList:
-         p1=os.path.join(p, fn)
-         if os.path.isfile(p1):
-            if fn not in dfiles:
-               dfiles.append(fn)
+        p1=os.path.join(p, fn)
+        if os.path.isfile(p1) and fn not in dfiles:
+            dfiles.append(fn)
 
     r=ck.access({'action':'update',
                  'module_uoa':work['self_module_uid'],
@@ -196,14 +195,14 @@ def check_size(i):
         duid=q['data_uid']
         duoa=q['data_uoa']
 
-        ck.out('Processing '+duoa+' ...')
+        ck.out(f'Processing {duoa} ...')
 
         ii={'action':'load',
             'module_uoa':muid,
             'repo_uoa':ruid,
             'data_uoa':duid}
 
-        rx=ck.access(ii) 
+        rx=ck.access(ii)
         if rx['return']>0: return rx
 
         dd=rx['dict']
@@ -230,11 +229,11 @@ def check_size(i):
               ii['dict']=dd
               ii['sort_keys']='yes'
               ii['ignore_update']='yes'
-              
+
               rx=ck.access(ii)
               if rx['return']>0: return rx
 
-        ck.out('  Size: '+str(sz)+x)
+        ck.out(f'  Size: {sz}{x}')
 
     return {'return':0}
 
@@ -284,7 +283,7 @@ def add_file_to(i):
     pn=os.path.join(p,fn)
 
     if o=='con':
-       ck.out('Copying file '+fn+' to '+pn+' ...')
+        ck.out(f'Copying file {fn} to {pn} ...')
 
     shutil.copyfile(fn,pn)
 
@@ -333,19 +332,17 @@ def add(i):
     # Check tags
     xtags=d.get('tags',[])
     if len(xtags)==0:
-       tags=i.get('tags','').strip()
-       if tags=='':
-          if o=='con':
-             rx=ck.inp({'text':'Enter tags for your data set separated by comma (such as image,jpeg): '})
-             if rx['return']>0: return rx
-             tags=rx['string'].strip()
+        tags=i.get('tags','').strip()
+        if tags == '' and o == 'con':
+            rx=ck.inp({'text':'Enter tags for your data set separated by comma (such as image,jpeg): '})
+            if rx['return']>0: return rx
+            tags=rx['string'].strip()
 
-       xtags=['dataset']
-       for t in tags.split(','):
-           t1=t.strip()
-           if t1!='':
-              if t1 not in xtags:
-                 xtags.append(t1)
+        xtags=['dataset']
+        for t in tags.split(','):
+            t1=t.strip()
+            if t1 != '' and t1 not in xtags:
+                xtags.append(t1)
 
     d['tags']=xtags
 
@@ -371,12 +368,12 @@ def add(i):
 
     # Copy file
     if fn!='':
-       pn=os.path.join(p,fn1)
+        pn=os.path.join(p,fn1)
 
-       if o=='con':
-          ck.out('')
-          ck.out('Copying file '+fn+' to '+pn+' ...')
+        if o=='con':
+            ck.out('')
+            ck.out(f'Copying file {fn} to {pn} ...')
 
-       shutil.copyfile(fn,pn)
+        shutil.copyfile(fn,pn)
 
     return r

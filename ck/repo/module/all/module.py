@@ -77,7 +77,7 @@ def pull(i):
             if o == 'con':
                 ck.out('Updating CK from GitHub ...')
                 ck.out('')
-                ck.out('  cd '+ck_root)
+                ck.out(f'  cd {ck_root}')
                 ck.out('  git pull')
                 ck.out('')
 
@@ -93,13 +93,13 @@ def pull(i):
 
         py = os.getenv('CK_PYTHON', '')
         if py != '':
-            c = c.replace('python ', py+' ')
+            c = c.replace('python ', f'{py} ')
 
         ck.out('')
         ck.out('Installing CK kernel as python module ...')
 
         ck.out('')
-        ck.out('  cd '+ck_root)
+        ck.out(f'  cd {ck_root}')
 
         # Get OS
         r = ck.get_os_ck({})
@@ -109,7 +109,7 @@ def pull(i):
         if plat != 'win':
             c = ck.cfg.get('linux_sudo', '')+' '+c
 
-        ck.out('  '+c)
+        ck.out(f'  {c}')
         ck.out('')
         os.system(c)
 

@@ -13,10 +13,11 @@ cfg={}  # Will be updated by CK (meta description of this module)
 work={} # Will be updated by CK (temporal data)
 ck=None # Will be updated by CK (initialized CK kernel) 
 
-# Local settings
+hextra = (
+    '<center>\n'
+    + ' [ <a href="https://cKnowledge.org">Project website</a> ], '
+)
 
-hextra='<center>\n'
-hextra+=' [ <a href="https://cKnowledge.org">Project website</a> ], '
 hextra+=' [ <a href="https://cKnowledge.org/partners.html">Partners</a> ], '
 hextra+=' [ <a href="https://github.com/mlcommons/ck-mlops">CK automation recipes for MLOps</a> ], '
 hextra+=' [ <a href="https://en.wikipedia.org/wiki/Collective_Knowledge_(software)">Wikipedia</a> ] \n'
@@ -24,7 +25,7 @@ hextra+='</center>\n'
 hextra+='\n'
 
 form_name='ck_ai_web_form'
-onchange='document.'+form_name+'.submit();'
+onchange = f'document.{form_name}.submit();'
 
 ##############################################################################
 # Initialize module
@@ -61,12 +62,10 @@ def show(i):
 
     import copy
 
-    h=''
     st=''
 
-    h+='<center>\n'
+    h = '' + '<center>\n'
     h+='\n\n<script language="JavaScript">function copyToClipboard (text) {window.prompt ("Copy to clipboard: Ctrl+C, Enter", text);}</script>\n\n' 
-
 #    h+='<h2>Aggregated results from Caffe crowd-benchmarking (time, accuracy, energy, cost, ...)</h2>\n'
 
     h+=hextra
@@ -85,7 +84,12 @@ def show(i):
     action=i.get('action','')
     muoa=i.get('module_uoa','')
 
-    url+='action=index&module_uoa=wfe&native_action='+action+'&'+'native_module_uoa='+muoa
+    url += (
+        f'action=index&module_uoa=wfe&native_action={action}&'
+        + 'native_module_uoa='
+        + muoa
+    )
+
     url1=url
 
     # Start form
@@ -164,7 +168,7 @@ def show(i):
     h+='<h2>Want to survive Cambrian AI/SW/HW explosion but lost in technological chaos?</h2>\n'
     h+='<img src="http://cKnowledge.org/images/ai-cloud-resize.png"><br><br>\n'
 
-    h+='<b>Join the growing <a href="http://cKnowledge.org/partners.html">consortium</a>\n' 
+    h+='<b>Join the growing <a href="http://cKnowledge.org/partners.html">consortium</a>\n'
     h+='using and enhancing <a href="http://cKnowledge.org">Collective Knowledge technology</a> to\n'
     h+=' a) clean up this mess, b) reinvent computer engineering and make it more collaborative, reproducible and reusable,\n'
     h+=' c) develop efficient and reliable computer systems from IoT to supercomputers, \n'
@@ -250,140 +254,139 @@ def ask(i):
     rr={'return':0}
 
     if to=='predict_compiler_flags':
-       # This is just a demo of MILEPOST project combined with CK-powered collective optimization
-       # We plan to considerably improve modeling based on our Collective Mind part II vision paper
-       # (bringing community to share optimizations, features, models and enable dynamic adaptation).
+        # This is just a demo of MILEPOST project combined with CK-powered collective optimization
+        # We plan to considerably improve modeling based on our Collective Mind part II vision paper
+        # (bringing community to share optimizations, features, models and enable dynamic adaptation).
 
-       # Check if module exists
-       r=ck.access({'action':'find',
-                    'module_uoa':cfg['module_deps']['module'],
-                    'data_uoa':cfg['module_deps']['milepost']})
-       if r['return']>0 and r['return']!=16: return r
+        # Check if module exists
+        r=ck.access({'action':'find',
+                     'module_uoa':cfg['module_deps']['module'],
+                     'data_uoa':cfg['module_deps']['milepost']})
+        if r['return']>0 and r['return']!=16: return r
 
-       if r['return']==16:
-          return {'return':1, 'error':'Please, install CK MILEPOST repository using "ck pull repo:reproduce-milepost-project"'}
+        if r['return']==16:
+           return {'return':1, 'error':'Please, install CK MILEPOST repository using "ck pull repo:reproduce-milepost-project"'}
 
-       compiler=i.get('compiler','')
-       if compiler=='':
-          return {'return':1, 'error':'--compiler is not defined'}
+        compiler=i.get('compiler','')
+        if compiler=='':
+           return {'return':1, 'error':'--compiler is not defined'}
 
-       scenario=i.get('scenario','')
-       if scenario=='': 
-          if compiler.lower().startswith('gcc'):
-             scenario=cfg['module_deps']['experiment.tune.compiler.flags.gcc.e']
-          elif compiler.lower().startswith('llvm'):
-             scenario=cfg['module_deps']['experiment.tune.compiler.flags.llvm.e']
-          else:
-             return {'return':1, 'error':'scenario is not defined (see "ck search module --tags="program optimization,program-features"'}
+        scenario=i.get('scenario','')
+        if scenario=='': 
+           if compiler.lower().startswith('gcc'):
+              scenario=cfg['module_deps']['experiment.tune.compiler.flags.gcc.e']
+           elif compiler.lower().startswith('llvm'):
+              scenario=cfg['module_deps']['experiment.tune.compiler.flags.llvm.e']
+           else:
+              return {'return':1, 'error':'scenario is not defined (see "ck search module --tags="program optimization,program-features"'}
 
-       cpu_name=i.get('cpu_name','')
-       if cpu_name=='':
-          return {'return':1, 'error':'--cpu_name is not defined'}
+        cpu_name=i.get('cpu_name','')
+        if cpu_name=='':
+           return {'return':1, 'error':'--cpu_name is not defined'}
 
-       features=i.get('features',[])
+        features=i.get('features',[])
 
-       xfeatures={}
-       for k in i:
-           if k.startswith('ft'):
-              k1=int(k[2:])
-              v1=i[k]
-              xfeatures[k1]=v1
+        xfeatures={}
+        for k in i:
+            if k.startswith('ft'):
+               k1=int(k[2:])
+               v1=i[k]
+               xfeatures[k1]=v1
 
-       for k in range(0,66):
-           if k in xfeatures:
-              features.append(xfeatures[k])
+        for k in range(66):
+            if k in xfeatures:
+               features.append(xfeatures[k])
 
-       if len(features)==0:
-          return {'return':1, 'error':'feature vector is not defined'}
+        if len(features)==0:
+           return {'return':1, 'error':'feature vector is not defined'}
 
-       # Search optimization results
-       ii={'action':aa,
-           'module_uoa':cfg['module_deps']['program.optimization'],
-           'repo_uoa':er,
-           'remote_repo_uoa':esr,
-           'scenario':scenario,
-           '__web_prune__compiler':compiler,
-           '__web_prune__cpu_name':cpu_name,
-           'skip_html':'yes'}
+        # Search optimization results
+        ii={'action':aa,
+            'module_uoa':cfg['module_deps']['program.optimization'],
+            'repo_uoa':er,
+            'remote_repo_uoa':esr,
+            'scenario':scenario,
+            '__web_prune__compiler':compiler,
+            '__web_prune__cpu_name':cpu_name,
+            'skip_html':'yes'}
 
-       r=ck.access(ii)
-       if r['return']>0: return r
+        r=ck.access(ii)
+        if r['return']>0: return r
 
-       results=r['results']
-       if len(results)==0:
-          return {'return':1, 'error':'optimization results are not found for such configuration'}
+        results=r['results']
+        if len(results)==0:
+           return {'return':1, 'error':'optimization results are not found for such configuration'}
 
-       if len(results)>1:
-          return {'return':1, 'error':'ambiguity - more then 1 configuration found'}
+        if len(results)>1:
+           return {'return':1, 'error':'ambiguity - more then 1 configuration found'}
 
-       # Predict
-       muoa=results[0]['module_uoa']
-       duoa=results[0]['data_uoa']
+        # Predict
+        muoa=results[0]['module_uoa']
+        duoa=results[0]['data_uoa']
 
-       ii={'action':aa,
-           'module_uoa':cfg['module_deps']['milepost'],
-           'repo_uoa':er,
-           'remote_repo_uoa':esr,
-           'view_solution_'+muoa+'_'+duoa:'',
-           'skip_html':'yes'}
+        ii = {
+            'action': aa,
+            'module_uoa': cfg['module_deps']['milepost'],
+            'repo_uoa': er,
+            'remote_repo_uoa': esr,
+            f'view_solution_{muoa}_{duoa}': '',
+            'skip_html': 'yes',
+        }
 
-       j=1
-       for v in features:
-           ii['mft'+str(j)]=v
-           j+=1
 
-       rr=ck.access(ii)
-       if rr['return']>0: return rr
+        for j, v in enumerate(features, start=1):
+            ii[f'mft{str(j)}'] = v
+        rr=ck.access(ii)
+        if rr['return']>0: return rr
 
-       popt=rr.get('predicted_opt','')
+        popt=rr.get('predicted_opt','')
 
-       if popt=='':
-          ck.out('WARNING: could not predict optimization')
-       else:
-          ck.out('Predicted optimization:')
-          ck.out('')
-          ck.out(popt)
+        if popt=='':
+           ck.out('WARNING: could not predict optimization')
+        else:
+           ck.out('Predicted optimization:')
+           ck.out('')
+           ck.out(popt)
 
-    ############################################################################################################
     elif to=='classify_image':
 
-       engine=i.get('dnn_engine','')
-       if engine=='': engine='caffe'
+        engine=i.get('dnn_engine','')
+        if engine=='': engine='caffe'
 
-       image=i.get('image','')
-       if image=='' or not os.path.isfile(image):
-          return {'return':1, 'error':'image not found'}
+        image=i.get('image','')
+        if image=='' or not os.path.isfile(image):
+           return {'return':1, 'error':'image not found'}
 
-       r=ck.convert_file_to_upload_string({'filename':image})
-       if r['return']>0: return r
+        r=ck.convert_file_to_upload_string({'filename':image})
+        if r['return']>0: return r
 
-       fcb64=r['file_content_base64']
+        fcb64=r['file_content_base64']
 
-       # Search optimization results
-       ii={'action':aa,
-           'module_uoa':cfg['module_deps']['model.image.classification'],
-           'repo_uoa':er,
-           'remote_repo_uoa':esr,
-           'dnn_engine':engine,
-           'file_content_base64':fcb64,
-           'skip_html':'yes'}
+        # Search optimization results
+        ii={'action':aa,
+            'module_uoa':cfg['module_deps']['model.image.classification'],
+            'repo_uoa':er,
+            'remote_repo_uoa':esr,
+            'dnn_engine':engine,
+            'file_content_base64':fcb64,
+            'skip_html':'yes'}
 
-       rr=ck.access(ii)
-       if rr['return']>0: return rr
+        rr=ck.access(ii)
+        if rr['return']>0: return rr
 
-       warning=rr.get('warning','')
-       prediction=rr.get('prediction','')
+        warning=rr.get('warning','')
+        prediction=rr.get('prediction','')
 
-       if warning!='':
-          ck.out('WARNING: '+warning)
+        if warning!='':
+            ck.out(f'WARNING: {warning}')
 
-       if prediction!='':
-          ck.out('')
-          ck.out('Preciction:')
-          ck.out('')
-          ck.out(prediction)
+        if prediction!='':
+           ck.out('')
+           ck.out('Preciction:')
+           ck.out('')
+           ck.out(prediction)
 
     else:
-       return {'return':1, 'error':'we do not have such scenario yet ('+to+')'}
+        return {'return': 1, 'error': f'we do not have such scenario yet ({to})'}
 
     return rr

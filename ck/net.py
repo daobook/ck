@@ -57,7 +57,7 @@ def request(i):
         if started:
             url += '&'
         started = True
-        url += k+'='+quote_plus(v)
+        url += f'{k}={quote_plus(v)}'
 
     # Request
     request = urllib2.Request(url)

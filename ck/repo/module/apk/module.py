@@ -50,9 +50,7 @@ def detect(i):
     """
 
     o=i.get('out','')
-    oo=''
-    if o=='con': oo='con'
-
+    oo = 'con' if o=='con' else ''
     hos=i.get('host_os','')
     tos=i.get('target_os','')
     tdid=i.get('device_id','')
@@ -98,15 +96,18 @@ def detect(i):
         params[package]={}
 
         # Get parameters
-        ii={'action':'shell',
-            'module_uoa':cfg['module_deps']['os'],
-            'host_os':hos,
-            'target_os':tos,
-            'device_id':tdid,
-            'target':target,
-            'split_to_list':'yes',
-            'should_be_remote':'yes',
-            'cmd':'dumpsys package '+package}
+        ii = {
+            'action': 'shell',
+            'module_uoa': cfg['module_deps']['os'],
+            'host_os': hos,
+            'target_os': tos,
+            'device_id': tdid,
+            'target': target,
+            'split_to_list': 'yes',
+            'should_be_remote': 'yes',
+            'cmd': f'dumpsys package {package}',
+        }
+
 
         r=ck.access(ii)
         if r['return']>0: return r
@@ -141,7 +142,7 @@ def detect(i):
 
             for k in sorted(params[name]):
                 v=params[name][k]
-                ck.out('  '+k+' = '+v)
+                ck.out(f'  {k} = {v}')
 
     return {'return':0, 'params':params, 'target_os_dict':tosd}
 
@@ -169,9 +170,7 @@ def install(i):
     import os
 
     o=i.get('out','')
-    oo=''
-    if o=='con': oo=o
-
+    oo = o if o=='con' else ''
     name=i.get('name','')
     if name=='':
         name=i.get('data_uoa','')
@@ -187,11 +186,7 @@ def install(i):
     if target=='' and tos=='':
         tos='android19-arm'
         i['target_os']=tos
-#        return {'return':1, 'error':'"target_os" or "target" is not specified'}
-
-    xtdid=''
-    if tdid!='': xtdid=' -s '+tdid
-
+    xtdid = f' -s {tdid}' if tdid!='' else ''
     rr={'return':0}
 
     # Detect if APK is installed
@@ -221,11 +216,14 @@ def install(i):
             p=r['path']
             d=r['dict']
 
-            aname=''
-            for apk in d.get('apks',[]):
-                if abi in apk.get('abis',[]):
-                    aname=apk.get('apk_name','')
-                    break
+            aname = next(
+                (
+                    apk.get('apk_name', '')
+                    for apk in d.get('apks', [])
+                    if abi in apk.get('abis', [])
+                ),
+                '',
+            )
 
             # If the preferred abi didn't match but is 64-bit,
             # look for a 32-bit binary (worst case won't install)
@@ -246,16 +244,19 @@ def install(i):
                 if os.path.isfile(pp):
                     # Trying to install
                     if o=='con':
-                        ck.out('  APK found ('+aname+') - trying to install ...')
+                        ck.out(f'  APK found ({aname}) - trying to install ...')
                         if alt_abi!='':
                             ck.out('  First choice ABI "'+abi+'" not found, using "'+alt_abi+'"')
 
-                    ii={'action':'shell',
-                        'module_uoa':cfg['module_deps']['os'],
-                        'host_os':hos,
-                        'target_os':hos,
-                        'cmd':'adb '+xtdid+' install -r -d '+pp,
-                        'out':oo}
+                    ii = {
+                        'action': 'shell',
+                        'module_uoa': cfg['module_deps']['os'],
+                        'host_os': hos,
+                        'target_os': hos,
+                        'cmd': f'adb {xtdid} install -r -d {pp}',
+                        'out': oo,
+                    }
+
                     r=ck.access(ii)
                     if r['return']>0: return r
 
@@ -321,7 +322,7 @@ def add(i):
     path=i.get('path','')
     if path!='':
         if not os.path.isfile(path):
-            return {'return':1, 'error':'APK is not found ('+path+')'}
+            return {'return': 1, 'error': f'APK is not found ({path})'}
 
         if apk_name=='':
             apk_name=os.path.basename(path)
@@ -334,8 +335,8 @@ def add(i):
         if r['return']>0: return r
         abi=r['string'].strip()
 
-        if abi=='':
-            abi='armeabi,armeabi-v7a,arm64-v8a'
+    if abi=='':
+        abi='armeabi,armeabi-v7a,arm64-v8a'
 
     if abi=='':
         return {'return':1, 'error':'"abi" is not specified'}
@@ -410,7 +411,7 @@ def add(i):
 
     if o=='con':
         ck.out('')
-        ck.out('APK successfully registered in the CK ('+p+')')
+        ck.out(f'APK successfully registered in the CK ({p})')
 
     return r
 
@@ -447,9 +448,7 @@ def uninstall(i):
     tdid=i.get('device_id','')
     target=i.get('target','')
 
-    xtdid=''
-    if tdid!='': xtdid=' -s '+tdid
-
+    xtdid = f' -s {tdid}' if tdid!='' else ''
     if target=='' and tos=='':
         tos='android-32'
 
@@ -457,12 +456,15 @@ def uninstall(i):
     if name=='':
         name=i.get('data_uoa','')
 
-    ii={'action':'shell',
-        'module_uoa':cfg['module_deps']['os'],
-        'host_os':hos,
-        'target_os':hos,
-        'out':oo,
-        'cmd':'adb '+xtdid+' uninstall '+name}
+    ii = {
+        'action': 'shell',
+        'module_uoa': cfg['module_deps']['os'],
+        'host_os': hos,
+        'target_os': hos,
+        'out': oo,
+        'cmd': f'adb {xtdid} uninstall {name}',
+    }
+
     r=ck.access(ii)
     if r['return']>0: return r
 
@@ -504,18 +506,19 @@ def list_installed(i):
     tdid=i.get('device_id','')
     target=i.get('target','')
 
-    xtdid=''
-    if tdid!='': xtdid=' -s '+tdid
-
+    xtdid = f' -s {tdid}' if tdid!='' else ''
     if target=='' and tos=='':
         tos='android-32'
 
-    ii={'action':'shell',
-        'module_uoa':cfg['module_deps']['os'],
-        'host_os':hos,
-        'target_os':hos,
-        'out':oo,
-        'cmd':'adb '+xtdid+' shell pm list packages -f'}
+    ii = {
+        'action': 'shell',
+        'module_uoa': cfg['module_deps']['os'],
+        'host_os': hos,
+        'target_os': hos,
+        'out': oo,
+        'cmd': f'adb {xtdid} shell pm list packages -f',
+    }
+
     r=ck.access(ii)
     if r['return']>0: return r
 

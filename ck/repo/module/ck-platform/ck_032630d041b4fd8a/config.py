@@ -13,7 +13,7 @@ CK_CFG_MODULE_UID="b34231a3467566f8" # ck info module:cfg
 CK_CFG_MODULE_REPO_UOA="befd7892b0d469e9" # CK module UOA for REPO
 
 CR_DEFAULT_SERVER="https://cKnowledge.io"
-CR_DEFAULT_SERVER_URL=CR_DEFAULT_SERVER+"/api/v1/?"
+CR_DEFAULT_SERVER_URL = f'{CR_DEFAULT_SERVER}/api/v1/?'
 CR_DEFAULT_SERVER_USER="crowd-user"
 CR_DEFAULT_SERVER_API_KEY="43fa84787ff65c2c00bf740e3853c90da8081680fe1025e8314e260888265033"
 
@@ -134,10 +134,8 @@ def update(i):
 
     from . import obj
 
-    title='Bootstrapping'
-    if cfg.get('bootstrapped','')=='yes': title='Updating'
-
-    ck.out(title+' cBench to support portable actions and workflows:')
+    title = 'Updating' if cfg.get('bootstrapped','')=='yes' else 'Bootstrapping'
+    ck.out(f'{title} cBench to support portable actions and workflows:')
     ck.out('')
 
     # Check release notes 
@@ -160,47 +158,47 @@ def update(i):
     sbf=os.environ.get('CB_SAVE_BOOTSTRAP_FILES','')
 
     if sbf=='':
-       fboot='cb-bootstrap-20200529'
-       files=[fboot+'.json']
+        fboot='cb-bootstrap-20200529'
+        files = [f'{fboot}.json']
 
-       if os.name=='nt':
-          files.append(fboot+'-win.json')
+        if os.name=='nt':
+            files.append(f'{fboot}-win.json')
 
-       for fn in files:
-           r=ck.gen_tmp_file({'prefix':'cb-bootstrap-', 'suffix':'.json'})
-           if r['return']>0: return r
-           ftmp=r['file_name']
+        for fn in files:
+            r=ck.gen_tmp_file({'prefix':'cb-bootstrap-', 'suffix':'.json'})
+            if r['return']>0: return r
+            ftmp=r['file_name']
 
-           burl=CR_DEFAULT_SERVER+'/static/bootstrap/'+fn
+            burl = f'{CR_DEFAULT_SERVER}/static/bootstrap/{fn}'
 
-           ck.out('Downloading '+burl)
+            ck.out(f'Downloading {burl}')
 
-           from . import comm
+            from . import comm
 
-           rx=comm.download_file({'url':burl, 'file':ftmp})
-           if rx['return']>0: return rx
+            rx=comm.download_file({'url':burl, 'file':ftmp})
+            if rx['return']>0: return rx
 
-           rx=ck.load_json_file({'json_file':ftmp})
-           if rx['return']>0: return rx
+            rx=ck.load_json_file({'json_file':ftmp})
+            if rx['return']>0: return rx
 
-           lst_all+=rx['dict']
+            lst_all+=rx['dict']
 
-           os.remove(ftmp)
+            os.remove(ftmp)
 
-       r=obj.download({'components':lst_all, 'force':force})
-       if r['return']>0 and r['return']!=8: return r
+        r=obj.download({'components':lst_all, 'force':force})
+        if r['return']>0 and r['return']!=8: return r
 
     else:
-       for x in CR_SOLUTION_CK_COMPONENTS:
-           r=obj.download({'cid':x['cid'], 'version':x.get('version',''), 'force':force})
-           if r['return']>0: 
-              if r['return']!=8: return r
-              else: ck.out('    Skipped - already exists!')
-           else:
-              lst_all+=r['components']
+        for x in CR_SOLUTION_CK_COMPONENTS:
+            r=obj.download({'cid':x['cid'], 'version':x.get('version',''), 'force':force})
+            if r['return']>0: 
+               if r['return']!=8: return r
+               else: ck.out('    Skipped - already exists!')
+            else:
+               lst_all+=r['components']
 
-       rx=ck.save_json_to_file({'json_file':sbf, 'dict':lst_all, 'sort_keys':'yes'})
-       if rx['return']>0: return rx
+        rx=ck.save_json_to_file({'json_file':sbf, 'dict':lst_all, 'sort_keys':'yes'})
+        if rx['return']>0: return rx
 
     ck.out('')
 
@@ -216,7 +214,7 @@ def update(i):
 
     r=ck.access(ii)
 
-    ck.out(title+' finished!')
+    ck.out(f'{title} finished!')
     ck.out('')
 
     return r

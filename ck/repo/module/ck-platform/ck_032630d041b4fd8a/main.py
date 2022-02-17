@@ -53,14 +53,12 @@ def setup(username,
 
 # LOGIN TEST #############################################################################
 @cli.command()
-
 @click.option('-u', '--username', 'username', required=False)
 @click.option('-a', '--api_key', 'api_key', required=False)
 @click.option('-s', '--server_url', 'server_url', required=False)
 @click.option('-su', '--server_user', 'server_user', required=False)
 @click.option('-sp', '--server_pass', 'server_pass', required=False)
 @click.option('-ss', '--server_skip_validation', 'server_skip_validation', required=False)
-
 def login(username,
           api_key,
           server_url,
@@ -77,8 +75,6 @@ def login(username,
                        'server_user':server_user,
                        'server_pass':server_pass,
                        'server_skip_validation':server_skip_validation})
-
-    return 0
 
 # PUBLISH COMPONENT #############################################################################
 @cli.command()

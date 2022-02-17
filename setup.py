@@ -68,11 +68,7 @@ with open(kernel_file, encoding="utf-8") as f:
 # Read dependencies
 
 with open('requirements.txt', 'r', encoding='utf-8') as fr:
-    requirements = []
-    for l in fr:
-        requirements.append(l)
-
-
+    requirements = list(fr)
 ############################################################
 # Add all directories in "repo" to the distribution
 
@@ -105,11 +101,7 @@ class custom_install(install):
                 python_bin = os.environ.get('CK_PYTHON','').strip()
 
             if os.environ.get('CK_SKIP_SAVING_PYTHON_BIN','').strip().lower()!='yes' and os.path.isfile(python_bin):
-                # Attempt to write to $SCRIPTS/ck-python.cfg
-                file_type = 'wb'
-                if sys.version_info[0] > 2:
-                    file_type = 'w'
-
+                file_type = 'w' if sys.version_info[0] > 2 else 'wb'
                 p = os.path.join(dir_install_script, 'ck-python.cfg')
 
                 try:
@@ -117,13 +109,11 @@ class custom_install(install):
                         f.write(python_bin+'\n')
 
                     print('')
-                    print("Writing CK python executable ("+python_bin+") to "+p)
+                    print(f'Writing CK python executable ({python_bin}) to {p}')
                     print('')
                 except Exception as e:
                     print(
                         "warning: can\'t write info about CK python executable to "+p+" ("+format(e)+")")
-                    pass
-
         # Check default repo status before copying
         r = ck.net.request(
             {'get': {'action': 'get-default-repo-status', 'version': current_version}})

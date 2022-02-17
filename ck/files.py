@@ -41,13 +41,13 @@ def load_json_file(i):
         else:
             f = open(fn, 'r')
     except Exception as e:
-        return {'return': 16, 'error': 'problem opening json file='+fn+' ('+format(e)+')'}
+        return {'return': 16, 'error': f'problem opening json file={fn} ({format(e)})'}
 
     try:
         s = f.read()
     except Exception as e:
         f.close()
-        return {'return': 1, 'error': 'problem reading json file='+fn+' ('+format(e)+')'}
+        return {'return': 1, 'error': f'problem reading json file={fn} ({format(e)})'}
 
     f.close()
 
@@ -57,7 +57,11 @@ def load_json_file(i):
         else:
             d = json.loads(s, encoding='utf8')
     except Exception as e:
-        return {'return': 1, 'error': 'problem parsing json from file='+fn+' ('+format(e)+')'}
+        return {
+            'return': 1,
+            'error': f'problem parsing json from file={fn} ({format(e)})',
+        }
+
 
     return {'return': 0, 'dict': d}
 
@@ -141,20 +145,24 @@ def load_yaml_file(i):
         else:
             f = open(fn, 'r')
     except Exception as e:
-        return {'return': 16, 'error': 'problem opening YAML file='+fn+' ('+format(e)+')'}
+        return {'return': 16, 'error': f'problem opening YAML file={fn} ({format(e)})'}
 
     try:
         s = f.read()
     except Exception as e:
         f.close()
-        return {'return': 1, 'error': 'problem reading YAML file='+fn+' ('+format(e)+')'}
+        return {'return': 1, 'error': f'problem reading YAML file={fn} ({format(e)})'}
 
     f.close()
 
     try:
         d = yaml.load(s, Loader=yaml.FullLoader)
     except Exception as e:
-        return {'return': 1, 'error': 'problem parsing YAML from file='+fn+' ('+format(e)+')'}
+        return {
+            'return': 1,
+            'error': f'problem parsing YAML from file={fn} ({format(e)})',
+        }
+
 
     return {'return': 0, 'dict': d}
 
@@ -231,19 +239,19 @@ def load_text_file(i):
     fn = i['text_file']
 
     en = i.get('encoding', '')
-    if en == '' or en == None:
+    if en == '' or en is None:
         en = 'utf8'
 
     try:
         f = open(fn, 'rb')
     except Exception as e:
-        return {'return': 16, 'error': 'problem opening text file='+fn+' ('+format(e)+')'}
+        return {'return': 16, 'error': f'problem opening text file={fn} ({format(e)})'}
 
     try:
         b = f.read()
     except Exception as e:
         f.close()
-        return {'return': 1, 'error': 'problem reading text file='+fn+' ('+format(e)+')'}
+        return {'return': 1, 'error': f'problem reading text file={fn} ({format(e)})'}
 
     f.close()
 
@@ -269,30 +277,28 @@ def load_text_file(i):
             lst = s.split('\n')
             r['lst'] = lst
 
-            if cd == 'yes':
-                dd = {}
+        if cd == 'yes':
+            dd = {}
 
-                ss = i.get('str_split', '')
-                rq = i.get('remove_quotes', '')
-                if ss == '':
-                    ss = ':'
+            ss = i.get('str_split', '')
+            rq = i.get('remove_quotes', '')
+            if ss == '':
+                ss = ':'
 
-                for q in lst:
-                    qq = q.strip()
-                    ix = qq.find(ss)
-                    if ix > 0:
-                        k = qq[0:ix].strip()
-                        v = ''
-                        if ix+1 < len(qq):
-                            v = qq[ix+1:].strip()
-                        if v != '' and rq == 'yes':
-                            if v.startswith('"'):
-                                v = v[1:]
-                            if v.endswith('"'):
-                                v = v[:-1]
-                        dd[k] = v
+            for q in lst:
+                qq = q.strip()
+                ix = qq.find(ss)
+                if ix > 0:
+                    k = qq[:ix].strip()
+                    v = qq[ix+1:].strip() if ix+1 < len(qq) else ''
+                    if v != '' and rq == 'yes':
+                        if v.startswith('"'):
+                            v = v[1:]
+                        if v.endswith('"'):
+                            v = v[:-1]
+                    dd[k] = v
 
-                r['dict'] = dd
+            r['dict'] = dd
 
     return r
 
@@ -331,10 +337,7 @@ def save_text_file(i):
     except Exception as e:
         pass
 
-    m = 'w'
-    if i.get('append', '') == 'yes':
-        m = 'a'
-
+    m = 'a' if i.get('append', '') == 'yes' else 'w'
     try:
         s = s.encode('utf8')
     except Exception as e:
@@ -345,10 +348,10 @@ def save_text_file(i):
         #         f=open(fn, m+'b')
         #         f.write(s)
         #      else:
-        f = open(fn, m+'b')
+        f = open(fn, f'{m}b')
         f.write(s)
     except Exception as e:
-        return {'return': 1, 'error': 'problem writing text file='+fn+' ('+format(e)+')'}
+        return {'return': 1, 'error': f'problem writing text file={fn} ({format(e)})'}
 
     f.close()
 

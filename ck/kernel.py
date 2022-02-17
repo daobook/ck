@@ -408,9 +408,8 @@ def save_state():
     import copy
     import os
 
-    r = {}
+    r = {'cfg': copy.deepcopy(cfg)}
 
-    r['cfg'] = copy.deepcopy(cfg)
     r['paths_repos'] = copy.deepcopy(paths_repos)
 
     r['cache_repo_init'] = cache_repo_init
@@ -511,10 +510,7 @@ def out(s):
     if allow_print:
         if con_encoding == '':
             x = sys.stdin.encoding
-            if x == None:
-                b = s.encode()
-            else:
-                b = s.encode(x, 'ignore')
+            b = s.encode() if x is None else s.encode(x, 'ignore')
         else:
             b = s.encode(con_encoding, 'ignore')
 
@@ -525,7 +521,6 @@ def out(s):
                 sys.stdout.buffer.write(b'\n')
             except Exception as e:
                 print(s)
-                pass
         else:
             print(b)
 
@@ -594,10 +589,7 @@ def eout(s):
     if allow_print:
         if con_encoding == '':
             x = sys.stdin.encoding
-            if x == None:
-                b = s.encode()
-            else:
-                b = s.encode(x, 'ignore')
+            b = s.encode() if x is None else s.encode(x, 'ignore')
         else:
             b = s.encode(con_encoding, 'ignore')
 
@@ -608,7 +600,6 @@ def eout(s):
                 sys.stderr.buffer.write(b'\n')
             except Exception as e:
                 sys.stderr.write(s)
-                pass
         else:
             sys.stderr.write(b)
 
@@ -651,7 +642,7 @@ def err(r):
     rc = r['return']
     re = r['error']
 
-    out('Error: '+re)
+    out(f'Error: {re}')
     sys.exit(rc)
 
 ##############################################################################
@@ -688,7 +679,7 @@ def jerr(r):
     rc = r['return']
     re = r['error']
 
-    out('Error: '+re)
+    out(f'Error: {re}')
 
     raise KeyboardInterrupt
 
@@ -737,12 +728,7 @@ def lower_list(lst):
 
     """
 
-    nlst = []
-
-    for v in lst:
-        nlst.append(v.lower())
-
-    return nlst
+    return [v.lower() for v in lst]
 
 ##############################################################################
 # Support function for checking splitting entry number
@@ -859,19 +845,14 @@ def index_module(module_uoa, repo_uoa):
 
     # First check if index the whole repo
     ir = cfg.get('index_repos', [])
-    if len(ir) > 0 and repo_uoa != '':
-        if repo_uoa in ir:
-            return ret
+    if len(ir) > 0 and repo_uoa != '' and repo_uoa in ir:
+        return ret
 
     im = cfg.get('index_modules', [])
 
     # Next check if index module (if im is empty index all)
     if len(im) > 0:
-        ret = False
-
-        if module_uoa in im:
-            ret = True
-
+        ret = module_uoa in im
     return ret
 
 ##############################################################################
@@ -951,8 +932,6 @@ def system_with_timeout_kill(proc):
         import psutil
     except ImportError:
         loaded = False
-        pass
-
     if loaded:  # pragma: no cover
         try:
             pid = proc.pid
@@ -966,8 +945,6 @@ def system_with_timeout_kill(proc):
             p.kill()
         except Exception as e:
             loaded = False
-            pass
-
     # Try traditional way
     if not loaded:
         try:
@@ -1019,11 +996,11 @@ def system_with_timeout(i):
         t = 0
         tx = float(i['timeout'])
 
-        while p.poll() == None and t < xto:
+        while p.poll() is None and t < xto:
             time.sleep(0.1)
             t = time.time()-t0
 
-        if t >= xto and p.poll() == None:
+        if t >= xto and p.poll() is None:
             system_with_timeout_kill(p)
             return {'return': 8, 'error': 'process timed out and had been terminated'}
     else:
@@ -1065,10 +1042,8 @@ def run_and_get_stdout(i):
     import platform
 
     cmd = i['cmd']
-    if type(cmd) != list:
-        # Split only on non-Windows platforms (since Windows takes a string in Popen)
-        if not platform.system().lower().startswith('win'):
-            cmd = shlex.split(cmd)
+    if type(cmd) != list and not platform.system().lower().startswith('win'):
+        cmd = shlex.split(cmd)
 
     xshell = False
     if i.get('shell', '') == 'yes':
@@ -1113,16 +1088,15 @@ def get_from_dicts(dict1, key, default_value, dict2, extra=''):
 
     value = default_value
 
-    if key not in dict1:
-        if dict2 != None:
-            value = dict2.get(extra+key, default_value)
-    else:
+    if key in dict1:
         value = dict1[key]
         del(dict1[key])
 
         if dict2 != None:
             dict2[extra+key] = value
 
+    elif dict2 != None:
+        value = dict2.get(extra+key, default_value)
     return value
 
 ##############################################################################
@@ -1161,48 +1135,36 @@ def convert_iso_time(i):
         dto = datetime.datetime.strptime(t, "%Y-%m-%dT%H:%M:%S.%f")
     except Exception as e:
         ok = False
-        pass
-
     if not ok:
         ok = True
         try:
             dto = datetime.datetime.strptime(t, "%Y-%m-%dT%H:%M:%S")
         except Exception as e:
             ok = False
-            pass
-
     if not ok:
         ok = True
         try:
             dto = datetime.datetime.strptime(t, "%Y-%m-%dT%H:%M")
         except Exception as e:
             ok = False
-            pass
-
     if not ok:
         ok = True
         try:
             dto = datetime.datetime.strptime(t, "%Y-%m-%dT%H")
         except Exception as e:
             ok = False
-            pass
-
     if not ok:
         ok = True
         try:
             dto = datetime.datetime.strptime(t, "%Y-%m-%d")
         except Exception as e:
             ok = False
-            pass
-
     if not ok:
         ok = True
         try:
             dto = datetime.datetime.strptime(t, "%Y-%m")
         except Exception as e:
             ok = False
-            pass
-
     if not ok:
         ok = True
         try:
@@ -1264,10 +1226,7 @@ def inp(i):
 
     if con_encoding == '':
         x = sys.stdin.encoding
-        if x == None:
-            b = t.encode()
-        else:
-            b = t.encode(x, 'ignore')
+        b = t.encode() if x is None else t.encode(x, 'ignore')
     else:
         b = t.encode(con_encoding, 'ignore')  # pragma: no cover
 
@@ -1284,7 +1243,7 @@ def inp(i):
         s = input(b)
     else:
         x = sys.stdin.encoding
-        if x == None:
+        if x is None:
             x = 'utf8'
         s = raw_input(b).decode(x).encode('utf8')
 
@@ -1318,8 +1277,6 @@ def select(i):
                 string (str): selected dictionary key
     """
 
-    s = ''
-
     title = i.get('title', '')
     if title != '':
         out(title)
@@ -1331,9 +1288,8 @@ def select(i):
     else:
         kd = d
 
-    j = 0
     ks = {}
-    for k in kd:
+    for j, k in enumerate(kd):
         q = d[k]
 
         sj = str(j)
@@ -1341,9 +1297,7 @@ def select(i):
 
         qn = q.get('name', '')
 
-        out(sj+') '+qn)
-
-        j += 1
+        out(f'{sj}) {qn}')
 
     out('')
     rx = inp({'text': 'Make your selection (or press Enter for 0): '})
@@ -1351,14 +1305,15 @@ def select(i):
         return rx
     sx = rx['string'].strip()
 
+    s = ''
     if sx == '':
         if i.get('error_if_empty', '') == 'yes':
             return {'return': 1, 'error': 'selection is empty'}
 
         s = kd[0]
+    elif sx not in ks:
+        return {'return': 1, 'error': 'selection is not recognized'}
     else:
-        if sx not in ks:
-            return {'return': 1, 'error': 'selection is not recognized'}
         s = ks[sx]
 
     return {'return': 0, 'string': s}
@@ -1400,18 +1355,14 @@ def select_uoa(i):
         klst = lst
 
     zz = {}
-    iz = 0
-
-    for z1 in klst:
+    for iz, z1 in enumerate(klst):
         z = z1['data_uid']
         zu = z1['data_uoa']
 
         zs = str(iz)
         zz[zs] = z
 
-        out(zs+') '+zu+' ('+z+')')
-
-        iz += 1
+        out(f'{zs}) {zu} ({z})')
 
     out('')
     y = 'Select UOA'
@@ -1513,13 +1464,15 @@ def check_writing(i):
     ruoa = i.get('repo_uoa', '')
     ruid = i.get('repo_uid', '')
 
-    if cfg.get('forbid_writing_to_default_repo', '') == 'yes':
-        if ruoa == cfg['repo_name_default'] or ruid == cfg['repo_uid_default']:
-            return {'return': 1, 'error': 'writing to default repo is forbidden'}
+    if cfg.get('forbid_writing_to_default_repo', '') == 'yes' and (
+        ruoa == cfg['repo_name_default'] or ruid == cfg['repo_uid_default']
+    ):
+        return {'return': 1, 'error': 'writing to default repo is forbidden'}
 
-    if cfg.get('forbid_writing_to_local_repo', '') == 'yes':
-        if ruoa == cfg['repo_name_local'] or ruid == cfg['repo_uid_local']:
-            return {'return': 1, 'error': 'writing to local repo is forbidden'}
+    if cfg.get('forbid_writing_to_local_repo', '') == 'yes' and (
+        ruoa == cfg['repo_name_local'] or ruid == cfg['repo_uid_local']
+    ):
+        return {'return': 1, 'error': 'writing to local repo is forbidden'}
 
     rr = {'return': 0}
 
@@ -1535,9 +1488,11 @@ def check_writing(i):
             rd = rx.get('dict', {})
         rr['repo_dict'] = rd
 
-    if cfg.get('allow_writing_only_to_allowed', '') == 'yes':
-        if rd.get('allow_writing', '') != 'yes':
-            return {'return': 1, 'error': 'writing to this repo is forbidden'}
+    if (
+        cfg.get('allow_writing_only_to_allowed', '') == 'yes'
+        and rd.get('allow_writing', '') != 'yes'
+    ):
+        return {'return': 1, 'error': 'writing to this repo is forbidden'}
 
     if rd.get('forbid_deleting', '') == 'yes' and dl == 'yes':
         return {'return': 1, 'error': 'deleting in this repo is forbidden'}
@@ -1653,10 +1608,7 @@ def get_os_ck(i):
 
     pbits = str(8 * struct.calcsize("P"))
 
-    plat = 'linux'
-    if platform.system().lower().startswith('win'):  # pragma: no cover
-        plat = 'win'
-
+    plat = 'win' if platform.system().lower().startswith('win') else 'linux'
     obits = i.get('bits', '')
     if obits == '':
         obits = '32'
@@ -1674,7 +1626,7 @@ def get_os_ck(i):
                 return r
             fn = r['file_name']
 
-            cmd = 'getconf LONG_BIT > '+fn
+            cmd = f'getconf LONG_BIT > {fn}'
             rx = os.system(cmd)
             if rx == 0:
                 r = load_text_file({'text_file': fn,
@@ -2159,21 +2111,17 @@ def merge_dicts(i):
 
     for k in b:
         v = b[k]
-        if type(v) is dict:
-            if k not in a:
-                a.update({k: b[k]})
-            elif type(a[k]) == dict:
-                merge_dicts({'dict1': a[k], 'dict2': b[k], 'append_lists':append_lists})
-            else:
-                a[k] = b[k]
-        elif type(v) is list:
+        if type(v) is dict and k not in a:
+            a.update({k: b[k]})
+        elif type(v) is dict and type(a[k]) == dict:
+            merge_dicts({'dict1': a[k], 'dict2': b[k], 'append_lists':append_lists})
+        elif type(v) is dict or type(v) is not list:
+            a[k] = b[k]
+        else:
             if append_lists!='yes' or k not in a:
                a[k] = []
             for y in v:
                 a[k].append(y)
-        else:
-            a[k] = b[k]
-
     return {'return': 0, 'dict1': a}
 
 ##############################################################################
@@ -2205,19 +2153,18 @@ def convert_file_to_upload_string(i):
     fn = i['filename']
 
     if not os.path.isfile(fn):
-        return {'return': 1, 'error': 'file '+fn+' not found'}
+        return {'return': 1, 'error': f'file {fn} not found'}
 
     s = b''
     try:
-        f = open(fn, 'rb')
-        while True:
-            x = f.read(32768)
-            if not x:
-                break
-            s += x
-        f.close()
+        with open(fn, 'rb') as f:
+            while True:
+                x = f.read(32768)
+                if not x:
+                    break
+                s += x
     except Exception as e:
-        return {'return': 1, 'error': 'error reading file ('+format(e)+')'}
+        return {'return': 1, 'error': f'error reading file ({format(e)})'}
 
     s = base64.urlsafe_b64encode(s).decode('utf8')
 
@@ -2273,11 +2220,10 @@ def convert_upload_string_to_file(i):
     if os.path.isfile(px):
         return {'return': 1, 'error': 'file already exists in the current directory'}
     try:
-        fx = open(px, 'wb')
-        fx.write(fc)
-        fx.close()
+        with open(px, 'wb') as fx:
+            fx.write(fc)
     except Exception as e:
-        return {'return': 1, 'error': 'problem writing file='+px+' ('+format(e)+')'}
+        return {'return': 1, 'error': f'problem writing file={px} ({format(e)})'}
 
     return {'return': 0, 'filename': px, 'filename_ext': fne}
 
@@ -2387,9 +2333,7 @@ def convert_ck_list_to_dict(i):
 
     """
 
-    obj = {}
-    obj['cids'] = []
-
+    obj = {'cids': []}
     l = len(i)
 
     if l > 0:
@@ -2411,7 +2355,6 @@ def convert_ck_list_to_dict(i):
                 obj['unparsed'] = p2
                 break
 
-            #####################################
             elif p.startswith('--'):
                 cx = False
 
@@ -2420,12 +2363,11 @@ def convert_ck_list_to_dict(i):
                 p2 = 'yes'
                 q = p.find("=")
                 if q > 0:
-                    p1 = p[0:q]
+                    p1 = p[:q]
                     if len(p) > q:
                         p2 = p[q+1:]
                 obj[p1] = p2
 
-            #####################################
             elif p.startswith('-'):
                 cx = False
 
@@ -2434,12 +2376,11 @@ def convert_ck_list_to_dict(i):
                 p2 = 'yes'
                 q = p.find("=")
                 if q > 0:
-                    p1 = p[0:q]
+                    p1 = p[:q]
                     if len(p) > q:
                         p2 = p[q+1:]
                 obj[p1] = p2
 
-            #####################################
             elif p.startswith("@@@"):
                 cx = False
                 jd = p[3:]
@@ -2452,7 +2393,6 @@ def convert_ck_list_to_dict(i):
 
                 merge_dicts({'dict1': obj, 'dict2': y['dict']})
 
-            #####################################
             elif p.startswith("@@"):
                 cx = False
                 key = p[2:]
@@ -2476,7 +2416,6 @@ def convert_ck_list_to_dict(i):
 
                 merge_dicts({'dict1': dx, 'dict2': dy})
 
-            #####################################
             elif p.startswith("@"):
                 cx = False
 
@@ -2497,7 +2436,6 @@ def convert_ck_list_to_dict(i):
 
                 merge_dicts({'dict1': obj, 'dict2': y['dict']})
 
-            #####################################
             elif p.find('=') >= 0:
                 cx = False
 
@@ -2505,18 +2443,15 @@ def convert_ck_list_to_dict(i):
                 p2 = ''
                 q = p.find("=")
                 if q > 0:
-                    p1 = p[0:q]
+                    p1 = p[:q]
                     if len(p) > q:
                         p2 = p[q+1:]
                 obj[p1] = p2
-            #####################################
+            elif not module_uoa_or_cid:
+                module_uoa_or_cid = p
             else:
-                # If no module_uoa_or_cid -> set it
-                if module_uoa_or_cid == '':
-                    module_uoa_or_cid = p
-                else:
-                    # Otherwise add to CIDs
-                    obj['cids'].append(p)
+                # Otherwise add to CIDs
+                obj['cids'].append(p)
 
     if module_uoa_or_cid != '':
         obj['cid'] = module_uoa_or_cid

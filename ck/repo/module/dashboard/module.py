@@ -20,7 +20,7 @@ fmodule_name='ck_top_module'
 frepo_name='ck_top_repo'
 
 form_name='ck_top_form'
-onchange='document.'+form_name+'.submit();'
+onchange = f'document.{form_name}.submit();'
 
 ##############################################################################
 # Initialize module
@@ -65,7 +65,7 @@ def display(args):
 
     # Filter and pass some arguments from command line to browser
     extra_url = args.get('extra_url','')
-    
+
     extra_url_dict = { key:args[key] for key in args if key in ['scenario', 'global'] }
     extra_url += "&".join("{0}={1}".format(key, extra_url[key]) for key in extra_url_dict)
 
@@ -80,16 +80,15 @@ def display(args):
               'experiment_repo_uoa':'',
               'experiment_uoa':'',
               'experiment_tags':''}
-    
-    for k in sub_keys:
-        kk=sub_keys[k]
+
+    for k, kk in sub_keys.items():
         if kk=='': kk=k
 
         v=args.get(k,'')
         if v!='':
-           if extra_url!='':
-              extra_url+='&'
-           extra_url+=kk+'='+v
+            if extra_url!='':
+               extra_url+='&'
+            extra_url += f'{kk}={v}'
 
     args['action'] = 'start'
     args['module_uoa'] = 'web'

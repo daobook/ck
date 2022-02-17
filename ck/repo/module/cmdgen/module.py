@@ -62,8 +62,7 @@ def iterate(i):
         param_value = input_params[param_name]
         matchObj = re.match('(\w+)([,:])?((-?\d+):(-?\d+)(?:\:(\d+))?)?$', param_name)
         matchObjComplex = re.match('(\w+(?:(:)\w+)+)(,)$', param_name) or re.match('(\w+(?:(,)\w+)+)(:)$',param_name)
-        matchObjGroup = re.match('group.(\w+)$', param_name)
-        if matchObjGroup:
+        if matchObjGroup := re.match('group.(\w+)$', param_name):
             group_key           = matchObjGroup.group(1)
             current_group       = groups[group_key]
             new_dim_structure   = [ { k: str(old_d[k]) for k in old_d.keys() } for old_d in current_group ]
@@ -76,7 +75,7 @@ def iterate(i):
             new_dim_structure = [ dict(zip(key_list, value_join.split(delimiter_inner))) for value_join in split_param_values ]
         elif matchObj:
             pure_name   = matchObj.group(1)
-            if matchObj.group(2)==None:
+            if matchObj.group(2) is None:
                 new_dim_structure = [ {pure_name: param_value} ]
             elif matchObj.group(3):
                 range_from  = int(matchObj.group(4))
@@ -190,6 +189,9 @@ def gen(i):
     param_dicts = r['param_dicts']
 
     cmds    = []
+    # Substitute the accumulated values into command template:
+    #
+    anchor_regexpr  = '((?:<<<|{{{)(\??)(\w+)(.?)(?:>>>|}}}))'
     for input_params in param_dicts:
 
         # Accumulating values:
@@ -205,17 +207,17 @@ def gen(i):
                 accu_map = specific_accu_map.get(param_value)
 
                 # if not found, try matching a pattern:
-                if accu_map == None:
+                if accu_map is None:
                     for pattern_candidate in specific_accu_map:
-                        if re.search('^'+pattern_candidate+'$', param_value):
+                        if re.search(f'^{pattern_candidate}$', param_value):
                             accu_map = specific_accu_map[pattern_candidate]
 
                 # if still not found, try the universal default:
-                if accu_map == None:
+                if accu_map is None:
                     accu_map = specific_accu_map.get('###')
 
                 # if still not found, fail gracefully:
-                if accu_map==None:
+                if accu_map is None:
                     return {'return':1, 'error':"build_map[{}] is missing both '{}' and '###' values".format(param_name, param_value)}
 
                 for accu_name in accu_map:
@@ -229,15 +231,6 @@ def gen(i):
                     for accu_value in accu_value_list:
                         accu[accu_name].append( accu_value.replace('###', param_value) )
 
-        if False and interactive:
-            print('-'*80)
-            print("Accu contents:")
-            pprint(accu)
-            print("")
-
-        # Substitute the accumulated values into command template:
-        #
-        anchor_regexpr  = '((?:<<<|{{{)(\??)(\w+)(.?)(?:>>>|}}}))'
         subst_output    = entry_dict['cmd_template']
         can_substitute  = bool( re.search(anchor_regexpr, subst_output) )
         iteration       = 0
@@ -249,13 +242,11 @@ def gen(i):
                 if anchor_name in accu:
                     if anchor_name in input_params:
                         return {'return':1, 'error':"Both input_params and accu contain '{}' anchor, ambiguous substitution".format(anchor_name)}
-                    else:
-                        accu_value_list = accu[anchor_name]
-                        if type(accu_value_list)!=list:
-                            accu_value_list = [ accu_value_list ]
-                        subst_output = subst_output.replace(expression, accu_sep.join(accu_value_list) )
+                    accu_value_list = accu[anchor_name]
+                    if type(accu_value_list)!=list:
+                        accu_value_list = [ accu_value_list ]
+                    subst_output = subst_output.replace(expression, accu_sep.join(accu_value_list) )
 
-                        # print("Substituting {} -> {} from accu".format(expression, accu_sep.join(accu[anchor_name])))
                 elif anchor_name in input_params:
                     subst_output = subst_output.replace(expression, input_params[anchor_name] )
 
@@ -273,7 +264,7 @@ def gen(i):
                 else:
                     return {'return':1, 'error':"Neither input_params nor accu contain substitution for non-optional '{}' anchor".format(anchor_name)}
 
-                # print("input={}\noutput={}\n".format(subst_input, subst_output))
+                            # print("input={}\noutput={}\n".format(subst_input, subst_output))
 
             can_substitute  = bool( re.search(anchor_regexpr, subst_output) )
             if interactive:
@@ -351,8 +342,7 @@ def show(i):
     from pprint import pprint
 
     interactive     = i.get('out')=='con'
-    data_uoa = i.get('data_uoa')
-    if data_uoa:
+    if data_uoa := i.get('data_uoa'):
         load_adict = {  'action':           'load',
                         'module_uoa':       i['module_uoa'],
                         'data_uoa':         data_uoa,

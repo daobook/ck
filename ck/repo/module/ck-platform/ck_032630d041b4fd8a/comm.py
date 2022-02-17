@@ -53,21 +53,20 @@ def send(i):
 #       return {'return':1, 'error': 'API key is not defined'}
 
     url=config.get('server_url')
-    if url=='' or url==None:
-       return {'return':1, 'error': 'cK API URL is not defined'}
+    if url == '' or url is None:
+        return {'return':1, 'error': 'cK API URL is not defined'}
 
     remote_server_user=config.get('server_user')
-    if remote_server_user==None: remote_server_user=''
+    if remote_server_user is None: remote_server_user=''
 
     remote_server_password=config.get('server_pass')
-    if remote_server_password==None: remote_server_password=''
+    if remote_server_password is None: remote_server_password=''
 
     remote_skip_certificate_validation=config.get('server_skip_validation')
-    if remote_skip_certificate_validation==None: remote_skip_certificate_validation=''
+    if remote_skip_certificate_validation is None: remote_skip_certificate_validation=''
 
     # Prepare dict to send to remote server
-    ii={}
-    ii['action']=i.get('action','')
+    ii = {'action': i.get('action', '')}
     ii['dict']=i.get('dict',{})
     ii['ownership']=i.get('ownership',{})
     ii['username']=username
@@ -98,13 +97,13 @@ def send(i):
     auth=None
     add_auth=False
 
-    if remote_server_user!='' and remote_server_user!=None: 
-       if remote_server_password==None: remote_server_password=''
+    if remote_server_user not in ['', None]: 
+        if remote_server_password is None: remote_server_password=''
 
-       auth = urllib2.HTTPPasswordMgrWithDefaultRealm()
-       auth.add_password(None, url, remote_server_user, remote_server_password)
+        auth = urllib2.HTTPPasswordMgrWithDefaultRealm()
+        auth.add_password(None, url, remote_server_user, remote_server_password)
 
-       add_auth=True
+        add_auth=True
 
     # Prepare handler (TBD: maybe there is another, more elegant way?)
     if add_auth and add_ctx:
@@ -246,9 +245,9 @@ def download_file(i):
 
     # Connect
     try:
-       urlretrieve(url, fn)
+        urlretrieve(url, fn)
     except Exception as e:
-       return {'return':1, 'error':'download failed ('+format(e)+')'}
+        return {'return': 1, 'error': f'download failed ({format(e)})'}
 
     statinfo = os.stat(fn)
     file_size=statinfo.st_size

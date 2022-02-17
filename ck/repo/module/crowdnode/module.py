@@ -72,7 +72,7 @@ def push(i):
 
     fn=i.get('filename','')
     if fn=='' or not os.path.isfile(fn):
-        return {'return':1, 'error':'file '+fn+' not found'}
+        return {'return': 1, 'error': f'file {fn} not found'}
 
     ep=i.get('extra_path','')
     if ep=='':
@@ -219,7 +219,7 @@ def shell(i):
         if so!='': 
             ck.out(so)
         if se!='': 
-            if getattr(ck, 'eout', None)==None:
+            if getattr(ck, 'eout', None) is None:
                 ck.out(se)
             else:
                 ck.eout(se)

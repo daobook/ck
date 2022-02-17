@@ -52,8 +52,8 @@ def delete(i):
     username=cfg.get('username','')
     if i.get('username')!=None: username=i['username']
 
-    if username=='' or username==None: 
-       return {'return':1, 'error':'Username is not defined'}
+    if username == '' or username is None: 
+        return {'return':1, 'error':'Username is not defined'}
 
     cfg['username']=username
 
@@ -62,16 +62,16 @@ def delete(i):
 
     if i.get('api_key')!=None: api_key=i['api_key']
 
-    if api_key=='' or api_key==None: 
-       return {'return':1, 'error':'API key is not defined'}
+    if api_key == '' or api_key is None: 
+        return {'return':1, 'error':'API key is not defined'}
 
     cfg['api_key']=api_key
 
     # CID ###########################################################        
     cid=i.get('cid')
 
-    if cid=='' or cid==None: 
-       return {'return':1, 'error':'CK entry (CID) is not defined'}
+    if cid == '' or cid is None: 
+        return {'return':1, 'error':'CK entry (CID) is not defined'}
 
 
     # Sending request to download
